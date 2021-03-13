@@ -1,0 +1,1 @@
+../../../../../TuyaSmartSDK/TuyaSmartBLEMeshKit/TuyaSmartBLEMeshKit/BLEMesh/DPS/TYBLEMeshSensorDP.h

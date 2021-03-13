@@ -1,0 +1,1 @@
+../../../../../TuyaSmartSDK/TuyaSmartBLEMeshKit/TuyaSmartBLEMeshKit/Public/Home/TuyaSmartActivator+BleMesh.h

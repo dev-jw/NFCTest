@@ -1,0 +1,1 @@
+../../../../../TuyaSmartSDK/TuyaSmartDeviceKit/TuyaSmartDeviceKit/Public/Home/DeviceShare/Model/TuyaSmartDeviceShareModel.h

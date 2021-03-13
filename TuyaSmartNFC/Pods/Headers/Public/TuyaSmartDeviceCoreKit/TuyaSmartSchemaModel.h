@@ -1,0 +1,1 @@
+../../../../../TuyaSmartSDK/TuyaSmartDeviceCoreKit/TuyaSmartDeviceCoreKit/Public/Model/TuyaSmartSchemaModel.h

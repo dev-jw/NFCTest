@@ -1,0 +1,698 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3B60528A25FC917F006241D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B60528925FC917F006241D8 /* AppDelegate.swift */; };
+		3B60528C25FC917F006241D8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B60528B25FC917F006241D8 /* SceneDelegate.swift */; };
+		3B60528E25FC917F006241D8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B60528D25FC917F006241D8 /* ContentView.swift */; };
+		3B60529025FC9181006241D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B60528F25FC9181006241D8 /* Assets.xcassets */; };
+		3B60529325FC9181006241D8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B60529225FC9181006241D8 /* Preview Assets.xcassets */; };
+		3B60529625FC9181006241D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B60529425FC9181006241D8 /* LaunchScreen.storyboard */; };
+		3B6052B125FC9182006241D8 /* clips.app in Embed App Clips */ = {isa = PBXBuildFile; fileRef = 3B60528725FC917F006241D8 /* clips.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3B71EF2525FB155200E37AE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B71EF2425FB155200E37AE0 /* AppDelegate.swift */; };
+		3B71EF2725FB155200E37AE0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B71EF2625FB155200E37AE0 /* SceneDelegate.swift */; };
+		3B71EF2925FB155200E37AE0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B71EF2825FB155200E37AE0 /* ContentView.swift */; };
+		3B71EF2B25FB155400E37AE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B71EF2A25FB155400E37AE0 /* Assets.xcassets */; };
+		3B71EF2E25FB155400E37AE0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B71EF2D25FB155400E37AE0 /* Preview Assets.xcassets */; };
+		3B71EF3125FB155400E37AE0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B71EF2F25FB155400E37AE0 /* LaunchScreen.storyboard */; };
+		3B71EF8025FB177F00E37AE0 /* TuyaSmartConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B71EF7F25FB177F00E37AE0 /* TuyaSmartConfig.swift */; };
+		3B71EF8525FB17EB00E37AE0 /* t_s.bmp in Resources */ = {isa = PBXBuildFile; fileRef = 3B71EF8425FB17EB00E37AE0 /* t_s.bmp */; };
+		3B71EFA425FB1AED00E37AE0 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B71EFA325FB1AED00E37AE0 /* LoginView.swift */; };
+		3B71F0DE25FB392A00E37AE0 /* LoginHelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B71F0DD25FB392A00E37AE0 /* LoginHelp.swift */; };
+		3B71F0E425FB433F00E37AE0 /* HomeHelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B71F0E325FB433F00E37AE0 /* HomeHelp.swift */; };
+		3B71F0F225FB66EA00E37AE0 /* NFCTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B71F0F125FB66EA00E37AE0 /* NFCTool.swift */; };
+		C727B0742BD2AA8D97381954 /* libPods-TuyaSmartNFC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A4549D78892418EC31528168 /* libPods-TuyaSmartNFC.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3B6052AF25FC9182006241D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3B71EF1925FB155200E37AE0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3B60528625FC917F006241D8;
+			remoteInfo = clips;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3B6052B225FC9182006241D8 /* Embed App Clips */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/AppClips";
+			dstSubfolderSpec = 16;
+			files = (
+				3B6052B125FC9182006241D8 /* clips.app in Embed App Clips */,
+			);
+			name = "Embed App Clips";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		36EBA69217E4748AFDF3B7BF /* Pods-TuyaSmartNFC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuyaSmartNFC.debug.xcconfig"; path = "Target Support Files/Pods-TuyaSmartNFC/Pods-TuyaSmartNFC.debug.xcconfig"; sourceTree = "<group>"; };
+		3B60528725FC917F006241D8 /* clips.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = clips.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B60528925FC917F006241D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3B60528B25FC917F006241D8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3B60528D25FC917F006241D8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3B60528F25FC9181006241D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3B60529225FC9181006241D8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3B60529525FC9181006241D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3B60529725FC9181006241D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B60529825FC9181006241D8 /* clips.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = clips.entitlements; sourceTree = "<group>"; };
+		3B71EF2125FB155200E37AE0 /* TuyaSmartNFC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TuyaSmartNFC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B71EF2425FB155200E37AE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3B71EF2625FB155200E37AE0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3B71EF2825FB155200E37AE0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3B71EF2A25FB155400E37AE0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3B71EF2D25FB155400E37AE0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3B71EF3025FB155400E37AE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3B71EF3225FB155400E37AE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B71EF7125FB168F00E37AE0 /* TuyaSmartNFC.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TuyaSmartNFC.entitlements; sourceTree = "<group>"; };
+		3B71EF7F25FB177F00E37AE0 /* TuyaSmartConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TuyaSmartConfig.swift; sourceTree = "<group>"; };
+		3B71EF8425FB17EB00E37AE0 /* t_s.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = t_s.bmp; sourceTree = "<group>"; };
+		3B71EFA325FB1AED00E37AE0 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		3B71F0DD25FB392A00E37AE0 /* LoginHelp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginHelp.swift; sourceTree = "<group>"; };
+		3B71F0E325FB433F00E37AE0 /* HomeHelp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHelp.swift; sourceTree = "<group>"; };
+		3B71F0F125FB66EA00E37AE0 /* NFCTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCTool.swift; sourceTree = "<group>"; };
+		42EFBF295AD764D3BB9168B6 /* Pods_TuyaSmartNFCTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TuyaSmartNFCTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		57C88310D43C732E1F5280B6 /* Pods_TuyaSmartNFC_TuyaSmartNFCUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TuyaSmartNFC_TuyaSmartNFCUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E5AE5F72BF6A446A4E50277 /* Pods-TuyaSmartNFCTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuyaSmartNFCTests.release.xcconfig"; path = "Target Support Files/Pods-TuyaSmartNFCTests/Pods-TuyaSmartNFCTests.release.xcconfig"; sourceTree = "<group>"; };
+		7DF8705ED7365CAED674E3D5 /* Pods-TuyaSmartNFCTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuyaSmartNFCTests.debug.xcconfig"; path = "Target Support Files/Pods-TuyaSmartNFCTests/Pods-TuyaSmartNFCTests.debug.xcconfig"; sourceTree = "<group>"; };
+		826FCCD3921F19D548E0770D /* Pods-TuyaSmartNFC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuyaSmartNFC.release.xcconfig"; path = "Target Support Files/Pods-TuyaSmartNFC/Pods-TuyaSmartNFC.release.xcconfig"; sourceTree = "<group>"; };
+		A4549D78892418EC31528168 /* libPods-TuyaSmartNFC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TuyaSmartNFC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB6B7920E09EB54024E8DB7B /* Pods-TuyaSmartNFC-TuyaSmartNFCUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuyaSmartNFC-TuyaSmartNFCUITests.release.xcconfig"; path = "Target Support Files/Pods-TuyaSmartNFC-TuyaSmartNFCUITests/Pods-TuyaSmartNFC-TuyaSmartNFCUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F382EAF1BCE6227FEF603B7F /* Pods-TuyaSmartNFC-TuyaSmartNFCUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuyaSmartNFC-TuyaSmartNFCUITests.debug.xcconfig"; path = "Target Support Files/Pods-TuyaSmartNFC-TuyaSmartNFCUITests/Pods-TuyaSmartNFC-TuyaSmartNFCUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3B60528425FC917F006241D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B71EF1E25FB155200E37AE0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C727B0742BD2AA8D97381954 /* libPods-TuyaSmartNFC.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		37E82179AF99C4BED7870F3C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				36EBA69217E4748AFDF3B7BF /* Pods-TuyaSmartNFC.debug.xcconfig */,
+				826FCCD3921F19D548E0770D /* Pods-TuyaSmartNFC.release.xcconfig */,
+				F382EAF1BCE6227FEF603B7F /* Pods-TuyaSmartNFC-TuyaSmartNFCUITests.debug.xcconfig */,
+				BB6B7920E09EB54024E8DB7B /* Pods-TuyaSmartNFC-TuyaSmartNFCUITests.release.xcconfig */,
+				7DF8705ED7365CAED674E3D5 /* Pods-TuyaSmartNFCTests.debug.xcconfig */,
+				6E5AE5F72BF6A446A4E50277 /* Pods-TuyaSmartNFCTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		3B60528825FC917F006241D8 /* clips */ = {
+			isa = PBXGroup;
+			children = (
+				3B60528925FC917F006241D8 /* AppDelegate.swift */,
+				3B60528B25FC917F006241D8 /* SceneDelegate.swift */,
+				3B60528D25FC917F006241D8 /* ContentView.swift */,
+				3B60528F25FC9181006241D8 /* Assets.xcassets */,
+				3B60529425FC9181006241D8 /* LaunchScreen.storyboard */,
+				3B60529725FC9181006241D8 /* Info.plist */,
+				3B60529825FC9181006241D8 /* clips.entitlements */,
+				3B60529125FC9181006241D8 /* Preview Content */,
+			);
+			path = clips;
+			sourceTree = "<group>";
+		};
+		3B60529125FC9181006241D8 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3B60529225FC9181006241D8 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3B71EF1825FB155200E37AE0 = {
+			isa = PBXGroup;
+			children = (
+				3B71EF2325FB155200E37AE0 /* TuyaSmartNFC */,
+				3B60528825FC917F006241D8 /* clips */,
+				3B71EF2225FB155200E37AE0 /* Products */,
+				37E82179AF99C4BED7870F3C /* Pods */,
+				DE6C96F1E3E9D17E6A2290A0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3B71EF2225FB155200E37AE0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3B71EF2125FB155200E37AE0 /* TuyaSmartNFC.app */,
+				3B60528725FC917F006241D8 /* clips.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3B71EF2325FB155200E37AE0 /* TuyaSmartNFC */ = {
+			isa = PBXGroup;
+			children = (
+				3B71F0DC25FB391B00E37AE0 /* Login */,
+				3B71F0E225FB433300E37AE0 /* Home */,
+				3B71EF7E25FB174F00E37AE0 /* Utilities */,
+				3B71EF7125FB168F00E37AE0 /* TuyaSmartNFC.entitlements */,
+				3B71EF2425FB155200E37AE0 /* AppDelegate.swift */,
+				3B71EF2625FB155200E37AE0 /* SceneDelegate.swift */,
+				3B71EF2825FB155200E37AE0 /* ContentView.swift */,
+				3B71EF2A25FB155400E37AE0 /* Assets.xcassets */,
+				3B71EF2F25FB155400E37AE0 /* LaunchScreen.storyboard */,
+				3B71EF3225FB155400E37AE0 /* Info.plist */,
+				3B71EF8425FB17EB00E37AE0 /* t_s.bmp */,
+				3B71EF2C25FB155400E37AE0 /* Preview Content */,
+			);
+			path = TuyaSmartNFC;
+			sourceTree = "<group>";
+		};
+		3B71EF2C25FB155400E37AE0 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3B71EF2D25FB155400E37AE0 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3B71EF7E25FB174F00E37AE0 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				3B71EF7F25FB177F00E37AE0 /* TuyaSmartConfig.swift */,
+				3B71F0F125FB66EA00E37AE0 /* NFCTool.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		3B71F0DC25FB391B00E37AE0 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				3B71EFA325FB1AED00E37AE0 /* LoginView.swift */,
+				3B71F0DD25FB392A00E37AE0 /* LoginHelp.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		3B71F0E225FB433300E37AE0 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				3B71F0E325FB433F00E37AE0 /* HomeHelp.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		DE6C96F1E3E9D17E6A2290A0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				57C88310D43C732E1F5280B6 /* Pods_TuyaSmartNFC_TuyaSmartNFCUITests.framework */,
+				42EFBF295AD764D3BB9168B6 /* Pods_TuyaSmartNFCTests.framework */,
+				A4549D78892418EC31528168 /* libPods-TuyaSmartNFC.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3B60528625FC917F006241D8 /* clips */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B6052B925FC9182006241D8 /* Build configuration list for PBXNativeTarget "clips" */;
+			buildPhases = (
+				3B60528325FC917F006241D8 /* Sources */,
+				3B60528425FC917F006241D8 /* Frameworks */,
+				3B60528525FC917F006241D8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = clips;
+			productName = clips;
+			productReference = 3B60528725FC917F006241D8 /* clips.app */;
+			productType = "com.apple.product-type.application.on-demand-install-capable";
+		};
+		3B71EF2025FB155200E37AE0 /* TuyaSmartNFC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B71EF4B25FB155500E37AE0 /* Build configuration list for PBXNativeTarget "TuyaSmartNFC" */;
+			buildPhases = (
+				CEAF81EFA057AEC61B738DFC /* [CP] Check Pods Manifest.lock */,
+				3B71EF1D25FB155200E37AE0 /* Sources */,
+				3B71EF1E25FB155200E37AE0 /* Frameworks */,
+				3B71EF1F25FB155200E37AE0 /* Resources */,
+				3D7EEDA89561E91241C8B5FD /* [CP] Embed Pods Frameworks */,
+				73CF3A158329CEDE6660A34F /* [CP] Copy Pods Resources */,
+				3B6052B225FC9182006241D8 /* Embed App Clips */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3B6052B025FC9182006241D8 /* PBXTargetDependency */,
+			);
+			name = TuyaSmartNFC;
+			productName = TuyaSmartNFC;
+			productReference = 3B71EF2125FB155200E37AE0 /* TuyaSmartNFC.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3B71EF1925FB155200E37AE0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					3B60528625FC917F006241D8 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					3B71EF2025FB155200E37AE0 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 3B71EF1C25FB155200E37AE0 /* Build configuration list for PBXProject "TuyaSmartNFC" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3B71EF1825FB155200E37AE0;
+			productRefGroup = 3B71EF2225FB155200E37AE0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3B71EF2025FB155200E37AE0 /* TuyaSmartNFC */,
+				3B60528625FC917F006241D8 /* clips */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3B60528525FC917F006241D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B60529625FC9181006241D8 /* LaunchScreen.storyboard in Resources */,
+				3B60529325FC9181006241D8 /* Preview Assets.xcassets in Resources */,
+				3B60529025FC9181006241D8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B71EF1F25FB155200E37AE0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B71EF3125FB155400E37AE0 /* LaunchScreen.storyboard in Resources */,
+				3B71EF2E25FB155400E37AE0 /* Preview Assets.xcassets in Resources */,
+				3B71EF8525FB17EB00E37AE0 /* t_s.bmp in Resources */,
+				3B71EF2B25FB155400E37AE0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3D7EEDA89561E91241C8B5FD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TuyaSmartNFC/Pods-TuyaSmartNFC-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TuyaSmartNFC/Pods-TuyaSmartNFC-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TuyaSmartNFC/Pods-TuyaSmartNFC-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		73CF3A158329CEDE6660A34F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TuyaSmartNFC/Pods-TuyaSmartNFC-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TuyaSmartNFC/Pods-TuyaSmartNFC-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TuyaSmartNFC/Pods-TuyaSmartNFC-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CEAF81EFA057AEC61B738DFC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TuyaSmartNFC-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3B60528325FC917F006241D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B60528A25FC917F006241D8 /* AppDelegate.swift in Sources */,
+				3B60528C25FC917F006241D8 /* SceneDelegate.swift in Sources */,
+				3B60528E25FC917F006241D8 /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B71EF1D25FB155200E37AE0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B71EF8025FB177F00E37AE0 /* TuyaSmartConfig.swift in Sources */,
+				3B71EF2525FB155200E37AE0 /* AppDelegate.swift in Sources */,
+				3B71F0E425FB433F00E37AE0 /* HomeHelp.swift in Sources */,
+				3B71EF2725FB155200E37AE0 /* SceneDelegate.swift in Sources */,
+				3B71F0DE25FB392A00E37AE0 /* LoginHelp.swift in Sources */,
+				3B71F0F225FB66EA00E37AE0 /* NFCTool.swift in Sources */,
+				3B71EFA425FB1AED00E37AE0 /* LoginView.swift in Sources */,
+				3B71EF2925FB155200E37AE0 /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3B6052B025FC9182006241D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3B60528625FC917F006241D8 /* clips */;
+			targetProxy = 3B6052AF25FC9182006241D8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3B60529425FC9181006241D8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3B60529525FC9181006241D8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		3B71EF2F25FB155400E37AE0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3B71EF3025FB155400E37AE0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3B6052B325FC9182006241D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = clips/clips.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"clips/Preview Content\"";
+				DEVELOPMENT_TEAM = KQV995FM5N;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = clips/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zsy.nfc.test.clips;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3B6052B425FC9182006241D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = clips/clips.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"clips/Preview Content\"";
+				DEVELOPMENT_TEAM = KQV995FM5N;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = clips/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zsy.nfc.test.clips;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3B71EF4925FB155500E37AE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3B71EF4A25FB155500E37AE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3B71EF4C25FB155500E37AE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36EBA69217E4748AFDF3B7BF /* Pods-TuyaSmartNFC.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TuyaSmartNFC/TuyaSmartNFC.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"TuyaSmartNFC/Preview Content\"";
+				DEVELOPMENT_TEAM = KQV995FM5N;
+				ENABLE_BITCODE = NO;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = TuyaSmartNFC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zsy.nfc.test;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3B71EF4D25FB155500E37AE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 826FCCD3921F19D548E0770D /* Pods-TuyaSmartNFC.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TuyaSmartNFC/TuyaSmartNFC.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"TuyaSmartNFC/Preview Content\"";
+				DEVELOPMENT_TEAM = KQV995FM5N;
+				ENABLE_BITCODE = NO;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = TuyaSmartNFC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zsy.nfc.test;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3B6052B925FC9182006241D8 /* Build configuration list for PBXNativeTarget "clips" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B6052B325FC9182006241D8 /* Debug */,
+				3B6052B425FC9182006241D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B71EF1C25FB155200E37AE0 /* Build configuration list for PBXProject "TuyaSmartNFC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B71EF4925FB155500E37AE0 /* Debug */,
+				3B71EF4A25FB155500E37AE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B71EF4B25FB155500E37AE0 /* Build configuration list for PBXNativeTarget "TuyaSmartNFC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B71EF4C25FB155500E37AE0 /* Debug */,
+				3B71EF4D25FB155500E37AE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3B71EF1925FB155200E37AE0 /* Project object */;
+}

@@ -1,0 +1,1 @@
+../../../../../TuyaSmartSDK/TuyaSmartBLEMeshKit/TuyaSmartBLEMeshKit/Service/TYBleMeshMultiActivatorService.h

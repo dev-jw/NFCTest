@@ -1,0 +1,1 @@
+../../../../../TuyaSmartSDK/TuyaSmartBLEKit/TuyaSmartBLEKit/Service/BLECommon/ChipCert/TYBLEChipCertService.h

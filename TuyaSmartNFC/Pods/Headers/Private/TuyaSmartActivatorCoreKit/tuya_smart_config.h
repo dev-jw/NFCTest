@@ -1,0 +1,1 @@
+../../../../../TuyaSmartSDK/TuyaSmartActivatorCoreKit/TuyaSmartActivatorCoreKit/Classes/Utils/TuyaSmartActivator/Headers/Public/tuya_smart_config.h

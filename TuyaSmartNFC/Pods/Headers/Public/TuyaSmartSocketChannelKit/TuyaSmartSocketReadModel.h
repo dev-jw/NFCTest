@@ -1,0 +1,1 @@
+../../../../../TuyaSmartSDK/TuyaSmartSocketChannelKit/TuyaSmartSocketChannelKit/Public/TuyaSmartSocketReadModel.h

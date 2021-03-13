@@ -1,0 +1,1 @@
+../../../../../TuyaSmartSDK/TuyaSmartBaseKit/TuyaSmartBaseKit/Service/TYIPRequestServerTrust.h

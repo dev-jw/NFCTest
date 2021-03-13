@@ -1,0 +1,1 @@
+../../../../../TuyaSmartSDK/TuyaSmartDeviceCoreKit/TuyaSmartDeviceCoreKit/Header/TYCoreHttpsSign.h

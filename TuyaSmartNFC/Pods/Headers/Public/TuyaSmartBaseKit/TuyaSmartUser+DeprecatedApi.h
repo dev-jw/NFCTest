@@ -1,0 +1,1 @@
+../../../../../TuyaSmartSDK/TuyaSmartBaseKit/TuyaSmartBaseKit/Public/TuyaSmartUser/TuyaSmartUser+DeprecatedApi.h

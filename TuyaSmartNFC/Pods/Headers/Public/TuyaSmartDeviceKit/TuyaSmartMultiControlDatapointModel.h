@@ -1,0 +1,1 @@
+../../../../../TuyaSmartSDK/TuyaSmartDeviceKit/TuyaSmartDeviceKit/Public/Model/MultiControl/TuyaSmartMultiControlDatapointModel.h

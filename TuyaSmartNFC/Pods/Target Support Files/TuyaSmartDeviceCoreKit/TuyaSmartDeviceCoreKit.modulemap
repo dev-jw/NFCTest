@@ -1,0 +1,6 @@
+module TuyaSmartDeviceCoreKit {
+  umbrella header "TuyaSmartDeviceCoreKit.h"
+
+  export *
+  module * { export * }
+}

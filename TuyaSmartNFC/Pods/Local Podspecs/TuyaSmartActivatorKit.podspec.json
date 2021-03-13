@@ -1,0 +1,38 @@
+{
+  "name": "TuyaSmartActivatorKit",
+  "version": "3.24.1.2-GCM-1-rc.1",
+  "summary": "A short description of TuyaSmartActivatorKit.",
+  "homepage": "https://tuya.com",
+  "license": {
+    "type": "MIT"
+  },
+  "authors": {
+    "0x5e": "gaosen@tuya.com"
+  },
+  "source": {
+    "git": "file:///Users/zsy/Desktop/TuyaSmartSDK/TuyaSmartActivatorKit"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "TuyaSmartActivatorKit/**/*.{h,m,mm,c}",
+  "module_map": "TuyaSmartActivatorKit/module.modulemap",
+  "public_header_files": "TuyaSmartActivatorKit/Public/**/*.h",
+  "prefix_header_contents": "#ifdef __OBJC__\n  #import <TuyaSmartActivatorCoreKit/TuyaSmartActivatorCoreKit.h>\n  #undef TYLog\n  #undef TYSDKLogDebug\n  #undef TYSDKLogInfo\n  #undef TYSDKLogWarn\n  #undef TYSDKLogError\n  #define TYSDKLogDebug(...)         TYSDKLog(0, @\"TuyaSmartActivatorKit\", __FILE__, __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)\n  #define TYSDKLogInfo(...)         TYSDKLog(1, @\"TuyaSmartActivatorKit\", __FILE__, __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)\n  #define TYSDKLogWarn(...)         TYSDKLog(2, @\"TuyaSmartActivatorKit\", __FILE__, __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)\n  #define TYSDKLogError(...)         TYSDKLog(3, @\"TuyaSmartActivatorKit\", __FILE__, __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)\n\n  #import <YYModel/YYModel.h>\n  #import \"TuyaSmartActivatorKit.h\"\n#endif",
+  "dependencies": {
+    "TuyaSmartActivatorCoreKit": [
+
+    ],
+    "TuyaSmartDeviceKit": [
+
+    ]
+  },
+  "user_target_xcconfig": {
+    "CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES": "YES"
+  },
+  "pod_target_xcconfig": {
+    "CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES": "YES",
+    "DEFINES_MODULE": "YES",
+    "TUYA_CODE_SIGN_ENTITLEMENTS": "com.apple.developer.networking.wifi-info"
+  }
+}

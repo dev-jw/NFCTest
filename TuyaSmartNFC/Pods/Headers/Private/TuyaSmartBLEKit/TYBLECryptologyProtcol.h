@@ -1,0 +1,1 @@
+../../../../../TuyaSmartSDK/TuyaSmartBLEKit/TuyaSmartBLEKit/Protocol/TYBLECryptologyProtcol.h
