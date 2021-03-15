@@ -1,1 +1,1 @@
-../../../../../TuyaSmartSDK/TuyaSmartDeviceKit/TuyaSmartDeviceKit/Public/Home/Model/Share/TuyaSmartReceiveMemberDetailModel.h
+../../../../../../TuyaSmartSDK/TuyaSmartDeviceKit/TuyaSmartDeviceKit/Public/Home/Model/Share/TuyaSmartReceiveMemberDetailModel.h

@@ -1,1 +1,1 @@
-../../../../../TuyaSmartSDK/TuyaSmartTimerKit/TuyaSmartTimerKit/Public/TuyaSmartTimerKit.h
+../../../../../../TuyaSmartSDK/TuyaSmartTimerKit/TuyaSmartTimerKit/Public/TuyaSmartTimerKit.h

@@ -1,1 +1,1 @@
-../../../../../TuyaSmartSDK/TuyaSmartDeviceKit/TuyaSmartDeviceKit/Public/Home/TuyaSmartRoom.h
+../../../../../../TuyaSmartSDK/TuyaSmartDeviceKit/TuyaSmartDeviceKit/Public/Home/TuyaSmartRoom.h

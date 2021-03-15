@@ -1,1 +1,1 @@
-../../../../../TuyaSmartSDK/TuyaSmartBaseKit/TuyaSmartBaseKit/Utils/TuyaSmartCore/Headers/Public/TuyaSmartCore.h
+../../../../../../TuyaSmartSDK/TuyaSmartBaseKit/TuyaSmartBaseKit/Utils/TuyaSmartCore/Headers/Public/TuyaSmartCore.h

@@ -1,1 +1,1 @@
-../../../../../TuyaSmartSDK/TYBluetooth/TYBluetooth/peripheral/TYBLEPeripheral.h
+../../../../../../TuyaSmartSDK/TYBluetooth/TYBluetooth/peripheral/TYBLEPeripheral.h

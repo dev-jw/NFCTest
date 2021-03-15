@@ -1,1 +1,1 @@
-../../../../../TuyaSmartSDK/TuyaSmartDeviceCoreKit/TuyaSmartDeviceCoreKit/Service/TYFirmwareService.h
+../../../../../../TuyaSmartSDK/TuyaSmartDeviceCoreKit/TuyaSmartDeviceCoreKit/Service/TYFirmwareService.h

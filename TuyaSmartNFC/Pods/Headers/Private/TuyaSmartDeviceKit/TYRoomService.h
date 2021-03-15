@@ -1,1 +1,1 @@
-../../../../../TuyaSmartSDK/TuyaSmartDeviceKit/TuyaSmartDeviceKit/Service/Home/TYRoomService.h
+../../../../../../TuyaSmartSDK/TuyaSmartDeviceKit/TuyaSmartDeviceKit/Service/Home/TYRoomService.h

@@ -1,1 +1,1 @@
-../../../../../TuyaSmartSDK/TuyaSmartBLEMeshKit/TuyaSmartBLEMeshKit/TuyaSmartSIGMesh/Classes/Configurator/State/quick/QuickDelayUpdateTimeState.h
+../../../../../../TuyaSmartSDK/TuyaSmartBLEMeshKit/TuyaSmartBLEMeshKit/TuyaSmartSIGMesh/Classes/Configurator/State/quick/QuickDelayUpdateTimeState.h

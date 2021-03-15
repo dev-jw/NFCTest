@@ -1,1 +1,1 @@
-../../../../../TuyaSmartSDK/TuyaSmartDeviceCoreKit/TuyaSmartDeviceCoreKit/Service/Pipelines/TuyaSmartSocketPipeline.h
+../../../../../../TuyaSmartSDK/TuyaSmartDeviceCoreKit/TuyaSmartDeviceCoreKit/Service/Pipelines/TuyaSmartSocketPipeline.h

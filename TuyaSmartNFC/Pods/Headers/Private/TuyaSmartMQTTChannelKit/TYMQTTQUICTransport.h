@@ -1,1 +1,1 @@
-../../../../../TuyaSmartSDK/TuyaSmartMQTTChannelKit/TuyaSmartMQTTChannelKit/Service/TYMQTTQUICTransport.h
+../../../../../../TuyaSmartSDK/TuyaSmartMQTTChannelKit/TuyaSmartMQTTChannelKit/Service/TYMQTTQUICTransport.h

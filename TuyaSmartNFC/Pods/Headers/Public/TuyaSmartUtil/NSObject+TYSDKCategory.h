@@ -1,1 +1,1 @@
-../../../../../TuyaSmartSDK/TuyaSmartUtil/TuyaSmartUtil/Public/NSObject+TYSDKCategory.h
+../../../../../../TuyaSmartSDK/TuyaSmartUtil/TuyaSmartUtil/Public/NSObject+TYSDKCategory.h

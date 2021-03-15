@@ -1,1 +1,1 @@
-../../../../../TuyaSmartSDK/TuyaSmartBLEMeshKit/TuyaSmartBLEMeshKit/TuyaSmartSIGMesh/Classes/Message/AccessMessage/StatusMessage/ModelPublicationStatusMessage.h
+../../../../../../TuyaSmartSDK/TuyaSmartBLEMeshKit/TuyaSmartBLEMeshKit/TuyaSmartSIGMesh/Classes/Message/AccessMessage/StatusMessage/ModelPublicationStatusMessage.h

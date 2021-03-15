@@ -1,1 +1,1 @@
-../../../../../TuyaSmartSDK/TYBluetooth/TYBluetooth/tool/TYBluetoothUtil.h
+../../../../../../TuyaSmartSDK/TYBluetooth/TYBluetooth/tool/TYBluetoothUtil.h

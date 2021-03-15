@@ -1,1 +1,1 @@
-../../../../../TuyaSmartSDK/TuyaSmartBLEKit/TuyaSmartBLEKit/Service/BLECommon/TYBLERequest.h
+../../../../../../TuyaSmartSDK/TuyaSmartBLEKit/TuyaSmartBLEKit/Service/BLECommon/TYBLERequest.h

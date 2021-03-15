@@ -1,1 +1,1 @@
-../../../../../TuyaSmartSDK/TuyaSmartBLEMeshKit/TuyaSmartBLEMeshKit/Service/TYSIGMeshPublishService.h
+../../../../../../TuyaSmartSDK/TuyaSmartBLEMeshKit/TuyaSmartBLEMeshKit/Service/TYSIGMeshPublishService.h

@@ -1,1 +1,1 @@
-../../../../../TuyaSmartSDK/TuyaSmartBLEKit/TuyaSmartBLEKit/Classes/WriteNotify/TYBLEClassicDualModeWriteNotify.h
+../../../../../../TuyaSmartSDK/TuyaSmartBLEKit/TuyaSmartBLEKit/Classes/WriteNotify/TYBLEClassicDualModeWriteNotify.h

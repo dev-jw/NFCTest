@@ -1,1 +1,1 @@
-../../../../../TuyaSmartSDK/TuyaSmartBLEKit/TuyaSmartBLEKit/Protocol/TYBLEActiveProtocol.h
+../../../../../../TuyaSmartSDK/TuyaSmartBLEKit/TuyaSmartBLEKit/Protocol/TYBLEActiveProtocol.h

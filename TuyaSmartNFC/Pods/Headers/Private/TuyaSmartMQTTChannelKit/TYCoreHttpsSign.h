@@ -1,1 +1,1 @@
-../../../../../TuyaSmartSDK/TuyaSmartMQTTChannelKit/TuyaSmartMQTTChannelKit/Header/TYCoreHttpsSign.h
+../../../../../../TuyaSmartSDK/TuyaSmartMQTTChannelKit/TuyaSmartMQTTChannelKit/Header/TYCoreHttpsSign.h

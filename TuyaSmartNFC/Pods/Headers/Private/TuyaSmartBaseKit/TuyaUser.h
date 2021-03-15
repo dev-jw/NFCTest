@@ -1,1 +1,1 @@
-../../../../../TuyaSmartSDK/TuyaSmartBaseKit/TuyaSmartBaseKit/Core/TuyaUser.h
+../../../../../../TuyaSmartSDK/TuyaSmartBaseKit/TuyaSmartBaseKit/Core/TuyaUser.h

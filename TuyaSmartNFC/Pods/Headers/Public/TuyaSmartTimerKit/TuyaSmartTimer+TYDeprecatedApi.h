@@ -1,1 +1,1 @@
-../../../../../TuyaSmartSDK/TuyaSmartTimerKit/TuyaSmartTimerKit/Public/TuyaSmartTimer+TYDeprecatedApi.h
+../../../../../../TuyaSmartSDK/TuyaSmartTimerKit/TuyaSmartTimerKit/Public/TuyaSmartTimer+TYDeprecatedApi.h

@@ -1,1 +1,1 @@
-../../../../../TuyaSmartSDK/TuyaSmartSocketChannelKit/TuyaSmartSocketChannelKit/Public/TuyaSmartSocketChannel.h
+../../../../../../TuyaSmartSDK/TuyaSmartSocketChannelKit/TuyaSmartSocketChannelKit/Public/TuyaSmartSocketChannel.h

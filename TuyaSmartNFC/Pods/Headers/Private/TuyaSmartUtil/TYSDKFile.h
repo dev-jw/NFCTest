@@ -1,1 +1,1 @@
-../../../../../TuyaSmartSDK/TuyaSmartUtil/TuyaSmartUtil/Public/TYSDKFile.h
+../../../../../../TuyaSmartSDK/TuyaSmartUtil/TuyaSmartUtil/Public/TYSDKFile.h

@@ -1,1 +1,1 @@
-../../../../../TuyaSmartSDK/TuyaSmartBaseKit/TuyaSmartBaseKit/Service/TYPushService.h
+../../../../../../TuyaSmartSDK/TuyaSmartBaseKit/TuyaSmartBaseKit/Service/TYPushService.h

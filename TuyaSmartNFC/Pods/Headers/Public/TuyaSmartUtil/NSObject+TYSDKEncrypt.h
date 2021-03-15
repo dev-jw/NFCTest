@@ -1,1 +1,1 @@
-../../../../../TuyaSmartSDK/TuyaSmartUtil/TuyaSmartUtil/Public/NSObject+TYSDKEncrypt.h
+../../../../../../TuyaSmartSDK/TuyaSmartUtil/TuyaSmartUtil/Public/NSObject+TYSDKEncrypt.h

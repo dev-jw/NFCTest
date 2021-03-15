@@ -1,1 +1,1 @@
-../../../../../TuyaSmartSDK/TuyaSmartBaseKit/TuyaSmartBaseKit/Utils/TYBaseNotificationUtils.h
+../../../../../../TuyaSmartSDK/TuyaSmartBaseKit/TuyaSmartBaseKit/Utils/TYBaseNotificationUtils.h

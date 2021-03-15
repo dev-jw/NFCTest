@@ -1,1 +1,1 @@
-../../../../../TuyaSmartSDK/TuyaSmartMQTTChannelKit/TuyaSmartMQTTChannelKit/Service/TYMQTTEventUtil.h
+../../../../../../TuyaSmartSDK/TuyaSmartMQTTChannelKit/TuyaSmartMQTTChannelKit/Service/TYMQTTEventUtil.h

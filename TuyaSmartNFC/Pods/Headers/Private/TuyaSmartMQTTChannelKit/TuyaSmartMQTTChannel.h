@@ -1,1 +1,1 @@
-../../../../../TuyaSmartSDK/TuyaSmartMQTTChannelKit/TuyaSmartMQTTChannelKit/Public/TuyaSmartMQTTChannel.h
+../../../../../../TuyaSmartSDK/TuyaSmartMQTTChannelKit/TuyaSmartMQTTChannelKit/Public/TuyaSmartMQTTChannel.h

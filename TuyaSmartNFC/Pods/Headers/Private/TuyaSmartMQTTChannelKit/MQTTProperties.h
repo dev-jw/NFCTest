@@ -1,1 +1,1 @@
-../../../../../TuyaSmartSDK/TuyaSmartMQTTChannelKit/MQTT-Client-Framework-0.15.2/MQTTClient/MQTTClient/MQTTProperties.h
+../../../../../../TuyaSmartSDK/TuyaSmartMQTTChannelKit/MQTT-Client-Framework-0.15.2/MQTTClient/MQTTClient/MQTTProperties.h

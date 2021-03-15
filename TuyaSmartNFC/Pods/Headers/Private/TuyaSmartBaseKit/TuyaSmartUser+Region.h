@@ -1,1 +1,1 @@
-../../../../../TuyaSmartSDK/TuyaSmartBaseKit/TuyaSmartBaseKit/Public/TuyaSmartUser/TuyaSmartUser+Region.h
+../../../../../../TuyaSmartSDK/TuyaSmartBaseKit/TuyaSmartBaseKit/Public/TuyaSmartUser/TuyaSmartUser+Region.h

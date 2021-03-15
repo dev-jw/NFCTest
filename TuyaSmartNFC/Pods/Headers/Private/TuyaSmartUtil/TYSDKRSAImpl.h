@@ -1,1 +1,1 @@
-../../../../../TuyaSmartSDK/TuyaSmartUtil/TuyaSmartUtil/Private/TYSDKRSAImpl.h
+../../../../../../TuyaSmartSDK/TuyaSmartUtil/TuyaSmartUtil/Private/TYSDKRSAImpl.h

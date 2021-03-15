@@ -1,1 +1,1 @@
-../../../../../TuyaSmartSDK/TuyaSmartSceneKit/TuyaSmartSceneKit/Public/DataFactory/TuyaSmartScenePreConditionFactory.h
+../../../../../../TuyaSmartSDK/TuyaSmartSceneKit/TuyaSmartSceneKit/Public/DataFactory/TuyaSmartScenePreConditionFactory.h

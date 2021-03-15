@@ -1,1 +1,1 @@
-../../../../../TuyaSmartSDK/TuyaSmartSceneKit/TuyaSmartSceneKit/Public/TuyaSmartScene.h
+../../../../../../TuyaSmartSDK/TuyaSmartSceneKit/TuyaSmartSceneKit/Public/TuyaSmartScene.h

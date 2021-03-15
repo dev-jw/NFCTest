@@ -1,1 +1,1 @@
-../../../../../TuyaSmartSDK/TuyaSmartUtil/OpenSSL-1.0.2.17/include-ios/openssl/asn1_mac.h
+../../../../../../TuyaSmartSDK/TuyaSmartUtil/OpenSSL-1.0.2.17/include-ios/openssl/asn1_mac.h

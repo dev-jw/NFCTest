@@ -8,12 +8,23 @@ import SwiftUI
 import TuyaSmartDeviceKit
 
 struct ContentView: View {
-    @ObservedObject var help = HomeHelp()
+    @ObservedObject var help = HomeHelp.shared
     @State var currentDevice: TuyaSmartDevice?
-
+    
+    @State var isPushed = false
+    
     private var homeSection: some View {
         Section(header: Text("Home")) {
-            Text(help.currentHome?.homeModel.name ?? "暂无家庭")
+            
+            Button(action: {
+                isPushed = true
+            }, label: {
+                
+                NavigationLink(destination: HomeListUI(),
+                               isActive: $isPushed) {
+                    Text(help.currentHome?.name ?? " Create Home")
+                }
+            })
         }
     }
     
@@ -29,57 +40,73 @@ struct ContentView: View {
         }
     }
     
-    private var operationSection: some View {
-        Section(header: Text("Tag")) {
-            Button(action: {
-                guard let deviceModel = help.devices?.first else { return }
-
-                guard let devId = deviceModel.devId else {
-                    return
+    private var activatorSection: some View {
+        Section(header: Text("Activator")) {
+            List {
+                NavigationLink(destination: EZActivatorContent()) {
+                    Text("EZ Activator")
                 }
-                
-                let device = TuyaSmartDevice.init(deviceId: devId)
-                
-                NFCTool.performAction(.readTag(device: device)) { (result) in
-                    deviceModel.isOnline = !deviceModel.isOnline
+                NavigationLink(destination: APActivatorContent()) {
+                    Text("AP Activator")
                 }
-            }, label: {
-                Text("Scan Tag")
-            })
-            Button(action: {
-                guard let device = help.devices?.first else { return }
-                
-                let dict = ["dp":"1", "devId": device.devId]
-                let data = try? JSONSerialization.data(withJSONObject: dict, options: [])
-
-                let str = String(data: data!, encoding: String.Encoding.utf8)
-                
-                NFCTool.performAction(.writeTag(dps: str ?? "")) { (result) in
-                    print(result)
+                NavigationLink(destination: GateWayActivatorContent()) {
+                    Text("GateWay Activator")
                 }
-            }, label: {
-                Text("Write Tag")
-            })
+                NavigationLink(destination: ZigBeeSubActivatorContent()) {
+                    Text("ZigBee Sub Activator")
+                }
+            }
+        }
+    }
+    
+    private var sceneSection: some View {
+        Section(header: Text("Scene")) {
+            NavigationLink(destination: SceneContent()) {
+                Text("Create Scene")
+            }
+        }
+    }
+    
+    private var NFCSection: some View {
+        Section(header: Text("NFC")) {
+            NavigationLink(destination: NFCContent()) {
+                Text("NFC Operation")
+            }
         }
     }
     
     var body: some View {
         NavigationView {
-          Form {
-            homeSection
-            deviceSection
-            operationSection
-            Button(action: {
-                HomeHelp.loginOut()
-            }, label: {
-                Text("Login Out")
-            })
-          }
-          .navigationBarTitle("Device List")
+            Form {
+                homeSection
+                deviceSection
+                activatorSection
+                sceneSection
+                NFCSection
+                Button(action: {
+                    loginOut()
+                }, label: {
+                    Text("Login Out")
+                })
+            }
+            .navigationBarTitle("Device List")
         }
         .navigationViewStyle(StackNavigationViewStyle())
         .onAppear {
             help.initiateCurrentHome()
+        }
+    }
+    
+    func loginOut() {
+        TuyaSmartUser.sharedInstance().loginOut {
+            
+            if let window = UIApplication.shared.windows.first {
+                window.rootViewController = UIHostingController(rootView: LoginView())
+                window.endEditing(true)
+                window.makeKeyAndVisible()
+            }
+        } failure: { (error) in
+            print("login out error: \(String(describing: error?.localizedDescription))")
         }
     }
 }

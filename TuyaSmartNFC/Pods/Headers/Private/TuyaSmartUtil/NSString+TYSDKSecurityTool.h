@@ -1,1 +1,1 @@
-../../../../../TuyaSmartSDK/TuyaSmartUtil/TuyaSmartUtil/Private/NSString+TYSDKSecurityTool.h
+../../../../../../TuyaSmartSDK/TuyaSmartUtil/TuyaSmartUtil/Private/NSString+TYSDKSecurityTool.h

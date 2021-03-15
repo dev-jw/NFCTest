@@ -1,1 +1,1 @@
-../../../../../TuyaSmartSDK/TYBluetooth/TYBluetooth/tool/CBUUID+TYCategory.h
+../../../../../../TuyaSmartSDK/TYBluetooth/TYBluetooth/tool/CBUUID+TYCategory.h

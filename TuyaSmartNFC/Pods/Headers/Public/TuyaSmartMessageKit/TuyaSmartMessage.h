@@ -1,1 +1,1 @@
-../../../../../TuyaSmartSDK/TuyaSmartMessageKit/TuyaSmartMessageKit/Public/TuyaSmartMessage.h
+../../../../../../TuyaSmartSDK/TuyaSmartMessageKit/TuyaSmartMessageKit/Public/TuyaSmartMessage.h

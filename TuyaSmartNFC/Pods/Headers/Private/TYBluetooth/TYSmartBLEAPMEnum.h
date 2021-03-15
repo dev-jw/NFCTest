@@ -1,1 +1,1 @@
-../../../../../TuyaSmartSDK/TYBluetooth/TYBluetooth/tool/log/TYSmartBLEAPMEnum.h
+../../../../../../TuyaSmartSDK/TYBluetooth/TYBluetooth/tool/log/TYSmartBLEAPMEnum.h

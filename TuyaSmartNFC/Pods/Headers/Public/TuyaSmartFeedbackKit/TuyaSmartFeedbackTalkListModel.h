@@ -1,1 +1,1 @@
-../../../../../TuyaSmartSDK/TuyaSmartFeedbackKit/TuyaSmartFeedbackKit/Public/Model/TuyaSmartFeedbackTalkListModel.h
+../../../../../../TuyaSmartSDK/TuyaSmartFeedbackKit/TuyaSmartFeedbackKit/Public/Model/TuyaSmartFeedbackTalkListModel.h

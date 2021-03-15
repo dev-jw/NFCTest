@@ -1,1 +1,1 @@
-../../../../../TuyaSmartSDK/TYBluetooth/TYBluetooth/tool/log/TYSmartBLEAPMMessageModel.h
+../../../../../../TuyaSmartSDK/TYBluetooth/TYBluetooth/tool/log/TYSmartBLEAPMMessageModel.h

@@ -97,11 +97,11 @@ EOM
   esac
 }
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_resource "${PODS_ROOT}/../../TuyaSmartSDK/TuyaSmartBaseKit/TuyaSmartBaseKit/Assets/cerficate_v2"
+  install_resource "${PODS_ROOT}/../../../TuyaSmartSDK/TuyaSmartBaseKit/TuyaSmartBaseKit/Assets/cerficate_v2"
   install_resource "${PODS_CONFIGURATION_BUILD_DIR}/TuyaSmartUtil/TuyaSmartUtil.bundle"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_resource "${PODS_ROOT}/../../TuyaSmartSDK/TuyaSmartBaseKit/TuyaSmartBaseKit/Assets/cerficate_v2"
+  install_resource "${PODS_ROOT}/../../../TuyaSmartSDK/TuyaSmartBaseKit/TuyaSmartBaseKit/Assets/cerficate_v2"
   install_resource "${PODS_CONFIGURATION_BUILD_DIR}/TuyaSmartUtil/TuyaSmartUtil.bundle"
 fi
 

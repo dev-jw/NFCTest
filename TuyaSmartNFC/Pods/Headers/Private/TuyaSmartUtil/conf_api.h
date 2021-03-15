@@ -1,1 +1,1 @@
-../../../../../TuyaSmartSDK/TuyaSmartUtil/OpenSSL-1.0.2.17/include-ios/openssl/conf_api.h
+../../../../../../TuyaSmartSDK/TuyaSmartUtil/OpenSSL-1.0.2.17/include-ios/openssl/conf_api.h

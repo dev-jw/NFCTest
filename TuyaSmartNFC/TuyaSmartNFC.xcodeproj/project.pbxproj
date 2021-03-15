@@ -26,6 +26,15 @@
 		3B71F0DE25FB392A00E37AE0 /* LoginHelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B71F0DD25FB392A00E37AE0 /* LoginHelp.swift */; };
 		3B71F0E425FB433F00E37AE0 /* HomeHelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B71F0E325FB433F00E37AE0 /* HomeHelp.swift */; };
 		3B71F0F225FB66EA00E37AE0 /* NFCTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B71F0F125FB66EA00E37AE0 /* NFCTool.swift */; };
+		3BF634F125FF033A000314D3 /* SceneContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF634F025FF033A000314D3 /* SceneContent.swift */; };
+		3BF634F725FF0345000314D3 /* DeviceContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF634F625FF0345000314D3 /* DeviceContent.swift */; };
+		3BF634FC25FF03A3000314D3 /* NFCContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF634FB25FF03A3000314D3 /* NFCContent.swift */; };
+		3BF6350225FF0DB4000314D3 /* HomeListUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF6350125FF0DB4000314D3 /* HomeListUI.swift */; };
+		3BF6350725FF64BF000314D3 /* EZActivatorContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF6350625FF64BE000314D3 /* EZActivatorContent.swift */; };
+		3BF6350D25FF64CA000314D3 /* APActivatorContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF6350C25FF64CA000314D3 /* APActivatorContent.swift */; };
+		3BF6351125FF64D4000314D3 /* GateWayActivatorContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF6351025FF64D4000314D3 /* GateWayActivatorContent.swift */; };
+		3BF6351525FF64E2000314D3 /* ZigBeeSubActivatorContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF6351425FF64E2000314D3 /* ZigBeeSubActivatorContent.swift */; };
+		3BF6351925FF69BF000314D3 /* ActivatorHelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF6351825FF69BF000314D3 /* ActivatorHelp.swift */; };
 		C727B0742BD2AA8D97381954 /* libPods-TuyaSmartNFC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A4549D78892418EC31528168 /* libPods-TuyaSmartNFC.a */; };
 /* End PBXBuildFile section */
 
@@ -79,6 +88,15 @@
 		3B71F0DD25FB392A00E37AE0 /* LoginHelp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginHelp.swift; sourceTree = "<group>"; };
 		3B71F0E325FB433F00E37AE0 /* HomeHelp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHelp.swift; sourceTree = "<group>"; };
 		3B71F0F125FB66EA00E37AE0 /* NFCTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCTool.swift; sourceTree = "<group>"; };
+		3BF634F025FF033A000314D3 /* SceneContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneContent.swift; sourceTree = "<group>"; };
+		3BF634F625FF0345000314D3 /* DeviceContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceContent.swift; sourceTree = "<group>"; };
+		3BF634FB25FF03A3000314D3 /* NFCContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCContent.swift; sourceTree = "<group>"; };
+		3BF6350125FF0DB4000314D3 /* HomeListUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeListUI.swift; sourceTree = "<group>"; };
+		3BF6350625FF64BE000314D3 /* EZActivatorContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EZActivatorContent.swift; sourceTree = "<group>"; };
+		3BF6350C25FF64CA000314D3 /* APActivatorContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APActivatorContent.swift; sourceTree = "<group>"; };
+		3BF6351025FF64D4000314D3 /* GateWayActivatorContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GateWayActivatorContent.swift; sourceTree = "<group>"; };
+		3BF6351425FF64E2000314D3 /* ZigBeeSubActivatorContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZigBeeSubActivatorContent.swift; sourceTree = "<group>"; };
+		3BF6351825FF69BF000314D3 /* ActivatorHelp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivatorHelp.swift; sourceTree = "<group>"; };
 		42EFBF295AD764D3BB9168B6 /* Pods_TuyaSmartNFCTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TuyaSmartNFCTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		57C88310D43C732E1F5280B6 /* Pods_TuyaSmartNFC_TuyaSmartNFCUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TuyaSmartNFC_TuyaSmartNFCUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E5AE5F72BF6A446A4E50277 /* Pods-TuyaSmartNFCTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuyaSmartNFCTests.release.xcconfig"; path = "Target Support Files/Pods-TuyaSmartNFCTests/Pods-TuyaSmartNFCTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -167,6 +185,10 @@
 		3B71EF2325FB155200E37AE0 /* TuyaSmartNFC */ = {
 			isa = PBXGroup;
 			children = (
+				3BF6350525FF64A2000314D3 /* Activator */,
+				3BF634FA25FF038B000314D3 /* NFC */,
+				3BF634EF25FF02D6000314D3 /* Scene */,
+				3BF634EE25FF02CE000314D3 /* Device */,
 				3B71F0DC25FB391B00E37AE0 /* Login */,
 				3B71F0E225FB433300E37AE0 /* Home */,
 				3B71EF7E25FB174F00E37AE0 /* Utilities */,
@@ -195,7 +217,6 @@
 			isa = PBXGroup;
 			children = (
 				3B71EF7F25FB177F00E37AE0 /* TuyaSmartConfig.swift */,
-				3B71F0F125FB66EA00E37AE0 /* NFCTool.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -213,8 +234,46 @@
 			isa = PBXGroup;
 			children = (
 				3B71F0E325FB433F00E37AE0 /* HomeHelp.swift */,
+				3BF6350125FF0DB4000314D3 /* HomeListUI.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		3BF634EE25FF02CE000314D3 /* Device */ = {
+			isa = PBXGroup;
+			children = (
+				3BF634F625FF0345000314D3 /* DeviceContent.swift */,
+			);
+			path = Device;
+			sourceTree = "<group>";
+		};
+		3BF634EF25FF02D6000314D3 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				3BF634F025FF033A000314D3 /* SceneContent.swift */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		3BF634FA25FF038B000314D3 /* NFC */ = {
+			isa = PBXGroup;
+			children = (
+				3B71F0F125FB66EA00E37AE0 /* NFCTool.swift */,
+				3BF634FB25FF03A3000314D3 /* NFCContent.swift */,
+			);
+			path = NFC;
+			sourceTree = "<group>";
+		};
+		3BF6350525FF64A2000314D3 /* Activator */ = {
+			isa = PBXGroup;
+			children = (
+				3BF6350625FF64BE000314D3 /* EZActivatorContent.swift */,
+				3BF6350C25FF64CA000314D3 /* APActivatorContent.swift */,
+				3BF6351025FF64D4000314D3 /* GateWayActivatorContent.swift */,
+				3BF6351425FF64E2000314D3 /* ZigBeeSubActivatorContent.swift */,
+				3BF6351825FF69BF000314D3 /* ActivatorHelp.swift */,
+			);
+			path = Activator;
 			sourceTree = "<group>";
 		};
 		DE6C96F1E3E9D17E6A2290A0 /* Frameworks */ = {
@@ -405,12 +464,21 @@
 			files = (
 				3B71EF8025FB177F00E37AE0 /* TuyaSmartConfig.swift in Sources */,
 				3B71EF2525FB155200E37AE0 /* AppDelegate.swift in Sources */,
+				3BF6351525FF64E2000314D3 /* ZigBeeSubActivatorContent.swift in Sources */,
 				3B71F0E425FB433F00E37AE0 /* HomeHelp.swift in Sources */,
 				3B71EF2725FB155200E37AE0 /* SceneDelegate.swift in Sources */,
 				3B71F0DE25FB392A00E37AE0 /* LoginHelp.swift in Sources */,
+				3BF6350725FF64BF000314D3 /* EZActivatorContent.swift in Sources */,
+				3BF634FC25FF03A3000314D3 /* NFCContent.swift in Sources */,
+				3BF6350225FF0DB4000314D3 /* HomeListUI.swift in Sources */,
 				3B71F0F225FB66EA00E37AE0 /* NFCTool.swift in Sources */,
+				3BF6351925FF69BF000314D3 /* ActivatorHelp.swift in Sources */,
 				3B71EFA425FB1AED00E37AE0 /* LoginView.swift in Sources */,
+				3BF6351125FF64D4000314D3 /* GateWayActivatorContent.swift in Sources */,
+				3BF634F125FF033A000314D3 /* SceneContent.swift in Sources */,
 				3B71EF2925FB155200E37AE0 /* ContentView.swift in Sources */,
+				3BF6350D25FF64CA000314D3 /* APActivatorContent.swift in Sources */,
+				3BF634F725FF0345000314D3 /* DeviceContent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,1 +1,1 @@
-../../../../../TuyaSmartSDK/TuyaSmartMessageKit/TuyaSmartMessageKit/Public/TuyaSmartMessage+TYDeprecatedApi.h
+../../../../../../TuyaSmartSDK/TuyaSmartMessageKit/TuyaSmartMessageKit/Public/TuyaSmartMessage+TYDeprecatedApi.h

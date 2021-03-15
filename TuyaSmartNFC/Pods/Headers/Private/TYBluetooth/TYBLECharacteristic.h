@@ -1,1 +1,1 @@
-../../../../../TuyaSmartSDK/TYBluetooth/TYBluetooth/characteristic/TYBLECharacteristic.h
+../../../../../../TuyaSmartSDK/TYBluetooth/TYBluetooth/characteristic/TYBLECharacteristic.h

@@ -1,1 +1,1 @@
-../../../../../TuyaSmartSDK/TuyaSmartBLEKit/TuyaSmartBLEKit/Service/BLEChannel/ChannelDpAnalyze/TYBLEChannelAnalyze.h
+../../../../../../TuyaSmartSDK/TuyaSmartBLEKit/TuyaSmartBLEKit/Service/BLEChannel/ChannelDpAnalyze/TYBLEChannelAnalyze.h

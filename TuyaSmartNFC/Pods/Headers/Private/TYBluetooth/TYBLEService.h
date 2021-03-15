@@ -1,1 +1,1 @@
-../../../../../TuyaSmartSDK/TYBluetooth/TYBluetooth/service/TYBLEService.h
+../../../../../../TuyaSmartSDK/TYBluetooth/TYBluetooth/service/TYBLEService.h

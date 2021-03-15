@@ -1,1 +1,1 @@
-../../../../../TuyaSmartSDK/TuyaSmartDeviceKit/TuyaSmartDeviceKit/Public/Model/MultiControl/TuyaSmartMultiControlDpRelationModel.h
+../../../../../../TuyaSmartSDK/TuyaSmartDeviceKit/TuyaSmartDeviceKit/Public/Model/MultiControl/TuyaSmartMultiControlDpRelationModel.h

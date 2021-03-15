@@ -10,37 +10,27 @@ import Foundation
 import TuyaSmartDeviceKit
 
 class HomeHelp: ObservableObject {
-    
-    private static var shared = HomeHelp()
+    @Published var currentHome: TuyaSmartHomeModel?
+    @Published var devices: [TuyaSmartDeviceModel]? = []
+    @Published var homeList: [TuyaSmartHomeModel]? = []
 
+    private var home: TuyaSmartHome? = nil
+    
     private let homeManager = TuyaSmartHomeManager()
     
-    var currentHome: TuyaSmartHome?
-    @Published var devices: [TuyaSmartDeviceModel]? = []
-
-    static func loginOut() {
-        TuyaSmartUser.sharedInstance().loginOut {
-
-            if let window = UIApplication.shared.windows.first {
-                window.rootViewController = UIHostingController(rootView: LoginView())
-                window.endEditing(true)
-                window.makeKeyAndVisible()
-            }
-        } failure: { (error) in
-            print("login out error: \(String(describing: error?.localizedDescription))")
-        }
-    }
+    static let shared = HomeHelp()
 
     /// get first Home
     func initiateCurrentHome() {
 //        homeManager.delegate = self
-        homeManager.getHomeList { (homeModels) in
+        homeManager.getHomeList { [self] (homeModels) in
+            self.homeList = homeModels
             guard let home = homeModels?.first else {
-                let homeId = self.createHome()
-                self.configCurrentHome(homeId)
+                let homeId = createHome()
+                 configCurrentHome(homeId)
                 return
             }
-            self.configCurrentHome(home.homeId)
+            configCurrentHome(home.homeId)
         } failure: { (error) in
             print("fetch home list error: \(String(describing: error?.localizedDescription))")
         }
@@ -49,7 +39,8 @@ class HomeHelp: ObservableObject {
     /// create home
     func createHome() -> Int64 {
         var id: Int64 = 0
-        homeManager.addHome(withName: "Zsy's Home", geoName: "Zsy", rooms: ["Bedroom"], latitude: 0, longitude: 0) { (homeId) in
+        let homeName = "Zsy's Home - \(homeManager.homes.count)"
+        homeManager.addHome(withName: homeName, geoName: "Hangzhou", rooms: ["Bedroom"], latitude: 0, longitude: 0) { (homeId) in
             guard (homeId != 0) else { return }
             id = Int64(Int(homeId))
         } failure: { (error) in
@@ -58,18 +49,36 @@ class HomeHelp: ObservableObject {
         return Int64(id)
     }
     
-    /// fetch home Detail
+    /// setup home
     func configCurrentHome(_ homeId: Int64) {
-        self.currentHome = TuyaSmartHome(homeId: homeId)
-//        self.currentHome?.delegate = self
-        
-        self.currentHome?.getDetailWithSuccess({ (homeModel) in
-            
-            self.devices = self.currentHome?.deviceList
-            
+        home = TuyaSmartHome(homeId: homeId)
+        currentHome = home!.homeModel
+    }
+    
+    /// fetch Home Detail
+    func fetchDevices() {
+        home!.getDetailWithSuccess({ [self] (homeModel) in
+            currentHome = homeModel
+            devices = home!.deviceList
         }, failure: { (error) in
             print("get home Detail error: \(String(describing: error?.localizedDescription))")
         })
-
+    }
+    
+    
+    // delete Home
+    func deleteHome(at offsets: IndexSet) {
+        if let first = offsets.first {
+            
+            let homeModel = homeList![first]
+            
+            let home = TuyaSmartHome.init(homeId: homeModel.homeId)
+            
+            home?.dismiss { [self] in
+                homeList?.remove(at: first)
+            } failure: { (error) in
+                print("dismiss home Detail error: \(String(describing: error?.localizedDescription))")
+            }
+        }
     }
 }

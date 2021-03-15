@@ -51,21 +51,21 @@ PODS:
 
 DEPENDENCIES:
   - Toast-Swift
-  - TuyaSmartActivatorCoreKit (from `../TuyaSmartSDK/TuyaSmartActivatorCoreKit`)
-  - TuyaSmartActivatorKit (from `../TuyaSmartSDK/TuyaSmartActivatorKit`)
-  - TuyaSmartBaseKit (from `../TuyaSmartSDK/TuyaSmartBaseKit`)
-  - TuyaSmartBLEKit (from `../TuyaSmartSDK/TuyaSmartBLEKit`)
-  - TuyaSmartBLEMeshKit (from `../TuyaSmartSDK/TuyaSmartBLEMeshKit`)
-  - TuyaSmartDeviceCoreKit (from `../TuyaSmartSDK/TuyaSmartDeviceCoreKit`)
-  - TuyaSmartDeviceKit (from `../TuyaSmartSDK/TuyaSmartDeviceKit`)
-  - TuyaSmartFeedbackKit (from `../TuyaSmartSDK/TuyaSmartFeedbackKit`)
-  - TuyaSmartMessageKit (from `../TuyaSmartSDK/TuyaSmartMessageKit`)
-  - TuyaSmartMQTTChannelKit (from `../TuyaSmartSDK/TuyaSmartMQTTChannelKit`)
-  - TuyaSmartSceneKit (from `../TuyaSmartSDK/TuyaSmartSceneKit`)
-  - TuyaSmartSocketChannelKit (from `../TuyaSmartSDK/TuyaSmartSocketChannelKit`)
-  - TuyaSmartTimerKit (from `../TuyaSmartSDK/TuyaSmartTimerKit`)
-  - TuyaSmartUtil (from `../TuyaSmartSDK/TuyaSmartUtil`)
-  - TYBluetooth (from `../TuyaSmartSDK/TYBluetooth`)
+  - TuyaSmartActivatorCoreKit (from `../../TuyaSmartSDK/TuyaSmartActivatorCoreKit`)
+  - TuyaSmartActivatorKit (from `../../TuyaSmartSDK/TuyaSmartActivatorKit`)
+  - TuyaSmartBaseKit (from `../../TuyaSmartSDK/TuyaSmartBaseKit`)
+  - TuyaSmartBLEKit (from `../../TuyaSmartSDK/TuyaSmartBLEKit`)
+  - TuyaSmartBLEMeshKit (from `../../TuyaSmartSDK/TuyaSmartBLEMeshKit`)
+  - TuyaSmartDeviceCoreKit (from `../../TuyaSmartSDK/TuyaSmartDeviceCoreKit`)
+  - TuyaSmartDeviceKit (from `../../TuyaSmartSDK/TuyaSmartDeviceKit`)
+  - TuyaSmartFeedbackKit (from `../../TuyaSmartSDK/TuyaSmartFeedbackKit`)
+  - TuyaSmartMessageKit (from `../../TuyaSmartSDK/TuyaSmartMessageKit`)
+  - TuyaSmartMQTTChannelKit (from `../../TuyaSmartSDK/TuyaSmartMQTTChannelKit`)
+  - TuyaSmartSceneKit (from `../../TuyaSmartSDK/TuyaSmartSceneKit`)
+  - TuyaSmartSocketChannelKit (from `../../TuyaSmartSDK/TuyaSmartSocketChannelKit`)
+  - TuyaSmartTimerKit (from `../../TuyaSmartSDK/TuyaSmartTimerKit`)
+  - TuyaSmartUtil (from `../../TuyaSmartSDK/TuyaSmartUtil`)
+  - TYBluetooth (from `../../TuyaSmartSDK/TYBluetooth`)
 
 SPEC REPOS:
   trunk:
@@ -76,35 +76,35 @@ SPEC REPOS:
 
 EXTERNAL SOURCES:
   TuyaSmartActivatorCoreKit:
-    :path: "../TuyaSmartSDK/TuyaSmartActivatorCoreKit"
+    :path: "../../TuyaSmartSDK/TuyaSmartActivatorCoreKit"
   TuyaSmartActivatorKit:
-    :path: "../TuyaSmartSDK/TuyaSmartActivatorKit"
+    :path: "../../TuyaSmartSDK/TuyaSmartActivatorKit"
   TuyaSmartBaseKit:
-    :path: "../TuyaSmartSDK/TuyaSmartBaseKit"
+    :path: "../../TuyaSmartSDK/TuyaSmartBaseKit"
   TuyaSmartBLEKit:
-    :path: "../TuyaSmartSDK/TuyaSmartBLEKit"
+    :path: "../../TuyaSmartSDK/TuyaSmartBLEKit"
   TuyaSmartBLEMeshKit:
-    :path: "../TuyaSmartSDK/TuyaSmartBLEMeshKit"
+    :path: "../../TuyaSmartSDK/TuyaSmartBLEMeshKit"
   TuyaSmartDeviceCoreKit:
-    :path: "../TuyaSmartSDK/TuyaSmartDeviceCoreKit"
+    :path: "../../TuyaSmartSDK/TuyaSmartDeviceCoreKit"
   TuyaSmartDeviceKit:
-    :path: "../TuyaSmartSDK/TuyaSmartDeviceKit"
+    :path: "../../TuyaSmartSDK/TuyaSmartDeviceKit"
   TuyaSmartFeedbackKit:
-    :path: "../TuyaSmartSDK/TuyaSmartFeedbackKit"
+    :path: "../../TuyaSmartSDK/TuyaSmartFeedbackKit"
   TuyaSmartMessageKit:
-    :path: "../TuyaSmartSDK/TuyaSmartMessageKit"
+    :path: "../../TuyaSmartSDK/TuyaSmartMessageKit"
   TuyaSmartMQTTChannelKit:
-    :path: "../TuyaSmartSDK/TuyaSmartMQTTChannelKit"
+    :path: "../../TuyaSmartSDK/TuyaSmartMQTTChannelKit"
   TuyaSmartSceneKit:
-    :path: "../TuyaSmartSDK/TuyaSmartSceneKit"
+    :path: "../../TuyaSmartSDK/TuyaSmartSceneKit"
   TuyaSmartSocketChannelKit:
-    :path: "../TuyaSmartSDK/TuyaSmartSocketChannelKit"
+    :path: "../../TuyaSmartSDK/TuyaSmartSocketChannelKit"
   TuyaSmartTimerKit:
-    :path: "../TuyaSmartSDK/TuyaSmartTimerKit"
+    :path: "../../TuyaSmartSDK/TuyaSmartTimerKit"
   TuyaSmartUtil:
-    :path: "../TuyaSmartSDK/TuyaSmartUtil"
+    :path: "../../TuyaSmartSDK/TuyaSmartUtil"
   TYBluetooth:
-    :path: "../TuyaSmartSDK/TYBluetooth"
+    :path: "../../TuyaSmartSDK/TYBluetooth"
 
 SPEC CHECKSUMS:
   CocoaAsyncSocket: 065fd1e645c7abab64f7a6a2007a48038fdc6a99
@@ -127,6 +127,6 @@ SPEC CHECKSUMS:
   TYBluetooth: fffa1fa1b5cc143e5b71a5a222ee1b320491a7a6
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: 7390799cbf9b103366daa239387d262fa62257c1
+PODFILE CHECKSUM: f2d070cfa334d98af0ad8adcc0473dad08555f54
 
 COCOAPODS: 1.9.3

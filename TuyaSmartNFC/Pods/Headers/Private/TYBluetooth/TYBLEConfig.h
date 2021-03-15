@@ -1,1 +1,1 @@
-../../../../../TuyaSmartSDK/TYBluetooth/TYBluetooth/TYBLEConfig.h
+../../../../../../TuyaSmartSDK/TYBluetooth/TYBluetooth/TYBLEConfig.h

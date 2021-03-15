@@ -1,1 +1,1 @@
-../../../../../TuyaSmartSDK/TYBluetooth/TYBluetooth/central/TYBLECentralManager+Discovery.h
+../../../../../../TuyaSmartSDK/TYBluetooth/TYBluetooth/central/TYBLECentralManager+Discovery.h

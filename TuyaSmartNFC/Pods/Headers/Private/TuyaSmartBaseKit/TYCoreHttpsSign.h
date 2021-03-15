@@ -1,1 +1,1 @@
-../../../../../TuyaSmartSDK/TuyaSmartBaseKit/TuyaSmartBaseKit/Utils/TuyaSmartCore/Headers/Public/TYCoreHttpsSign.h
+../../../../../../TuyaSmartSDK/TuyaSmartBaseKit/TuyaSmartBaseKit/Utils/TuyaSmartCore/Headers/Public/TYCoreHttpsSign.h

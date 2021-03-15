@@ -1,1 +1,1 @@
-../../../../../TuyaSmartSDK/TuyaSmartUtil/OpenSSL-1.0.2.17/include-ios/openssl/ui_compat.h
+../../../../../../TuyaSmartSDK/TuyaSmartUtil/OpenSSL-1.0.2.17/include-ios/openssl/ui_compat.h

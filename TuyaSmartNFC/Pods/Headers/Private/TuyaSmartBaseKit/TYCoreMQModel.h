@@ -1,1 +1,1 @@
-../../../../../TuyaSmartSDK/TuyaSmartBaseKit/TuyaSmartBaseKit/Utils/TuyaSmartCore/Headers/Public/TYCoreMQModel.h
+../../../../../../TuyaSmartSDK/TuyaSmartBaseKit/TuyaSmartBaseKit/Utils/TuyaSmartCore/Headers/Public/TYCoreMQModel.h

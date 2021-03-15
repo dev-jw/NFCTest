@@ -1,1 +1,1 @@
-../../../../../TuyaSmartSDK/TYBluetooth/TYBluetooth/central/TYBLECentralManagerProtocol.h
+../../../../../../TuyaSmartSDK/TYBluetooth/TYBluetooth/central/TYBLECentralManagerProtocol.h

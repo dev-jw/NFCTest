@@ -1,1 +1,1 @@
-../../../../../TuyaSmartSDK/TYBluetooth/TYBluetooth/TYBLEAgentHub.h
+../../../../../../TuyaSmartSDK/TYBluetooth/TYBluetooth/TYBLEAgentHub.h
