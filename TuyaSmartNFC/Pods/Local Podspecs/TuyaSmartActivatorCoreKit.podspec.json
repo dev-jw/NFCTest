@@ -1,6 +1,6 @@
 {
   "name": "TuyaSmartActivatorCoreKit",
-  "version": "3.24.6-GCM-1-rc.2",
+  "version": "3.26.0",
   "summary": "A short description of TuyaSmartActivatorCoreKit.",
   "homepage": "https://tuya.com",
   "license": {
@@ -26,9 +26,13 @@
     ]
   },
   "user_target_xcconfig": {
-    "CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES": "YES"
+    "CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES": "YES",
+    "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64",
+    "EXCLUDED_ARCHS[sdk=watchsimulator*]": "x86_64 arm64"
   },
   "pod_target_xcconfig": {
-    "TUYA_CODE_SIGN_ENTITLEMENTS": "com.apple.developer.networking.wifi-info"
+    "TUYA_CODE_SIGN_ENTITLEMENTS": "com.apple.developer.networking.wifi-info",
+    "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64",
+    "EXCLUDED_ARCHS[sdk=watchsimulator*]": "x86_64 arm64"
   }
 }

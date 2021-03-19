@@ -1,11 +1,9 @@
 # Uncomment the next line to define a global platform for your project
 # platform :ios, '9.0'
 
-target 'TuyaSmartNFC' do
-  # Comment the next line if you don't want to use dynamic frameworks
-  # use_frameworks!
-  
-  # Pods for TuyaSmartNFC
+
+def pod_install
+  # TuyaSmart
   pod 'TuyaSmartUtil', :path => '../../TuyaSmartSDK/TuyaSmartUtil'
   pod 'TuyaSmartBaseKit', :path => '../../TuyaSmartSDK/TuyaSmartBaseKit'
   pod 'TuyaSmartDeviceKit', :path => '../../TuyaSmartSDK/TuyaSmartDeviceKit'
@@ -21,10 +19,24 @@ target 'TuyaSmartNFC' do
   pod 'TuyaSmartMessageKit', :path => '../../TuyaSmartSDK/TuyaSmartMessageKit'
   pod 'TuyaSmartFeedbackKit', :path => '../../TuyaSmartSDK/TuyaSmartFeedbackKit'
   pod 'TYBluetooth', :path => '../../TuyaSmartSDK/TYBluetooth'
+ 
+  # Toast
+  pod 'AlertToast'
   
-  pod 'Toast-Swift'
-
+  # ReSwift
+  pod 'ReSwift', '~> 5.0'
+  pod 'ReSwiftThunk', '~> 1.2'
 end
+
+target 'TuyaSmartNFC' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  # use_frameworks!
+  inhibit_all_warnings!
+
+  # Pods for TuyaSmartNFC
+  pod_install
+end
+
 
 post_install do |installer|
   installer.pods_project.targets.each do |target|

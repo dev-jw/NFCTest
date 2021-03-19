@@ -4,18 +4,18 @@
 //
 //  Copyright (c) 2014-2021 Tuya Inc. (https://developer.tuya.com/)
 
-import UIKit
 import SwiftUI
-import TuyaSmartBaseKit
+import CoreNFC
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
     var window: UIWindow?
     
-    
+    private lazy var main: AppMain = .init()
+
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         
-        let rootView = TuyaSmartUser.sharedInstance().isLogin ? AnyView(ContentView()) : AnyView(LoginView())
+        let rootView = ContentView().environmentObject(main.store)
         // Use a UIHostingController as window root view controller.
         if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)

@@ -14,27 +14,47 @@
 		3B60529325FC9181006241D8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B60529225FC9181006241D8 /* Preview Assets.xcassets */; };
 		3B60529625FC9181006241D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B60529425FC9181006241D8 /* LaunchScreen.storyboard */; };
 		3B6052B125FC9182006241D8 /* clips.app in Embed App Clips */ = {isa = PBXBuildFile; fileRef = 3B60528725FC917F006241D8 /* clips.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3B6537C2260443EE0098665F /* ActivatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6537C1260443EE0098665F /* ActivatorView.swift */; };
+		3B6537C926044E8D0098665F /* ActivatorAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6537C826044E8D0098665F /* ActivatorAction.swift */; };
+		3B6537CF26044EC00098665F /* ActivatorReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6537CE26044EC00098665F /* ActivatorReducer.swift */; };
+		3B6537D326044EC50098665F /* ActivatorState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6537D226044EC50098665F /* ActivatorState.swift */; };
+		3B6537D72604876D0098665F /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6537D62604876D0098665F /* LoadingView.swift */; };
+		3B6537DF2604ABB90098665F /* NFCView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6537DE2604ABB80098665F /* NFCView.swift */; };
+		3B6537E52604ABC30098665F /* SceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6537E42604ABC30098665F /* SceneView.swift */; };
 		3B71EF2525FB155200E37AE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B71EF2425FB155200E37AE0 /* AppDelegate.swift */; };
 		3B71EF2725FB155200E37AE0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B71EF2625FB155200E37AE0 /* SceneDelegate.swift */; };
 		3B71EF2925FB155200E37AE0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B71EF2825FB155200E37AE0 /* ContentView.swift */; };
 		3B71EF2B25FB155400E37AE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B71EF2A25FB155400E37AE0 /* Assets.xcassets */; };
 		3B71EF2E25FB155400E37AE0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B71EF2D25FB155400E37AE0 /* Preview Assets.xcassets */; };
 		3B71EF3125FB155400E37AE0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B71EF2F25FB155400E37AE0 /* LaunchScreen.storyboard */; };
-		3B71EF8025FB177F00E37AE0 /* TuyaSmartConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B71EF7F25FB177F00E37AE0 /* TuyaSmartConfig.swift */; };
 		3B71EF8525FB17EB00E37AE0 /* t_s.bmp in Resources */ = {isa = PBXBuildFile; fileRef = 3B71EF8425FB17EB00E37AE0 /* t_s.bmp */; };
-		3B71EFA425FB1AED00E37AE0 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B71EFA325FB1AED00E37AE0 /* LoginView.swift */; };
-		3B71F0DE25FB392A00E37AE0 /* LoginHelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B71F0DD25FB392A00E37AE0 /* LoginHelp.swift */; };
-		3B71F0E425FB433F00E37AE0 /* HomeHelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B71F0E325FB433F00E37AE0 /* HomeHelp.swift */; };
-		3B71F0F225FB66EA00E37AE0 /* NFCTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B71F0F125FB66EA00E37AE0 /* NFCTool.swift */; };
-		3BF634F125FF033A000314D3 /* SceneContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF634F025FF033A000314D3 /* SceneContent.swift */; };
-		3BF634F725FF0345000314D3 /* DeviceContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF634F625FF0345000314D3 /* DeviceContent.swift */; };
-		3BF634FC25FF03A3000314D3 /* NFCContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF634FB25FF03A3000314D3 /* NFCContent.swift */; };
-		3BF6350225FF0DB4000314D3 /* HomeListUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF6350125FF0DB4000314D3 /* HomeListUI.swift */; };
-		3BF6350725FF64BF000314D3 /* EZActivatorContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF6350625FF64BE000314D3 /* EZActivatorContent.swift */; };
-		3BF6350D25FF64CA000314D3 /* APActivatorContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF6350C25FF64CA000314D3 /* APActivatorContent.swift */; };
-		3BF6351125FF64D4000314D3 /* GateWayActivatorContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF6351025FF64D4000314D3 /* GateWayActivatorContent.swift */; };
-		3BF6351525FF64E2000314D3 /* ZigBeeSubActivatorContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF6351425FF64E2000314D3 /* ZigBeeSubActivatorContent.swift */; };
-		3BF6351925FF69BF000314D3 /* ActivatorHelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF6351825FF69BF000314D3 /* ActivatorHelp.swift */; };
+		3BF636B52601DE0C000314D3 /* SignView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF636B42601DE0C000314D3 /* SignView.swift */; };
+		3BF636BC2601DE35000314D3 /* TuyaSmartConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF636BB2601DE35000314D3 /* TuyaSmartConfig.swift */; };
+		3BF636C12601DE72000314D3 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF636C02601DE72000314D3 /* RootView.swift */; };
+		3BF636C92601DECE000314D3 /* AppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF636C82601DECE000314D3 /* AppReducer.swift */; };
+		3BF636CD2601DED4000314D3 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF636CC2601DED4000314D3 /* AppState.swift */; };
+		3BF636D12601DEE1000314D3 /* AppMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF636D02601DEE1000314D3 /* AppMain.swift */; };
+		3BF636D52601DEE7000314D3 /* AppStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF636D42601DEE7000314D3 /* AppStore.swift */; };
+		3BF636DB2601DF46000314D3 /* SignState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF636DA2601DF46000314D3 /* SignState.swift */; };
+		3BF636E12601DF8A000314D3 /* SignReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF636E02601DF8A000314D3 /* SignReducer.swift */; };
+		3BF636E52601DFA3000314D3 /* SignAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF636E42601DFA3000314D3 /* SignAction.swift */; };
+		3BF636EB2601DFD1000314D3 /* ThunkAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF636EA2601DFD1000314D3 /* ThunkAction.swift */; };
+		3BF636F12601DFE7000314D3 /* LoggingMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF636F02601DFE7000314D3 /* LoggingMiddleware.swift */; };
+		3BF636F82601E184000314D3 /* AuthAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF636F72601E184000314D3 /* AuthAction.swift */; };
+		3BF636FC2601E1B8000314D3 /* AuthState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF636FB2601E1B8000314D3 /* AuthState.swift */; };
+		3BF637002601E1D5000314D3 /* AuthReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF636FF2601E1D5000314D3 /* AuthReducer.swift */; };
+		3BF637052601FBBA000314D3 /* PresentationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF637042601FBBA000314D3 /* PresentationView.swift */; };
+		3BF6370B260217AB000314D3 /* ActivitaorButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF6370A260217AB000314D3 /* ActivitaorButton.swift */; };
+		3BF6370F26021B0C000314D3 /* RootRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF6370E26021B0C000314D3 /* RootRow.swift */; };
+		3BF638772602F218000314D3 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF638762602F217000314D3 /* ProfileView.swift */; };
+		3BF6387B2602F231000314D3 /* PanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF6387A2602F231000314D3 /* PanelView.swift */; };
+		3BF638812602F24C000314D3 /* HomeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF638802602F24C000314D3 /* HomeListView.swift */; };
+		3BF6388A2603339B000314D3 /* HomeState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF638892603339B000314D3 /* HomeState.swift */; };
+		3BF6388E260333A5000314D3 /* HomeAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF6388D260333A5000314D3 /* HomeAction.swift */; };
+		3BF63892260333B2000314D3 /* HomeReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF63891260333B2000314D3 /* HomeReducer.swift */; };
+		3BF6389826034CD9000314D3 /* DeviceAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF6389726034CD9000314D3 /* DeviceAction.swift */; };
+		3BF638A026034CF7000314D3 /* DeviceReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF6389F26034CF7000314D3 /* DeviceReducer.swift */; };
+		3BF638A426034CFF000314D3 /* DeviceState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF638A326034CFF000314D3 /* DeviceState.swift */; };
 		C727B0742BD2AA8D97381954 /* libPods-TuyaSmartNFC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A4549D78892418EC31528168 /* libPods-TuyaSmartNFC.a */; };
 /* End PBXBuildFile section */
 
@@ -73,6 +93,13 @@
 		3B60529525FC9181006241D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3B60529725FC9181006241D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3B60529825FC9181006241D8 /* clips.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = clips.entitlements; sourceTree = "<group>"; };
+		3B6537C1260443EE0098665F /* ActivatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivatorView.swift; sourceTree = "<group>"; };
+		3B6537C826044E8D0098665F /* ActivatorAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivatorAction.swift; sourceTree = "<group>"; };
+		3B6537CE26044EC00098665F /* ActivatorReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivatorReducer.swift; sourceTree = "<group>"; };
+		3B6537D226044EC50098665F /* ActivatorState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivatorState.swift; sourceTree = "<group>"; };
+		3B6537D62604876D0098665F /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		3B6537DE2604ABB80098665F /* NFCView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCView.swift; sourceTree = "<group>"; };
+		3B6537E42604ABC30098665F /* SceneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneView.swift; sourceTree = "<group>"; };
 		3B71EF2125FB155200E37AE0 /* TuyaSmartNFC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TuyaSmartNFC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B71EF2425FB155200E37AE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3B71EF2625FB155200E37AE0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -82,21 +109,34 @@
 		3B71EF3025FB155400E37AE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3B71EF3225FB155400E37AE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3B71EF7125FB168F00E37AE0 /* TuyaSmartNFC.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TuyaSmartNFC.entitlements; sourceTree = "<group>"; };
-		3B71EF7F25FB177F00E37AE0 /* TuyaSmartConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TuyaSmartConfig.swift; sourceTree = "<group>"; };
 		3B71EF8425FB17EB00E37AE0 /* t_s.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = t_s.bmp; sourceTree = "<group>"; };
-		3B71EFA325FB1AED00E37AE0 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
-		3B71F0DD25FB392A00E37AE0 /* LoginHelp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginHelp.swift; sourceTree = "<group>"; };
-		3B71F0E325FB433F00E37AE0 /* HomeHelp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHelp.swift; sourceTree = "<group>"; };
-		3B71F0F125FB66EA00E37AE0 /* NFCTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCTool.swift; sourceTree = "<group>"; };
-		3BF634F025FF033A000314D3 /* SceneContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneContent.swift; sourceTree = "<group>"; };
-		3BF634F625FF0345000314D3 /* DeviceContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceContent.swift; sourceTree = "<group>"; };
-		3BF634FB25FF03A3000314D3 /* NFCContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCContent.swift; sourceTree = "<group>"; };
-		3BF6350125FF0DB4000314D3 /* HomeListUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeListUI.swift; sourceTree = "<group>"; };
-		3BF6350625FF64BE000314D3 /* EZActivatorContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EZActivatorContent.swift; sourceTree = "<group>"; };
-		3BF6350C25FF64CA000314D3 /* APActivatorContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APActivatorContent.swift; sourceTree = "<group>"; };
-		3BF6351025FF64D4000314D3 /* GateWayActivatorContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GateWayActivatorContent.swift; sourceTree = "<group>"; };
-		3BF6351425FF64E2000314D3 /* ZigBeeSubActivatorContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZigBeeSubActivatorContent.swift; sourceTree = "<group>"; };
-		3BF6351825FF69BF000314D3 /* ActivatorHelp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivatorHelp.swift; sourceTree = "<group>"; };
+		3BF636B42601DE0C000314D3 /* SignView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignView.swift; sourceTree = "<group>"; };
+		3BF636BB2601DE35000314D3 /* TuyaSmartConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TuyaSmartConfig.swift; sourceTree = "<group>"; };
+		3BF636C02601DE72000314D3 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		3BF636C82601DECE000314D3 /* AppReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppReducer.swift; sourceTree = "<group>"; };
+		3BF636CC2601DED4000314D3 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		3BF636D02601DEE1000314D3 /* AppMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMain.swift; sourceTree = "<group>"; };
+		3BF636D42601DEE7000314D3 /* AppStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStore.swift; sourceTree = "<group>"; };
+		3BF636DA2601DF46000314D3 /* SignState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignState.swift; sourceTree = "<group>"; };
+		3BF636E02601DF8A000314D3 /* SignReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignReducer.swift; sourceTree = "<group>"; };
+		3BF636E42601DFA3000314D3 /* SignAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignAction.swift; sourceTree = "<group>"; };
+		3BF636EA2601DFD1000314D3 /* ThunkAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThunkAction.swift; sourceTree = "<group>"; };
+		3BF636F02601DFE7000314D3 /* LoggingMiddleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggingMiddleware.swift; sourceTree = "<group>"; };
+		3BF636F72601E184000314D3 /* AuthAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthAction.swift; sourceTree = "<group>"; };
+		3BF636FB2601E1B8000314D3 /* AuthState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthState.swift; sourceTree = "<group>"; };
+		3BF636FF2601E1D5000314D3 /* AuthReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthReducer.swift; sourceTree = "<group>"; };
+		3BF637042601FBBA000314D3 /* PresentationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationView.swift; sourceTree = "<group>"; };
+		3BF6370A260217AB000314D3 /* ActivitaorButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitaorButton.swift; sourceTree = "<group>"; };
+		3BF6370E26021B0C000314D3 /* RootRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootRow.swift; sourceTree = "<group>"; };
+		3BF638762602F217000314D3 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		3BF6387A2602F231000314D3 /* PanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanelView.swift; sourceTree = "<group>"; };
+		3BF638802602F24C000314D3 /* HomeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeListView.swift; sourceTree = "<group>"; };
+		3BF638892603339B000314D3 /* HomeState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeState.swift; sourceTree = "<group>"; };
+		3BF6388D260333A5000314D3 /* HomeAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAction.swift; sourceTree = "<group>"; };
+		3BF63891260333B2000314D3 /* HomeReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeReducer.swift; sourceTree = "<group>"; };
+		3BF6389726034CD9000314D3 /* DeviceAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceAction.swift; sourceTree = "<group>"; };
+		3BF6389F26034CF7000314D3 /* DeviceReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceReducer.swift; sourceTree = "<group>"; };
+		3BF638A326034CFF000314D3 /* DeviceState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceState.swift; sourceTree = "<group>"; };
 		42EFBF295AD764D3BB9168B6 /* Pods_TuyaSmartNFCTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TuyaSmartNFCTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		57C88310D43C732E1F5280B6 /* Pods_TuyaSmartNFC_TuyaSmartNFCUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TuyaSmartNFC_TuyaSmartNFCUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E5AE5F72BF6A446A4E50277 /* Pods-TuyaSmartNFCTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuyaSmartNFCTests.release.xcconfig"; path = "Target Support Files/Pods-TuyaSmartNFCTests/Pods-TuyaSmartNFCTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -162,6 +202,40 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		3B6537BA260443CA0098665F /* Activator */ = {
+			isa = PBXGroup;
+			children = (
+				3B6537C1260443EE0098665F /* ActivatorView.swift */,
+			);
+			path = Activator;
+			sourceTree = "<group>";
+		};
+		3B6537C526044E570098665F /* Activator */ = {
+			isa = PBXGroup;
+			children = (
+				3B6537C826044E8D0098665F /* ActivatorAction.swift */,
+				3B6537CE26044EC00098665F /* ActivatorReducer.swift */,
+				3B6537D226044EC50098665F /* ActivatorState.swift */,
+			);
+			path = Activator;
+			sourceTree = "<group>";
+		};
+		3B6537DC2604AB9F0098665F /* NFC */ = {
+			isa = PBXGroup;
+			children = (
+				3B6537DE2604ABB80098665F /* NFCView.swift */,
+			);
+			path = NFC;
+			sourceTree = "<group>";
+		};
+		3B6537DD2604ABA80098665F /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				3B6537E42604ABC30098665F /* SceneView.swift */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
 		3B71EF1825FB155200E37AE0 = {
 			isa = PBXGroup;
 			children = (
@@ -185,22 +259,19 @@
 		3B71EF2325FB155200E37AE0 /* TuyaSmartNFC */ = {
 			isa = PBXGroup;
 			children = (
-				3BF6350525FF64A2000314D3 /* Activator */,
-				3BF634FA25FF038B000314D3 /* NFC */,
-				3BF634EF25FF02D6000314D3 /* Scene */,
-				3BF634EE25FF02CE000314D3 /* Device */,
-				3B71F0DC25FB391B00E37AE0 /* Login */,
-				3B71F0E225FB433300E37AE0 /* Home */,
-				3B71EF7E25FB174F00E37AE0 /* Utilities */,
-				3B71EF7125FB168F00E37AE0 /* TuyaSmartNFC.entitlements */,
+				3BF636BA2601DE35000314D3 /* Utilities */,
+				3BF636AE2601DCEF000314D3 /* Combine */,
+				3BF636AC2601DCD7000314D3 /* Redux */,
+				3BF636AD2601DCD9000314D3 /* Views */,
 				3B71EF2425FB155200E37AE0 /* AppDelegate.swift */,
-				3B71EF2625FB155200E37AE0 /* SceneDelegate.swift */,
 				3B71EF2825FB155200E37AE0 /* ContentView.swift */,
+				3B71EF2625FB155200E37AE0 /* SceneDelegate.swift */,
 				3B71EF2A25FB155400E37AE0 /* Assets.xcassets */,
-				3B71EF2F25FB155400E37AE0 /* LaunchScreen.storyboard */,
 				3B71EF3225FB155400E37AE0 /* Info.plist */,
-				3B71EF8425FB17EB00E37AE0 /* t_s.bmp */,
+				3B71EF2F25FB155400E37AE0 /* LaunchScreen.storyboard */,
 				3B71EF2C25FB155400E37AE0 /* Preview Content */,
+				3B71EF8425FB17EB00E37AE0 /* t_s.bmp */,
+				3B71EF7125FB168F00E37AE0 /* TuyaSmartNFC.entitlements */,
 			);
 			path = TuyaSmartNFC;
 			sourceTree = "<group>";
@@ -213,67 +284,184 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		3B71EF7E25FB174F00E37AE0 /* Utilities */ = {
+		3BF636AC2601DCD7000314D3 /* Redux */ = {
 			isa = PBXGroup;
 			children = (
-				3B71EF7F25FB177F00E37AE0 /* TuyaSmartConfig.swift */,
+				3B6537C526044E570098665F /* Activator */,
+				3BF636C42601DEAA000314D3 /* App */,
+				3BF636F62601E179000314D3 /* Auth */,
+				3BF63885260325A2000314D3 /* Device */,
+				3BF638842603259E000314D3 /* Home */,
+				3BF636C72601DEBB000314D3 /* Main */,
+				3BF636C62601DEB2000314D3 /* Middleware */,
+				3BF636C52601DEAE000314D3 /* Sign */,
+			);
+			path = Redux;
+			sourceTree = "<group>";
+		};
+		3BF636AD2601DCD9000314D3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3B6537BA260443CA0098665F /* Activator */,
+				3BF637032601FBAF000314D3 /* Common */,
+				3BF638712602EE3C000314D3 /* Home */,
+				3B6537DC2604AB9F0098665F /* NFC */,
+				3BF638722602EE45000314D3 /* Panel */,
+				3BF638752602F1FD000314D3 /* Profile */,
+				3BF636BF2601DE64000314D3 /* Root */,
+				3B6537DD2604ABA80098665F /* Scene */,
+				3BF636B32601DDE1000314D3 /* Sign */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3BF636AE2601DCEF000314D3 /* Combine */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Combine;
+			sourceTree = "<group>";
+		};
+		3BF636B32601DDE1000314D3 /* Sign */ = {
+			isa = PBXGroup;
+			children = (
+				3BF636B42601DE0C000314D3 /* SignView.swift */,
+			);
+			path = Sign;
+			sourceTree = "<group>";
+		};
+		3BF636BA2601DE35000314D3 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				3BF636BB2601DE35000314D3 /* TuyaSmartConfig.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
 		};
-		3B71F0DC25FB391B00E37AE0 /* Login */ = {
+		3BF636BF2601DE64000314D3 /* Root */ = {
 			isa = PBXGroup;
 			children = (
-				3B71EFA325FB1AED00E37AE0 /* LoginView.swift */,
-				3B71F0DD25FB392A00E37AE0 /* LoginHelp.swift */,
+				3BF6370E26021B0C000314D3 /* RootRow.swift */,
+				3BF636C02601DE72000314D3 /* RootView.swift */,
 			);
-			path = Login;
+			path = Root;
 			sourceTree = "<group>";
 		};
-		3B71F0E225FB433300E37AE0 /* Home */ = {
+		3BF636C42601DEAA000314D3 /* App */ = {
 			isa = PBXGroup;
 			children = (
-				3B71F0E325FB433F00E37AE0 /* HomeHelp.swift */,
-				3BF6350125FF0DB4000314D3 /* HomeListUI.swift */,
+				3BF636C82601DECE000314D3 /* AppReducer.swift */,
+				3BF636CC2601DED4000314D3 /* AppState.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		3BF636C52601DEAE000314D3 /* Sign */ = {
+			isa = PBXGroup;
+			children = (
+				3BF636E42601DFA3000314D3 /* SignAction.swift */,
+				3BF636E02601DF8A000314D3 /* SignReducer.swift */,
+				3BF636DA2601DF46000314D3 /* SignState.swift */,
+			);
+			path = Sign;
+			sourceTree = "<group>";
+		};
+		3BF636C62601DEB2000314D3 /* Middleware */ = {
+			isa = PBXGroup;
+			children = (
+				3BF636E92601DFC1000314D3 /* Logging */,
+				3BF636E82601DFBF000314D3 /* ThunkAction */,
+			);
+			path = Middleware;
+			sourceTree = "<group>";
+		};
+		3BF636C72601DEBB000314D3 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				3BF636D02601DEE1000314D3 /* AppMain.swift */,
+				3BF636D42601DEE7000314D3 /* AppStore.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		3BF636E82601DFBF000314D3 /* ThunkAction */ = {
+			isa = PBXGroup;
+			children = (
+				3BF636EA2601DFD1000314D3 /* ThunkAction.swift */,
+			);
+			path = ThunkAction;
+			sourceTree = "<group>";
+		};
+		3BF636E92601DFC1000314D3 /* Logging */ = {
+			isa = PBXGroup;
+			children = (
+				3BF636F02601DFE7000314D3 /* LoggingMiddleware.swift */,
+			);
+			path = Logging;
+			sourceTree = "<group>";
+		};
+		3BF636F62601E179000314D3 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				3BF636F72601E184000314D3 /* AuthAction.swift */,
+				3BF636FF2601E1D5000314D3 /* AuthReducer.swift */,
+				3BF636FB2601E1B8000314D3 /* AuthState.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		3BF637032601FBAF000314D3 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				3BF6370A260217AB000314D3 /* ActivitaorButton.swift */,
+				3B6537D62604876D0098665F /* LoadingView.swift */,
+				3BF637042601FBBA000314D3 /* PresentationView.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		3BF638712602EE3C000314D3 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				3BF638802602F24C000314D3 /* HomeListView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
 		};
-		3BF634EE25FF02CE000314D3 /* Device */ = {
+		3BF638722602EE45000314D3 /* Panel */ = {
 			isa = PBXGroup;
 			children = (
-				3BF634F625FF0345000314D3 /* DeviceContent.swift */,
+				3BF6387A2602F231000314D3 /* PanelView.swift */,
+			);
+			path = Panel;
+			sourceTree = "<group>";
+		};
+		3BF638752602F1FD000314D3 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				3BF638762602F217000314D3 /* ProfileView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		3BF638842603259E000314D3 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				3BF6388D260333A5000314D3 /* HomeAction.swift */,
+				3BF63891260333B2000314D3 /* HomeReducer.swift */,
+				3BF638892603339B000314D3 /* HomeState.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		3BF63885260325A2000314D3 /* Device */ = {
+			isa = PBXGroup;
+			children = (
+				3BF6389726034CD9000314D3 /* DeviceAction.swift */,
+				3BF6389F26034CF7000314D3 /* DeviceReducer.swift */,
+				3BF638A326034CFF000314D3 /* DeviceState.swift */,
 			);
 			path = Device;
-			sourceTree = "<group>";
-		};
-		3BF634EF25FF02D6000314D3 /* Scene */ = {
-			isa = PBXGroup;
-			children = (
-				3BF634F025FF033A000314D3 /* SceneContent.swift */,
-			);
-			path = Scene;
-			sourceTree = "<group>";
-		};
-		3BF634FA25FF038B000314D3 /* NFC */ = {
-			isa = PBXGroup;
-			children = (
-				3B71F0F125FB66EA00E37AE0 /* NFCTool.swift */,
-				3BF634FB25FF03A3000314D3 /* NFCContent.swift */,
-			);
-			path = NFC;
-			sourceTree = "<group>";
-		};
-		3BF6350525FF64A2000314D3 /* Activator */ = {
-			isa = PBXGroup;
-			children = (
-				3BF6350625FF64BE000314D3 /* EZActivatorContent.swift */,
-				3BF6350C25FF64CA000314D3 /* APActivatorContent.swift */,
-				3BF6351025FF64D4000314D3 /* GateWayActivatorContent.swift */,
-				3BF6351425FF64E2000314D3 /* ZigBeeSubActivatorContent.swift */,
-				3BF6351825FF69BF000314D3 /* ActivatorHelp.swift */,
-			);
-			path = Activator;
 			sourceTree = "<group>";
 		};
 		DE6C96F1E3E9D17E6A2290A0 /* Frameworks */ = {
@@ -462,23 +650,43 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B71EF8025FB177F00E37AE0 /* TuyaSmartConfig.swift in Sources */,
+				3BF6370F26021B0C000314D3 /* RootRow.swift in Sources */,
+				3BF636EB2601DFD1000314D3 /* ThunkAction.swift in Sources */,
 				3B71EF2525FB155200E37AE0 /* AppDelegate.swift in Sources */,
-				3BF6351525FF64E2000314D3 /* ZigBeeSubActivatorContent.swift in Sources */,
-				3B71F0E425FB433F00E37AE0 /* HomeHelp.swift in Sources */,
+				3BF636DB2601DF46000314D3 /* SignState.swift in Sources */,
+				3B6537E52604ABC30098665F /* SceneView.swift in Sources */,
+				3B6537C2260443EE0098665F /* ActivatorView.swift in Sources */,
+				3BF6388E260333A5000314D3 /* HomeAction.swift in Sources */,
+				3BF636FC2601E1B8000314D3 /* AuthState.swift in Sources */,
+				3BF637052601FBBA000314D3 /* PresentationView.swift in Sources */,
+				3BF636E52601DFA3000314D3 /* SignAction.swift in Sources */,
+				3B6537D326044EC50098665F /* ActivatorState.swift in Sources */,
+				3B6537DF2604ABB90098665F /* NFCView.swift in Sources */,
+				3BF636D52601DEE7000314D3 /* AppStore.swift in Sources */,
+				3BF6370B260217AB000314D3 /* ActivitaorButton.swift in Sources */,
+				3BF636E12601DF8A000314D3 /* SignReducer.swift in Sources */,
+				3BF638A426034CFF000314D3 /* DeviceState.swift in Sources */,
+				3BF636B52601DE0C000314D3 /* SignView.swift in Sources */,
+				3BF636C92601DECE000314D3 /* AppReducer.swift in Sources */,
+				3BF636CD2601DED4000314D3 /* AppState.swift in Sources */,
+				3BF6387B2602F231000314D3 /* PanelView.swift in Sources */,
+				3BF636F12601DFE7000314D3 /* LoggingMiddleware.swift in Sources */,
+				3BF636C12601DE72000314D3 /* RootView.swift in Sources */,
+				3BF63892260333B2000314D3 /* HomeReducer.swift in Sources */,
+				3BF6388A2603339B000314D3 /* HomeState.swift in Sources */,
+				3B6537CF26044EC00098665F /* ActivatorReducer.swift in Sources */,
+				3BF6389826034CD9000314D3 /* DeviceAction.swift in Sources */,
+				3BF637002601E1D5000314D3 /* AuthReducer.swift in Sources */,
+				3B6537C926044E8D0098665F /* ActivatorAction.swift in Sources */,
+				3BF638A026034CF7000314D3 /* DeviceReducer.swift in Sources */,
+				3BF636F82601E184000314D3 /* AuthAction.swift in Sources */,
+				3BF636BC2601DE35000314D3 /* TuyaSmartConfig.swift in Sources */,
 				3B71EF2725FB155200E37AE0 /* SceneDelegate.swift in Sources */,
-				3B71F0DE25FB392A00E37AE0 /* LoginHelp.swift in Sources */,
-				3BF6350725FF64BF000314D3 /* EZActivatorContent.swift in Sources */,
-				3BF634FC25FF03A3000314D3 /* NFCContent.swift in Sources */,
-				3BF6350225FF0DB4000314D3 /* HomeListUI.swift in Sources */,
-				3B71F0F225FB66EA00E37AE0 /* NFCTool.swift in Sources */,
-				3BF6351925FF69BF000314D3 /* ActivatorHelp.swift in Sources */,
-				3B71EFA425FB1AED00E37AE0 /* LoginView.swift in Sources */,
-				3BF6351125FF64D4000314D3 /* GateWayActivatorContent.swift in Sources */,
-				3BF634F125FF033A000314D3 /* SceneContent.swift in Sources */,
+				3BF636D12601DEE1000314D3 /* AppMain.swift in Sources */,
+				3BF638812602F24C000314D3 /* HomeListView.swift in Sources */,
+				3BF638772602F218000314D3 /* ProfileView.swift in Sources */,
+				3B6537D72604876D0098665F /* LoadingView.swift in Sources */,
 				3B71EF2925FB155200E37AE0 /* ContentView.swift in Sources */,
-				3BF6350D25FF64CA000314D3 /* APActivatorContent.swift in Sources */,
-				3BF634F725FF0345000314D3 /* DeviceContent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -522,6 +730,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"clips/Preview Content\"";
 				DEVELOPMENT_TEAM = KQV995FM5N;
+				ENABLE_BITCODE = NO;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = clips/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -545,6 +754,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"clips/Preview Content\"";
 				DEVELOPMENT_TEAM = KQV995FM5N;
+				ENABLE_BITCODE = NO;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = clips/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
