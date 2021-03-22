@@ -12,6 +12,26 @@ struct NFCView: View {
     
     var body: some View {
         ZStack {
+            Form {
+                Section(header: Text("Tag")) {
+                    Button(action: {
+                        
+//                        NFCTool.performAction(.readTag(device: device)) { (result) in
+//                            deviceModel.isOnline = !deviceModel.isOnline
+//                        }
+                    }, label: {
+                        Text("Scan Tag")
+                    })
+                    Button(action: {
+
+//                        NFCTool.performAction(.writeTag(dps: str ?? "")) { (result) in
+//                            print(result)
+//                        }
+                    }, label: {
+                        Text("Write Tag")
+                    })
+                }
+            }
             LoadingView(isLoading: self.store.state.activatorState.requesting)
         }
         .navigationBarTitle("NFC")
