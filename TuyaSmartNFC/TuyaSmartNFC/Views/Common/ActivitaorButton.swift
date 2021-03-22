@@ -35,6 +35,7 @@ struct ActivitaorButton: View {
                                 .background(Color.white)
                                 .foregroundColor(Color.black)
                                 .clipShape(Circle())
+                                .shadow(color: .primary, radius: 4.0)
                         }
                         Spacer().frame(height: 10)
                         Button(action: nfcAction) {
@@ -44,6 +45,7 @@ struct ActivitaorButton: View {
                                 .background(Color.white)
                                 .foregroundColor(Color.black)
                                 .clipShape(Circle())
+                                .shadow(color: .primary, radius: 4.0)
                         }
                         Spacer().frame(height: 10)
                         Button(action: action) {
@@ -53,17 +55,18 @@ struct ActivitaorButton: View {
                                 .background(Color.white)
                                 .foregroundColor(Color.black)
                                 .clipShape(Circle())
+                                .shadow(color: .primary, radius: 4.0)
                         }
                         Spacer().frame(height: 10)
                     }
                     Spacer().frame(width: 5)
                 }
-                .cornerRadius(20)
-                .overlay(
-                    RoundedRectangle(cornerRadius: 10)
-                        .stroke(Color(.sRGB, red: 150/255, green: 150/255, blue: 150/255, opacity: 0.25), lineWidth: 1)
-                )
-                .shadow(color: .primary, radius: 4.0)
+//                .cornerRadius(20)
+//                .overlay(
+//                    RoundedRectangle(cornerRadius: 10)
+//                        .stroke(Color(.sRGB, red: 150/255, green: 150/255, blue: 150/255, opacity: 0.25), lineWidth: 1)
+//                )
+//                .shadow(color: .primary, radius: 4.0)
                 .frame(width: 60, height: 150)
                 .offset(x: -32, y: -16)
             }

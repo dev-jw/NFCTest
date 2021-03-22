@@ -15,6 +15,11 @@ enum DeviceReducer {
                 return state
             }
             switch action {
+            case .updateDevice(let device):
+                state.device = device
+                state.requesting = false
+                state.error = nil
+                return state
             case .updateDevices(let devices):
                 state.devices = devices
                 state.requesting = false
@@ -28,7 +33,17 @@ enum DeviceReducer {
                 state.requesting = true
                 state.error = nil
                 return state
+            case .startPublishDps:
+                state.requesting = true
+                state.error = nil
+                return state
+            case .updateDps(let dps, let dpId):
+                state.dps[dpId] = dps[dpId]
+                state.requesting = false
+                state.error = nil
+                return state
             }
+            
         }
     }
 }

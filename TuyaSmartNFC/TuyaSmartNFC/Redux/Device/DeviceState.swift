@@ -13,4 +13,18 @@ struct DeviceState: StateType {
     var error: Error?
     
     var devices: [TuyaSmartDeviceModel] = []
+    
+    var device: TuyaSmartDevice?
+    var schemaArray: [TuyaSmartSchemaModel] {
+        get {
+            return device?.deviceModel.schemaArray ?? []
+        }
+    }
+    
+    var dps: [AnyHashable : Any] {
+        get {
+            return device?.deviceModel.dps! ?? [:]
+        }
+        set {}
+    }
 }

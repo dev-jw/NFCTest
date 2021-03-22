@@ -35,11 +35,11 @@ struct RootView: View {
                                             HStack {
                                                 Text("Home")
                                                     .font(.headline)
-                                                    .foregroundColor(.black)
+                                                    .foregroundColor(Color.init("sectionTitleColor"))
                                                     .padding()
                                                 Spacer()
                                             }
-                                            .background(Color.white)
+                                            .background(Color.init("sectionColor"))
                                             .listRowInsets(
                                                 EdgeInsets(
                                                     top: 0,
@@ -63,12 +63,12 @@ struct RootView: View {
                                             HStack {
                                                 Text("Devices")
                                                     .font(.headline)
-                                                    .foregroundColor(.black)
+                                                    .foregroundColor(Color.init("sectionTitleColor"))
                                                     .padding()
                                                 
                                                 Spacer()
                                             }
-                                            .background(Color.white)
+                                            .background(Color.init("sectionColor"))
                                             .listRowInsets(
                                                 EdgeInsets(
                                                     top: 0,
@@ -84,12 +84,12 @@ struct RootView: View {
                                                 Text("Online statu: \(String(deviceModel.isOnline))")
                                                     .foregroundColor(.gray).font(.system(size: 12))
                                             }
-                                            Spacer()
-                                            Text("Delete").foregroundColor(.red).onTapGesture {
-                                                store.dispatch(DeviceAction.delete(with: deviceModel.devId))
-                                            }
                                         }) {
-                                            self.presentation = PresentationView(view: PanelView(devId: deviceModel.devId))
+                                            
+                                            if deviceModel.isOnline {
+                                                self.presentation = PresentationView(view: PanelView(devId: deviceModel.devId))
+                                            }
+                                            
                                         }.animation(.easeIn(duration: 0.3))
                                     }
                                 }
