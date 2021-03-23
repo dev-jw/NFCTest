@@ -48,7 +48,6 @@ struct PanelRowBase: View {
                     _body
                 }
                 .layoutPriority(1)
-                Spacer().frame(height: 0.0)
             }
             .padding()
         }
@@ -59,6 +58,7 @@ struct PanelRowBase: View {
         )
         .padding()
         .opacity(opacity)
+        .padding([.horizontal], 16.0)
         .padding([.bottom], -8.0)
         .onAppear {
             withAnimation {
@@ -114,13 +114,13 @@ struct PanelRow: View {
             case .sliderRow:
                 PanelRowBase(content: HStack {
                     Text("\(schemaModel.name)")
-                    Spacer()
+                    Spacer().frame(width: 20)
                     setupSlider()
                 })
             case .stringRow:
                 PanelRowBase(content: HStack {
                     Text("\(schemaModel.name)")
-                    Spacer()
+                    Spacer().frame(width: 20)
                     setupString()
                 })
             }
@@ -206,23 +206,23 @@ struct PanelRow: View {
         ((value as? Int) != nil) ? (text = String(value as! Int)) : (text = value as? String ?? "")
         
         return AnyView(
-            VStack {
+            HStack {
                 TextField("", text: Binding<String>(get: {
                     return text
-                }, set: { A,B in
-                    print("\(A) + \(B)")
+                }, set: { newValue, _ in
+                    text = newValue
                 }))
                 .autocapitalization(.words)
                 .font(Font.system(size: 14))
-                .frame(width: 120)
+                .textFieldStyle(RoundedBorderTextFieldStyle())
                 Button("Send", action: {
-                    
+                    if !text.isEmpty {
+                        store.dispatch(DeviceAction.publishDps(with: [schemaModel.dpId: text], dpId: schemaModel.dpId))
+                    }
                 })
-
             }
         )
     }
-    
 }
 
 struct PanelRow_Previews: PreviewProvider {

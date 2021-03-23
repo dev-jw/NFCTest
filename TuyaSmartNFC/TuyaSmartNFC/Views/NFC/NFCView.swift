@@ -12,24 +12,70 @@ struct NFCView: View {
     
     var body: some View {
         ZStack {
-            Form {
-                Section(header: Text("Tag")) {
-                    Button(action: {
+            ScrollView {
+                LazyVStack {
+                    Section(header: HStack {
+                        Text("Scan from tag")
+                            .font(.headline)
+                            .foregroundColor(Color.init("sectionTitleColor"))
+                            .padding()
+                        Spacer()
+                    }
+                    .background(Color.init("sectionColor"))
+                    .listRowInsets(
+                        EdgeInsets(
+                            top: 0,
+                            leading: 0,
+                            bottom: 0,
+                            trailing: 0))
+                    ) {
                         
-//                        NFCTool.performAction(.readTag(device: device)) { (result) in
-//                            deviceModel.isOnline = !deviceModel.isOnline
-//                        }
-                    }, label: {
-                        Text("Scan Tag")
-                    })
-                    Button(action: {
-
-//                        NFCTool.performAction(.writeTag(dps: str ?? "")) { (result) in
-//                            print(result)
-//                        }
-                    }, label: {
-                        Text("Write Tag")
-                    })
+                        RootRow(content: Text("Scan Tag")) {
+//                            NFCTool.performAction(.readTag(device: device)) { (result) in
+//                                deviceModel.isOnline = !deviceModel.isOnline
+//                            }
+                        }
+                    }
+                }
+                LazyVStack {
+                    Section(header: HStack {
+                        Text("Write to tag")
+                            .font(.headline)
+                            .foregroundColor(Color.init("sectionTitleColor"))
+                            .padding()
+                        Spacer()
+                    }
+                    .background(Color.init("sectionColor"))
+                    .listRowInsets(
+                        EdgeInsets(
+                            top: 0,
+                            leading: 0,
+                            bottom: 0,
+                            trailing: 0))
+                    ) {
+                        ForEach(store.state.deviceState.devices, id: \.self) { deviceModel in
+                            RootRow(content: HStack {
+                                Text(deviceModel.name).font(.system(size: 16, weight: .bold))
+                                Spacer()
+                                Text("on or off")
+                            }
+                            ) {
+                                
+                                // 开关 定义的 dpId 点为 1
+                                let value: Bool = deviceModel.dps["1"] as! Bool
+                                
+                                let dpsDict = ["1": !value]
+                                
+                                let dict = ["dps": dpsDict, "devId": deviceModel.devId as Any] as [String : Any]
+                                let data = try? JSONSerialization.data(withJSONObject: dict, options: [])
+                                
+                                let str = String(data: data!, encoding: String.Encoding.utf8)
+                                
+                                NFCTool.performAction(.writeTag(dps: str ?? ""))
+                                
+                            }.animation(.easeIn(duration: 0.3))
+                        }
+                    }
                 }
             }
             LoadingView(isLoading: self.store.state.activatorState.requesting)

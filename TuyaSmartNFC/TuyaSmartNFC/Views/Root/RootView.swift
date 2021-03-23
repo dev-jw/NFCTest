@@ -21,7 +21,7 @@ struct RootView: View {
     @State var isPushedHome = false
     @State var isPushedNFC = false
     @State var isPushedScene = false
-
+    
     var body: some View {
         NavigationView {
             ZStack {
@@ -30,22 +30,20 @@ struct RootView: View {
                     ZStack {
                         ScrollView {
                             LazyVStack(content: {
-                                Section(header:
-                                            //内容宽度
-                                            HStack {
-                                                Text("Home")
-                                                    .font(.headline)
-                                                    .foregroundColor(Color.init("sectionTitleColor"))
-                                                    .padding()
-                                                Spacer()
-                                            }
-                                            .background(Color.init("sectionColor"))
-                                            .listRowInsets(
-                                                EdgeInsets(
-                                                    top: 0,
-                                                    leading: 0,
-                                                    bottom: 0,
-                                                    trailing: 0))
+                                Section(header: HStack {
+                                    Text("Home")
+                                        .font(.headline)
+                                        .foregroundColor(Color.init("sectionTitleColor"))
+                                        .padding()
+                                    Spacer()
+                                }
+                                .background(Color.init("sectionColor"))
+                                .listRowInsets(
+                                    EdgeInsets(
+                                        top: 0,
+                                        leading: 0,
+                                        bottom: 0,
+                                        trailing: 0))
                                 ) {
                                     NavigationLink(destination: HomeListView(),
                                                    isActive: $isPushedHome) {
@@ -58,23 +56,24 @@ struct RootView: View {
                                 
                             })
                             LazyVStack(content: {
-                                Section(header:
-                                            //内容宽度
-                                            HStack {
-                                                Text("Devices")
-                                                    .font(.headline)
-                                                    .foregroundColor(Color.init("sectionTitleColor"))
-                                                    .padding()
-                                                
-                                                Spacer()
-                                            }
-                                            .background(Color.init("sectionColor"))
-                                            .listRowInsets(
-                                                EdgeInsets(
-                                                    top: 0,
-                                                    leading: 0,
-                                                    bottom: 0,
-                                                    trailing: 0))
+                                Section(header: HStack {
+                                    Text("Devices")
+                                        .font(.headline)
+                                        .foregroundColor(Color.init("sectionTitleColor"))
+                                        .padding()
+                                    Spacer()
+                                    CircleSystemButton(action:  {
+                                        activatorActionSheetState.showActionSheet = true
+                                    })
+                                    .padding()
+                                }
+                                .background(Color.init("sectionColor"))
+                                .listRowInsets(
+                                    EdgeInsets(
+                                        top: 0,
+                                        leading: 0,
+                                        bottom: 0,
+                                        trailing: 0))
                                 ) {
                                     ForEach(store.state.deviceState.devices, id: \.self) { deviceModel in
                                         RootRow(content: HStack {
@@ -95,18 +94,16 @@ struct RootView: View {
                                 }
                             })
                         }
-                        ActivitaorButton(action:  {
-                            activatorActionSheetState.showActionSheet = true
-                        }, nfcAction: {
+                        CircleSystemButton(systemName: "n.circle.fill", action:  {
                             isPushedNFC = true
-                            print("NFC")
-                        }, sceneAction: {
-                            isPushedScene = true
-                            print("Scene")
                         })
-                        
+                        .offset(x: 70 - UIScreen.main.bounds.width, y: -16)
                         NavigationLink(destination: NFCView(), isActive: $isPushedNFC) { EmptyView() }
                         
+                        CircleSystemButton(systemName: "s.circle.fill",action:  {
+                            isPushedScene = true
+                        })
+                        .offset(x: -32, y: -16)
                         NavigationLink(destination: SceneView(), isActive: $isPushedScene) { EmptyView() }
                     }
                     .layoutPriority(1)
@@ -149,7 +146,6 @@ struct RootView: View {
             }
         }
         .navigationViewStyle(StackNavigationViewStyle())
-        
         .onAppear { self.store.dispatch(DeviceAction.subscribe()) }
     }
 }

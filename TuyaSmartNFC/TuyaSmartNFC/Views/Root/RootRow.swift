@@ -31,6 +31,7 @@ struct RootRow: View {
         )
         .padding()
         .opacity(opacity)
+        .padding([.horizontal], 16.0)
         .padding([.bottom], -8.0)
         .onAppear {
             withAnimation {
