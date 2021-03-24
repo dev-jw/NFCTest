@@ -29,13 +29,13 @@ enum NFCError: LocalizedError {
 
 class NFCTool: NSObject {
     enum NFCAction {
-        case readTag(device: TuyaSmartDevice?)
+        case readTag
         case writeTag(dps: String)
         
         var alertMessage: String  {
             switch self {
-            case .readTag(let device):
-                return "Place tag near iPhone to read \(device!)."
+            case .readTag:
+                return "Place tag near iPhone to read."
             case .writeTag(let dps):
                 return "Place tag near iPhone to write \(dps)"
             }
@@ -44,7 +44,7 @@ class NFCTool: NSObject {
     
     private static let shared = NFCTool()
     
-    private var action: NFCAction = .readTag(device: nil)
+    private var action: NFCAction = .readTag
     private var completion: NFCFinishCompletion?
     
     private var readerSession: NFCTagReaderSession?
@@ -83,7 +83,7 @@ extension NFCTool: NFCTagReaderSessionDelegate {
         for nfcTag in tags {
             // In this example you are searching for a MIFARE Ultralight tag (NFC Forum T2T tag platform).
             if case let .miFare(mifareTag) = nfcTag {
-                if mifareTag.mifareFamily == .ultralight {
+                if mifareTag.mifareFamily == .ultralight || mifareTag.mifareFamily == .unknown {
                     tag = nfcTag
                     break
                 }
@@ -91,7 +91,7 @@ extension NFCTool: NFCTagReaderSessionDelegate {
         }
         
         if tag == nil {
-            session.invalidate(errorMessage: "No valid coupon found.")
+            session.invalidate(errorMessage: "No valid tag found.")
             return
         }
         
@@ -100,19 +100,8 @@ extension NFCTool: NFCTagReaderSessionDelegate {
                 session.invalidate(errorMessage: "Connection error. Please try again.")
                 return
             }
-            self.readTag(from: tag!)
+             self.readMiFareTag(from: tag!)
         }
-    }
-}
-
-// MARK: - NFCNDEFReaderSessionDelegate
-extension NFCTool: NFCNDEFReaderSessionDelegate {
-    func readerSession(_ session: NFCNDEFReaderSession, didInvalidateWithError error: Error) {
-        
-    }
-    
-    func readerSession(_ session: NFCNDEFReaderSession, didDetectNDEFs messages: [NFCNDEFMessage]) {
-        
     }
 }
 
@@ -123,7 +112,7 @@ extension NFCTool {
         readerSession?.invalidate()
     }
     
-    private func readTag(from tag: NFCTag) {
+    private func readMiFareTag(from tag: NFCTag) {
         guard case let .miFare(mifareTag) = tag else {
             return
         }
@@ -136,15 +125,18 @@ extension NFCTool {
             //            let maxCodeLength = 16
             
             // Send password
-            let readBlock4: [UInt8] = [0x1B, 0x11, 0x22, 0x33, 0x44]
+            let readBlock4: [UInt8] = [0x1B, 0x66, 0x66, 0x66, 0x66]
             self.sendReadTagCommand(Data(readBlock4), to: mifareTag) { (responseBlock4: Data) in
                 print("response: \(responseBlock4)")
                 
+                
+//                self.testWriteInitData(to: tag)
+
                 // require Real Word
-                let magicSignature: [UInt8] = [0xFE, 0x01]
+                let magicSignature: [UInt8] = [0x30, 0xD0]
                 self.sendReadTagCommand(Data(magicSignature), to: mifareTag) { (realData: Data) in
                     print("realData: \(realData)")
-                    
+
                     // writer NDEF message
                     self.write(to: mifareTag)
                 }
@@ -152,15 +144,40 @@ extension NFCTool {
         }
     }
     
+    
+    func testWriteInitData(to tag: NFCTag) {
+        guard case let .miFare(mifareTag) = tag else {
+            return
+        }
+        
+        DispatchQueue.global().async {
+            
+            // block3 save size
+            let writeBlockCommand: UInt8 = 0xA2
+            
+            let dataOffset: UInt8 = 0xD0
+            let data: UInt8 = 0x11
+                        
+            let writeCommand = Data([writeBlockCommand, dataOffset, data])
+
+            
+            self.sendReadTagCommand(writeCommand, to: mifareTag) { (responseBlock4: Data) in
+                print("response: \(responseBlock4)")
+        
+            }
+        }
+    }
+    
+    
     // MARK: - Private helper functions
     private func sendReadTagCommand(_ data: Data, to tag: NFCMiFareTag, _ completionHandler: @escaping (Data) -> Void) {
         if #available(iOS 14, *) {
-            tag.sendMiFareCommand(commandPacket: data) { (result: Result<Data, Error>) in
+            tag.sendMiFareCommand(commandPacket: data) { [self] (result: Result<Data, Error>) in
                 switch result {
                 case .success(let response):
                     completionHandler(response)
                 case .failure(let error):
-                    self.readerSession?.invalidate(errorMessage: "Read tag error: \(error.localizedDescription). Please try again.")
+                    readerSession?.invalidate(errorMessage: "Read tag error: password is invoke.")
                 }
             }
         } else {
@@ -191,8 +208,8 @@ extension NFCTool {
                 readerSession?.invalidate()
             case (.readWrite, .writeTag(let dps)):
                 self.writeData(to: tag, dps: dps)
-            case (.readWrite, .readTag(let device)):
-                self.readTag(from: tag, device: device!)
+            case (.readWrite, .readTag):
+                self.readTag(from: tag)
             default:
                 return
             }
@@ -232,22 +249,18 @@ extension NFCTool {
         }
     }
     
-    private func readTag(from tag: NFCMiFareTag, device: TuyaSmartDevice, alertMessage: String = "Tag Read & DP Publish") {
+    private func readTag(from tag: NFCMiFareTag, alertMessage: String = "Tag Read & DP Publish") {
         tag.readNDEF { [self] (message, error) in
             if let error = error {
                 self.handleError(error)
                 return
             }
             
-            // 1
             if let message = message,
                let record = message.records.first {
-                // 2
-                guard let dp = device.deviceModel.dps else {
-                    return
-                }
                 
-                if let p = String(data: record.type, encoding: .utf8), (p.compare("P").rawValue == 0)  {
+                let type = "tuya.smart:tuyanfc"
+                if let p = String(data: record.type, encoding: .utf8), (p.compare(type).rawValue == 0)  {
                     
                     let content = String(data: record.payload, encoding: .utf8)
                     
@@ -257,11 +270,16 @@ extension NFCTool {
                     
                     let dicts = dict as! Dictionary<String, Any>
                     
-                    let dpPoint = dicts["dp"] as! String
+                    let dpId = dicts["dpId"] as! String
+                    let devId = dicts["devId"] as! String
+ 
+                    guard let device = TuyaSmartDevice.init(deviceId: devId), let _ = device.deviceModel.dps else {
+                        return
+                    }
+                                        
+                    let value: Bool = device.deviceModel.dps[dpId] as! Bool
                     
-                    var value = (dp[dpPoint] == nil)
-                    value = !value
-                    let dps = [dpPoint : value]
+                    let dps = [dpId: !value]
                     
                     device.publishDps(dps as [AnyHashable : Any], success: {
                         print("dps publish success")

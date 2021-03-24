@@ -31,9 +31,7 @@ struct NFCView: View {
                     ) {
                         
                         RootRow(content: Text("Scan Tag")) {
-//                            NFCTool.performAction(.readTag(device: device)) { (result) in
-//                                deviceModel.isOnline = !deviceModel.isOnline
-//                            }
+                            NFCTool.performAction(.readTag)
                         }
                     }
                 }
@@ -60,13 +58,8 @@ struct NFCView: View {
                                 Text("on or off")
                             }
                             ) {
-                                
-                                // 开关 定义的 dpId 点为 1
-                                let value: Bool = deviceModel.dps["1"] as! Bool
-                                
-                                let dpsDict = ["1": !value]
-                                
-                                let dict = ["dps": dpsDict, "devId": deviceModel.devId as Any] as [String : Any]
+                                                                
+                                let dict = ["dpId": "1", "devId": deviceModel.devId as Any] as [String : Any]
                                 let data = try? JSONSerialization.data(withJSONObject: dict, options: [])
                                 
                                 let str = String(data: data!, encoding: String.Encoding.utf8)
