@@ -100,7 +100,8 @@ extension NFCTool: NFCTagReaderSessionDelegate {
                 session.invalidate(errorMessage: "Connection error. Please try again.")
                 return
             }
-             self.readMiFareTag(from: tag!)
+//             self.readMiFareTag(from: tag!)
+            self.testWriteInitData(to: tag!)
         }
     }
 }
@@ -153,12 +154,12 @@ extension NFCTool {
         DispatchQueue.global().async {
             
             // block3 save size
-            let writeBlockCommand: UInt8 = 0xA2
+            let writeBlockCommand: UInt8 = 0x30
             
-            let dataOffset: UInt8 = 0xD0
-            let data: UInt8 = 0x11
+            let dataOffset: UInt8 = 8 & 0x0ff
+//            let data: UInt8 = 0x11
                         
-            let writeCommand = Data([writeBlockCommand, dataOffset, data])
+            let writeCommand = Data([writeBlockCommand, dataOffset])
 
             
             self.sendReadTagCommand(writeCommand, to: mifareTag) { (responseBlock4: Data) in
