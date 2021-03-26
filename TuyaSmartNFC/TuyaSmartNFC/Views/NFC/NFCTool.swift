@@ -156,7 +156,7 @@ extension NFCTool {
             // block3 save size
             let writeBlockCommand: UInt8 = 0x30
             
-            let dataOffset: UInt8 = 8 & 0x0ff
+            let dataOffset: UInt8 = 3 & 0x0ff
 //            let data: UInt8 = 0x11
                         
             let writeCommand = Data([writeBlockCommand, dataOffset])
