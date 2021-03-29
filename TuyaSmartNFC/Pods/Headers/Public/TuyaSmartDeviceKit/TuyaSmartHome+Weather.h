@@ -1,1 +1,0 @@
-../../../../../../TuyaSmartSDK/TuyaSmartDeviceKit/TuyaSmartDeviceKit/Public/Home/Weather/TuyaSmartHome+Weather.h

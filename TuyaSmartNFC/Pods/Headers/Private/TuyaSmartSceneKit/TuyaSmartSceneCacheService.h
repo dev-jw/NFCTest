@@ -1,1 +1,0 @@
-../../../../../../TuyaSmartSDK/TuyaSmartSceneKit/TuyaSmartSceneKit/Service/TuyaSmartSceneCacheService.h

@@ -1,1 +1,0 @@
-../../../../../../TuyaSmartSDK/TuyaSmartDeviceKit/TuyaSmartDeviceKit/Public/Home/Invitation/TuyaSmartHomeInvitation.h

@@ -1,1 +1,0 @@
-../../../../../../TuyaSmartSDK/TuyaSmartDeviceKit/TuyaSmartDeviceKit/Utils/TYDeviceCryString.h

@@ -1,1 +1,0 @@
-../../../../../../TuyaSmartSDK/TuyaSmartBaseKit/TuyaSmartBaseKit/Utils/TYSDKDevice+UUID.h

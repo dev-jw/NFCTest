@@ -1,1 +1,0 @@
-../../../../../../TuyaSmartSDK/TuyaSmartDeviceCoreKit/TuyaSmartDeviceCoreKit/Model/TuyaSmartDevice+Private.h

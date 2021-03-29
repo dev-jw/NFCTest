@@ -1,1 +1,0 @@
-../../../../../../TuyaSmartSDK/TuyaSmartDeviceCoreKit/TuyaSmartDeviceCoreKit/Public/Model/TuyaSmartMQTTMessageModel.h

@@ -1,1 +1,0 @@
-../../../../../../TuyaSmartSDK/TuyaSmartDeviceKit/TuyaSmartDeviceKit/Public/Model/MultiControl/TuyaSmartMultiControlLinkModel.h

@@ -1,1 +1,0 @@
-../../../../../../TuyaSmartSDK/TuyaSmartBaseKit/TuyaSmartBaseKit/Model/TYDomainModel.h

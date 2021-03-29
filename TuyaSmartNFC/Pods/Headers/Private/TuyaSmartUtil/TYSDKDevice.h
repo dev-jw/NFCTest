@@ -1,1 +1,0 @@
-../../../../../../TuyaSmartSDK/TuyaSmartUtil/TuyaSmartUtil/Public/TYSDKDevice.h

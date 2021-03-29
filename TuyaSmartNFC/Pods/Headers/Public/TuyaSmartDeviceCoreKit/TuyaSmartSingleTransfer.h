@@ -1,1 +1,0 @@
-../../../../../../TuyaSmartSDK/TuyaSmartDeviceCoreKit/TuyaSmartDeviceCoreKit/Public/TuyaSmartSingleTransfer.h

@@ -1,1 +1,0 @@
-../../../../../../TuyaSmartSDK/TuyaSmartDeviceKit/TuyaSmartDeviceKit/Public/Home/DeviceShare/TuyaSmartHomeDeviceShare+TYDeprecatedApi.h

@@ -1,1 +1,0 @@
-../../../../../../TuyaSmartSDK/TuyaSmartBLEMeshKit/TuyaSmartBLEMeshKit/BLEMesh/TYBleMeshParseService.h

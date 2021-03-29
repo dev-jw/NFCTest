@@ -1,1 +1,0 @@
-../../../../../../TuyaSmartSDK/TuyaSmartBaseKit/TuyaSmartBaseKit/Public/TuyaSmartSDK.h

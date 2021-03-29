@@ -1,1 +1,0 @@
-../../../../../../TuyaSmartSDK/TuyaSmartBLEKit/TuyaSmartBLEKit/Classes/mutli_tsf_protocol.h

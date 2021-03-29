@@ -7,7 +7,7 @@ PODS:
     - ReSwiftThunk/Core (= 1.2.0)
   - ReSwiftThunk/Core (1.2.0):
     - ReSwift (~> 5.0)
-  - TuyaSmartActivatorCoreKit (3.26.0):
+  - TuyaSmartActivatorCoreKit (3.26.0-rc.3):
     - TuyaSmartDeviceCoreKit
   - TuyaSmartActivatorKit (3.24.2-rc.2):
     - TuyaSmartActivatorCoreKit
@@ -15,12 +15,12 @@ PODS:
   - TuyaSmartBaseKit (3.26.0-rc.2):
     - TuyaSmartUtil
     - YYModel
-  - TuyaSmartBLEKit (3.24.0-rc.7):
+  - TuyaSmartBLEKit (3.26.0-rc.7):
     - TuyaSmartBaseKit
-    - TuyaSmartDeviceCoreKit (>= 3.20.0)
+    - TuyaSmartDeviceCoreKit
     - TYBluetooth (< 10.0)
-  - TuyaSmartBLEMeshKit (3.24.0-rc.3):
-    - TuyaSmartActivatorKit
+  - TuyaSmartBLEMeshKit (3.26.0-rc.1):
+    - TuyaSmartActivatorCoreKit
     - TuyaSmartBaseKit
     - TuyaSmartBLEKit
     - TuyaSmartDeviceCoreKit (>= 3.20.0)
@@ -30,12 +30,12 @@ PODS:
     - TuyaSmartBaseKit
     - TuyaSmartMQTTChannelKit
     - TuyaSmartSocketChannelKit
-  - TuyaSmartDeviceKit (3.24.0-rc.8):
+  - TuyaSmartDeviceKit (3.25.1-rc.1):
     - TuyaSmartBaseKit
     - TuyaSmartDeviceCoreKit (>= 3.21.0)
-  - TuyaSmartFeedbackKit (3.24.0-rc.1):
+  - TuyaSmartFeedbackKit (3.26.0-rc.1):
     - TuyaSmartBaseKit
-  - TuyaSmartMessageKit (3.24.0-rc.2):
+  - TuyaSmartMessageKit (3.26.0-rc.1):
     - TuyaSmartBaseKit
   - TuyaSmartMQTTChannelKit (3.26.0-rc.4):
     - TuyaSmartBaseKit
@@ -59,21 +59,21 @@ DEPENDENCIES:
   - AlertToast
   - ReSwift (~> 5.0)
   - ReSwiftThunk (~> 1.2)
-  - TuyaSmartActivatorCoreKit (from `../../TuyaSmartSDK/TuyaSmartActivatorCoreKit`)
-  - TuyaSmartActivatorKit (from `../../TuyaSmartSDK/TuyaSmartActivatorKit`)
-  - TuyaSmartBaseKit (from `../../TuyaSmartSDK/TuyaSmartBaseKit`)
-  - TuyaSmartBLEKit (from `../../TuyaSmartSDK/TuyaSmartBLEKit`)
-  - TuyaSmartBLEMeshKit (from `../../TuyaSmartSDK/TuyaSmartBLEMeshKit`)
-  - TuyaSmartDeviceCoreKit (from `../../TuyaSmartSDK/TuyaSmartDeviceCoreKit`)
-  - TuyaSmartDeviceKit (from `../../TuyaSmartSDK/TuyaSmartDeviceKit`)
-  - TuyaSmartFeedbackKit (from `../../TuyaSmartSDK/TuyaSmartFeedbackKit`)
-  - TuyaSmartMessageKit (from `../../TuyaSmartSDK/TuyaSmartMessageKit`)
-  - TuyaSmartMQTTChannelKit (from `../../TuyaSmartSDK/TuyaSmartMQTTChannelKit`)
-  - TuyaSmartSceneKit (from `../../TuyaSmartSDK/TuyaSmartSceneKit`)
-  - TuyaSmartSocketChannelKit (from `../../TuyaSmartSDK/TuyaSmartSocketChannelKit`)
-  - TuyaSmartTimerKit (from `../../TuyaSmartSDK/TuyaSmartTimerKit`)
-  - TuyaSmartUtil (from `../../TuyaSmartSDK/TuyaSmartUtil`)
-  - TYBluetooth (from `../../TuyaSmartSDK/TYBluetooth`)
+  - TuyaSmartActivatorCoreKit (from `../../../Tuya/TuyaSmartSDK/TuyaSmartActivatorCoreKit`)
+  - TuyaSmartActivatorKit (from `../../../Tuya/TuyaSmartSDK/TuyaSmartActivatorKit`)
+  - TuyaSmartBaseKit (from `../../../Tuya/TuyaSmartSDK/TuyaSmartBaseKit`)
+  - TuyaSmartBLEKit (from `../../../Tuya/TuyaSmartSDK/TuyaSmartBLEKit`)
+  - TuyaSmartBLEMeshKit (from `../../../Tuya/TuyaSmartSDK/TuyaSmartBLEMeshKit`)
+  - TuyaSmartDeviceCoreKit (from `../../../Tuya/TuyaSmartSDK/TuyaSmartDeviceCoreKit`)
+  - TuyaSmartDeviceKit (from `../../../Tuya/TuyaSmartSDK/TuyaSmartDeviceKit`)
+  - TuyaSmartFeedbackKit (from `../../../Tuya/TuyaSmartSDK/TuyaSmartFeedbackKit`)
+  - TuyaSmartMessageKit (from `../../../Tuya/TuyaSmartSDK/TuyaSmartMessageKit`)
+  - TuyaSmartMQTTChannelKit (from `../../../Tuya/TuyaSmartSDK/TuyaSmartMQTTChannelKit`)
+  - TuyaSmartSceneKit (from `../../../Tuya/TuyaSmartSDK/TuyaSmartSceneKit`)
+  - TuyaSmartSocketChannelKit (from `../../../Tuya/TuyaSmartSDK/TuyaSmartSocketChannelKit`)
+  - TuyaSmartTimerKit (from `../../../Tuya/TuyaSmartSDK/TuyaSmartTimerKit`)
+  - TuyaSmartUtil (from `../../../Tuya/TuyaSmartSDK/TuyaSmartUtil`)
+  - TYBluetooth (from `../../../Tuya/TuyaSmartSDK/TYBluetooth`)
 
 SPEC REPOS:
   trunk:
@@ -86,59 +86,59 @@ SPEC REPOS:
 
 EXTERNAL SOURCES:
   TuyaSmartActivatorCoreKit:
-    :path: "../../TuyaSmartSDK/TuyaSmartActivatorCoreKit"
+    :path: "../../../Tuya/TuyaSmartSDK/TuyaSmartActivatorCoreKit"
   TuyaSmartActivatorKit:
-    :path: "../../TuyaSmartSDK/TuyaSmartActivatorKit"
+    :path: "../../../Tuya/TuyaSmartSDK/TuyaSmartActivatorKit"
   TuyaSmartBaseKit:
-    :path: "../../TuyaSmartSDK/TuyaSmartBaseKit"
+    :path: "../../../Tuya/TuyaSmartSDK/TuyaSmartBaseKit"
   TuyaSmartBLEKit:
-    :path: "../../TuyaSmartSDK/TuyaSmartBLEKit"
+    :path: "../../../Tuya/TuyaSmartSDK/TuyaSmartBLEKit"
   TuyaSmartBLEMeshKit:
-    :path: "../../TuyaSmartSDK/TuyaSmartBLEMeshKit"
+    :path: "../../../Tuya/TuyaSmartSDK/TuyaSmartBLEMeshKit"
   TuyaSmartDeviceCoreKit:
-    :path: "../../TuyaSmartSDK/TuyaSmartDeviceCoreKit"
+    :path: "../../../Tuya/TuyaSmartSDK/TuyaSmartDeviceCoreKit"
   TuyaSmartDeviceKit:
-    :path: "../../TuyaSmartSDK/TuyaSmartDeviceKit"
+    :path: "../../../Tuya/TuyaSmartSDK/TuyaSmartDeviceKit"
   TuyaSmartFeedbackKit:
-    :path: "../../TuyaSmartSDK/TuyaSmartFeedbackKit"
+    :path: "../../../Tuya/TuyaSmartSDK/TuyaSmartFeedbackKit"
   TuyaSmartMessageKit:
-    :path: "../../TuyaSmartSDK/TuyaSmartMessageKit"
+    :path: "../../../Tuya/TuyaSmartSDK/TuyaSmartMessageKit"
   TuyaSmartMQTTChannelKit:
-    :path: "../../TuyaSmartSDK/TuyaSmartMQTTChannelKit"
+    :path: "../../../Tuya/TuyaSmartSDK/TuyaSmartMQTTChannelKit"
   TuyaSmartSceneKit:
-    :path: "../../TuyaSmartSDK/TuyaSmartSceneKit"
+    :path: "../../../Tuya/TuyaSmartSDK/TuyaSmartSceneKit"
   TuyaSmartSocketChannelKit:
-    :path: "../../TuyaSmartSDK/TuyaSmartSocketChannelKit"
+    :path: "../../../Tuya/TuyaSmartSDK/TuyaSmartSocketChannelKit"
   TuyaSmartTimerKit:
-    :path: "../../TuyaSmartSDK/TuyaSmartTimerKit"
+    :path: "../../../Tuya/TuyaSmartSDK/TuyaSmartTimerKit"
   TuyaSmartUtil:
-    :path: "../../TuyaSmartSDK/TuyaSmartUtil"
+    :path: "../../../Tuya/TuyaSmartSDK/TuyaSmartUtil"
   TYBluetooth:
-    :path: "../../TuyaSmartSDK/TYBluetooth"
+    :path: "../../../Tuya/TuyaSmartSDK/TYBluetooth"
 
 SPEC CHECKSUMS:
   AlertToast: 6abc6752560818c044c1d9674dc3c43a21c465d6
   CocoaAsyncSocket: 065fd1e645c7abab64f7a6a2007a48038fdc6a99
   ReSwift: 628f1a9b3ee52e3b3ca2a644435472fd77afafe1
   ReSwiftThunk: 23c8ea9092d9dc94b72005f19352dbd37fa42533
-  TuyaSmartActivatorCoreKit: 8f67165bdffa21b8f1d2acef300f5f672e190ed7
-  TuyaSmartActivatorKit: e4660c763f79b56a30d0da51b0c59bf1205a4fe4
-  TuyaSmartBaseKit: 1855ea0011a4bfb3c5cf57ea3641ed0f20c55d8b
-  TuyaSmartBLEKit: e321e044ea44ef8dc14bed4f1ca61d1ace2ba9fa
-  TuyaSmartBLEMeshKit: 352a14153ecec09c4f361e43c2b7c53d7e86e4f7
-  TuyaSmartDeviceCoreKit: 1ef165c1ef54c25b740c747ddd1d9c866d30da96
-  TuyaSmartDeviceKit: c418854dd1fd51f12fd88aff74e59ba461f8a7c8
-  TuyaSmartFeedbackKit: fb50bfdfa7b55b195dd48794caaff00e3902a6c8
-  TuyaSmartMessageKit: 1105c53ff509896a59e64dff0e9f91d35aba5008
-  TuyaSmartMQTTChannelKit: e117bf3cba8befbc065c683e3d92e4cbcc8f8c58
+  TuyaSmartActivatorCoreKit: 2a1bc6b9f87cdfb9ec92d7b42dd1fc7fbebd9656
+  TuyaSmartActivatorKit: e39caa0e8200e71ad27936ff9624580be8b09518
+  TuyaSmartBaseKit: 1184b02773ac51b8c7524ae88653e2b3bb55c169
+  TuyaSmartBLEKit: cb1b3ab7139cc8c7a0870299405aa06425cb5f6a
+  TuyaSmartBLEMeshKit: 1bf37e3899b46db9f08de95c181568a5e835056b
+  TuyaSmartDeviceCoreKit: 0e92c02c66dde9f04c9f1a4a6d261d9f4692ae50
+  TuyaSmartDeviceKit: 3df269828d727748853a06a1063222e1572e29d6
+  TuyaSmartFeedbackKit: d006819d43535e1550afc85b155f1a24d9b05f30
+  TuyaSmartMessageKit: db64fed5ec778564d6b4b41617c82a603d3d5c76
+  TuyaSmartMQTTChannelKit: 0eda2f40c283a730208e5f5b9a9e7fa805968a69
   TuyaSmartQUIC: 5bb81563fedf5b739ac50a5abbf42ec807cfb64b
-  TuyaSmartSceneKit: ce49643734171b78c234f127d8ff3cddbbde4f56
-  TuyaSmartSocketChannelKit: 3c9d1692bea894b2cfa42db2cbe1b9ed0489368c
-  TuyaSmartTimerKit: 5cf29b83571ce73dd761dcd836d5d4baa3610355
-  TuyaSmartUtil: 4a5a0f43fe2fb9bd19562803f62bf5b67b1254e8
-  TYBluetooth: fffa1fa1b5cc143e5b71a5a222ee1b320491a7a6
+  TuyaSmartSceneKit: 98447c8d6b5229406ed3c6675f4c4ff1417294bd
+  TuyaSmartSocketChannelKit: 77e7371e4899a50ab6514dd7fb69958c08d729c3
+  TuyaSmartTimerKit: 60085e43dc31ec963747bb5353faa52220757fe6
+  TuyaSmartUtil: a8a9166cb8233bbd68563491d6c02d2a57ff4447
+  TYBluetooth: 8f53fc3eab096eaec296cfa2bb64e338910b86bd
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: bdf368c7f12029782dec58b57e70f3a5242a2b12
+PODFILE CHECKSUM: d51219f23bd722dd245974859a3e8fcdd2b46523
 
 COCOAPODS: 1.9.3

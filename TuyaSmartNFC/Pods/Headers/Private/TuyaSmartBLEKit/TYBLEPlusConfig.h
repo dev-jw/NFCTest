@@ -1,1 +1,0 @@
-../../../../../../TuyaSmartSDK/TuyaSmartBLEKit/TuyaSmartBLEKit/Classes/Config/TYBLEPlusConfig.h

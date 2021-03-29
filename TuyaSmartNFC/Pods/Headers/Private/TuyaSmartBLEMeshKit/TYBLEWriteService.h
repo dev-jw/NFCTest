@@ -1,1 +1,0 @@
-../../../../../../TuyaSmartSDK/TuyaSmartBLEMeshKit/TuyaSmartBLEMeshKit/Service/private/TYBLEWriteService.h

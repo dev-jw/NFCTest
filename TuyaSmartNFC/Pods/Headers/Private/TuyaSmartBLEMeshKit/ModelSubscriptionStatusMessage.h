@@ -1,1 +1,0 @@
-../../../../../../TuyaSmartSDK/TuyaSmartBLEMeshKit/TuyaSmartBLEMeshKit/TuyaSmartSIGMesh/Classes/Message/AccessMessage/StatusMessage/ModelSubscriptionStatusMessage.h

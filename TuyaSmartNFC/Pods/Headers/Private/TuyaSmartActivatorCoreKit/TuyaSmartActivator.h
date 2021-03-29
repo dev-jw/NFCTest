@@ -1,1 +1,0 @@
-../../../../../../TuyaSmartSDK/TuyaSmartActivatorCoreKit/TuyaSmartActivatorCoreKit/Classes/Public/TuyaSmartActivator.h

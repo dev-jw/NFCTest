@@ -1,1 +1,0 @@
-../../../../../../TuyaSmartSDK/TYBluetooth/TYBluetooth/tool/NSNumber+Characteristic.h

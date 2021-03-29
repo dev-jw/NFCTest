@@ -1,1 +1,0 @@
-../../../../../../TuyaSmartSDK/TuyaSmartBLEKit/TuyaSmartBLEKit/Utils/Tool/ty_crc8.h

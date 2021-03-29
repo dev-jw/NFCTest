@@ -1,1 +1,0 @@
-../../../../../../TuyaSmartSDK/TuyaSmartBLEMeshKit/TuyaSmartBLEMeshKit/TYBLEMeshKit/Classes/command/TYBLEMeshCommand.h

@@ -1,6 +1,0 @@
-module TuyaSmartSocketChannelKit {
-  umbrella header "TuyaSmartSocketChannelKit.h"
-
-  export *
-  module * { export * }
-}

@@ -1,1 +1,0 @@
-../../../../../../TuyaSmartSDK/TuyaSmartUtil/OpenSSL-1.0.2.17/include-ios/openssl/x509v3.h

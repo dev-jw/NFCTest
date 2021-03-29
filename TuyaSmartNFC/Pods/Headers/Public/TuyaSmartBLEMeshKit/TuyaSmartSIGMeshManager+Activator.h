@@ -1,1 +1,0 @@
-../../../../../../TuyaSmartSDK/TuyaSmartBLEMeshKit/TuyaSmartBLEMeshKit/Public/SIG/TuyaSmartSIGMeshManager+Activator.h

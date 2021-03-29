@@ -1,1 +1,0 @@
-../../../../../../TuyaSmartSDK/TuyaSmartBLEKit/TuyaSmartBLEKit/Service/TYBLEBigData/TYBLEBigDataSummaryModel.h

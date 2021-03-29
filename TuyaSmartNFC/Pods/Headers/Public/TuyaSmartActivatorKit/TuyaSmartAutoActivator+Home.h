@@ -1,1 +1,0 @@
-../../../../../../TuyaSmartSDK/TuyaSmartActivatorKit/TuyaSmartActivatorKit/Public/TuyaSmartAutoActivator+Home.h

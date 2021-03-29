@@ -1,1 +1,0 @@
-../../../../../../TuyaSmartSDK/TuyaSmartActivatorCoreKit/TuyaSmartActivatorCoreKit/Classes/Service/TYMultiActivatorService.h

@@ -1,1 +1,0 @@
-../../../../../../TuyaSmartSDK/TuyaSmartBLEMeshKit/TuyaSmartBLEMeshKit/TuyaSmartSIGMesh/Classes/Transport/Lower Transport Layer/LowerTransportLayer.h
