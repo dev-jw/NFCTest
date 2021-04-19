@@ -1,0 +1,84 @@
+{
+  "name": "TuyaSmartBLEMeshKit",
+  "version": "3.26.5-rc.8",
+  "summary": "A short description of TuyaSmartBLEMeshKit.",
+  "homepage": "https://tuya.com",
+  "license": {
+    "type": "MIT"
+  },
+  "authors": {
+    "huangdaxia": "huangkai@tuya.com"
+  },
+  "source": {
+    "git": "file:///Users/zsy/Desktop/TuyaSmartSDK/TuyaSmartBLEMeshKit"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "TuyaSmartBLEMeshKit/**/*.{h,m,mm,c}",
+  "module_map": "TuyaSmartBLEMeshKit/module.modulemap",
+  "public_header_files": [
+    "TuyaSmartBLEMeshKit/Public/**/*.h",
+    "TuyaSmartBLEMeshKit/TYBLEMeshKit/Classes/command/**/*.h",
+    "TuyaSmartBLEMeshKit/TYBLEMeshKit/Classes/model/TYBleMeshDeviceModel.h",
+    "TuyaSmartBLEMeshKit/BLEMesh/TYBLEMeshManager.h",
+    "TuyaSmartBLEMeshKit/TuyaSmartSIGMesh/Classes/TuyaSmartSIGMeshDiscoverDeviceInfo.h"
+  ],
+  "prefix_header_contents": [
+    "#ifdef __OBJC__",
+    "#import <YYModel/YYModel.h>",
+    "#import \"TuyaSmartBLEMeshKit.h\"",
+    "#import \"TYMeshNotificationUtils.h\"",
+    "#import \"TYMeshApiConf.h\"",
+    "#import \"TYMeshPrivateDef.h\"",
+    "#import <TYBluetooth/TYBluetooth.h>",
+    "#import \"TuyaSmartSIGMeshConstants.h\"",
+    "#import \"NSData+TYSDKHex.h\"",
+    "#endif"
+  ],
+  "pod_target_xcconfig": {
+    "TUYA_PRIVACY_USAGE_DESCRIPTION": "NSBluetoothAlwaysUsageDescription NSBluetoothPeripheralUsageDescription",
+    "CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES": "YES",
+    "DEFINES_MODULE": "YES"
+  },
+  "frameworks": [
+    "Foundation",
+    "CoreBluetooth"
+  ],
+  "dependencies": {
+    "TuyaSmartBaseKit": [
+
+    ],
+    "TuyaSmartDeviceCoreKit": [
+      ">= 3.20.0"
+    ],
+    "TuyaSmartActivatorCoreKit": [
+
+    ],
+    "TYBluetooth": [
+      "< 10.0"
+    ],
+    "TuyaSmartBLEKit": [
+
+    ],
+    "TuyaSmartUtil": [
+
+    ]
+  },
+  "user_target_xcconfig": {
+    "CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES": "YES"
+  },
+  "testspecs": [
+    {
+      "name": "Tests",
+      "test_type": "unit",
+      "source_files": "Tests/Classes/**/*.{h,m}",
+      "resources": "Tests/Assets/**/*.{bmp,json}",
+      "dependencies": {
+        "TYSDKBluetoothMock": [
+
+        ]
+      }
+    }
+  ]
+}

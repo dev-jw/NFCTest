@@ -1,0 +1,66 @@
+{
+  "name": "TuyaSmartMQTTChannelKit",
+  "version": "3.26.0",
+  "summary": "A short description of TuyaSmartMQTTChannelKit.",
+  "homepage": "https://tuya.com",
+  "license": {
+    "type": "MIT"
+  },
+  "authors": {
+    "xcc": "xucheng@tuya.com"
+  },
+  "source": {
+    "git": "file:///Users/zsy/Desktop/TuyaSmartSDK/TuyaSmartMQTTChannelKit"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "ios": {
+    "frameworks": "CoreData",
+    "source_files": [
+      "MQTT-Client-Framework-0.15.2/MQTTClient/MQTTClient/MQTTCFSocketDecoder.{h,m}",
+      "MQTT-Client-Framework-0.15.2/MQTTClient/MQTTClient/MQTTCFSocketEncoder.{h,m}",
+      "MQTT-Client-Framework-0.15.2/MQTTClient/MQTTClient/MQTTCFSocketTransport.{h,m}",
+      "MQTT-Client-Framework-0.15.2/MQTTClient/MQTTClient/MQTTCoreDataPersistence.{h,m}",
+      "MQTT-Client-Framework-0.15.2/MQTTClient/MQTTClient/MQTTDecoder.{h,m}",
+      "MQTT-Client-Framework-0.15.2/MQTTClient/MQTTClient/MQTTInMemoryPersistence.{h,m}",
+      "MQTT-Client-Framework-0.15.2/MQTTClient/MQTTClient/MQTTLog.{h,m}",
+      "MQTT-Client-Framework-0.15.2/MQTTClient/MQTTClient/MQTTStrict.{h,m}",
+      "MQTT-Client-Framework-0.15.2/MQTTClient/MQTTClient/MQTTClient.h",
+      "MQTT-Client-Framework-0.15.2/MQTTClient/MQTTClient/MQTTMessage.{h,m}",
+      "MQTT-Client-Framework-0.15.2/MQTTClient/MQTTClient/MQTTPersistence.h",
+      "MQTT-Client-Framework-0.15.2/MQTTClient/MQTTClient/MQTTSSLSecurityPolicy.{h,m}",
+      "MQTT-Client-Framework-0.15.2/MQTTClient/MQTTClient/MQTTSSLSecurityPolicyDecoder.{h,m}",
+      "MQTT-Client-Framework-0.15.2/MQTTClient/MQTTClient/MQTTSSLSecurityPolicyEncoder.{h,m}",
+      "MQTT-Client-Framework-0.15.2/MQTTClient/MQTTClient/MQTTSSLSecurityPolicyTransport.{h,m}",
+      "MQTT-Client-Framework-0.15.2/MQTTClient/MQTTClient/MQTTProperties.{h,m}",
+      "MQTT-Client-Framework-0.15.2/MQTTClient/MQTTClient/MQTTSession.{h,m}",
+      "MQTT-Client-Framework-0.15.2/MQTTClient/MQTTClient/MQTTSessionLegacy.{h,m}",
+      "MQTT-Client-Framework-0.15.2/MQTTClient/MQTTClient/MQTTSessionSynchron.{h,m}",
+      "MQTT-Client-Framework-0.15.2/MQTTClient/MQTTClient/MQTTTransport.{h,m}",
+      "MQTT-Client-Framework-0.15.2/MQTTClient/MQTTClient/GCDTimer.{h,m}"
+    ]
+  },
+  "source_files": "TuyaSmartMQTTChannelKit/**/*.{h,m,mm,c}",
+  "module_map": "TuyaSmartMQTTChannelKit/module.modulemap",
+  "public_header_files": "TuyaSmartMQTTChannelKit/Public/**/*.h",
+  "prefix_header_contents": "#ifdef __OBJC__\n  #import <TuyaSmartBaseKit/TuyaSmartBaseKit.h>\n  #undef TYLog\n  #undef TYSDKLogDebug\n  #undef TYSDKLogInfo\n  #undef TYSDKLogWarn\n  #undef TYSDKLogError\n  #define TYSDKLogDebug(...)         TYSDKLog(0, @\"TuyaSmartMQTTChannelKit\", __FILE__, __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)\n  #define TYSDKLogInfo(...)         TYSDKLog(1, @\"TuyaSmartMQTTChannelKit\", __FILE__, __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)\n  #define TYSDKLogWarn(...)         TYSDKLog(2, @\"TuyaSmartMQTTChannelKit\", __FILE__, __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)\n  #define TYSDKLogError(...)         TYSDKLog(3, @\"TuyaSmartMQTTChannelKit\", __FILE__, __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)\n\n  #import \"TuyaSmartMQTTChannelKit.h\"\n\n  #import \"macros.h\"\n\n  #import \"MQTTSession.h\"\n  #import \"MQTTDecoder.h\"\n  #import \"MQTTSessionLegacy.h\"\n  #import \"MQTTSessionSynchron.h\"\n  #import \"MQTTProperties.h\"\n  #import \"MQTTMessage.h\"\n  #import \"MQTTTransport.h\"\n  #import \"MQTTCFSocketTransport.h\"\n  #import \"MQTTCoreDataPersistence.h\"\n  #import \"MQTTSSLSecurityPolicyTransport.h\"\n  #import \"MQTTLog.h\"\n\n#endif",
+  "dependencies": {
+    "TuyaSmartBaseKit": [
+
+    ],
+    "TuyaSmartQUIC": [
+
+    ]
+  },
+  "pod_target_xcconfig": {
+    "DEFINES_MODULE": "YES",
+    "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64",
+    "EXCLUDED_ARCHS[sdk=watchsimulator*]": "x86_64 arm64"
+  },
+  "prepare_command": "curl -fSL https://github.com/novastone-media/MQTT-Client-Framework/archive/0.15.2.tar.gz -o MQTT-Client-Framework-0.15.2.tar.gz       && rm -rf MQTT-Client-Framework-0.15.2       && tar -zxvf MQTT-Client-Framework-0.15.2.tar.gz MQTT-Client-Framework-0.15.2/MQTTClient/MQTTClient/       && rm -rf MQTT-Client-Framework-0.15.2.tar.gz \n# pushd MQTT-Client-Framework-0.15.2/MQTTClient/MQTTClient/\n\n# # Class name\n# grep -Eh \"@implementation\\s+(\\w+)$\" *.{h,m}     #   | sed -E \"s/@implementation (.*)/#define \\1 TY\\1/g\"     #   > macros.h\n\n# # Struct name\n# grep -Eh \"typedef NS_ENUM\\(.*\\)\" *.{h,m}     #   | sed -E \"s/.?typedef NS_ENUM\\(.*, (.*)\\) ?\\{/#define \\1 TY\\1/g\"     #   > struct_names.txt\n# cat struct_names.txt >> macros.h\n# cat struct_names.txt     #   | xargs -I {} grep -Eh '{}[a-zA-Z]+( = .*)?,' *.{h,m}     #   | sed -E 's/^ *(.*),.*$/\\1/g'     #   >> macros.h\n\n# popd",
+  "user_target_xcconfig": {
+    "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64",
+    "EXCLUDED_ARCHS[sdk=watchsimulator*]": "x86_64 arm64"
+  }
+}

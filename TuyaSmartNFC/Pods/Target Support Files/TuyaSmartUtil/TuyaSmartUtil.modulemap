@@ -1,0 +1,6 @@
+module TuyaSmartUtil {
+  umbrella header "TuyaSmartUtil.h"
+
+  export *
+  module * { export * }
+}

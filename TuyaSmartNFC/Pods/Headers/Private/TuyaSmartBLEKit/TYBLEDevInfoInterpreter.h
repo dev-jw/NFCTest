@@ -1,0 +1,1 @@
+../../../../../../TuyaSmartSDK/TuyaSmartBLEKit/TuyaSmartBLEKit/Service/BLECommon/TYBLEDevInfoInterpreter.h

@@ -1,0 +1,1 @@
+../../../../../../TuyaSmartSDK/TuyaSmartBLEMeshKit/TuyaSmartBLEMeshKit/TuyaSmartSIGMesh/Classes/TuyaSmartSIGMeshKit.h

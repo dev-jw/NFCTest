@@ -1,0 +1,1 @@
+../../../../../../TuyaSmartSDK/TuyaSmartMessageKit/TuyaSmartMessageKit/Public/TuyaSmartMessageRequestModel.h

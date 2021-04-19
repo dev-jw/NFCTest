@@ -100,8 +100,9 @@ extension NFCTool: NFCTagReaderSessionDelegate {
                 session.invalidate(errorMessage: "Connection error. Please try again.")
                 return
             }
-//             self.readMiFareTag(from: tag!)
-            self.testWriteInitData(to: tag!)
+
+             self.readMiFareTag(from: tag!)
+//            self.testWriteInitData(to: tag!)
         }
     }
 }
@@ -119,6 +120,10 @@ extension NFCTool {
         }
         
         DispatchQueue.global().async {
+            
+            self.write(to: mifareTag)
+
+            
             //            let blockSize = 16
             //            let useCounterOffset = 2
             //            let lengthOffset = 3
@@ -126,22 +131,22 @@ extension NFCTool {
             //            let maxCodeLength = 16
             
             // Send password
-            let readBlock4: [UInt8] = [0x1B, 0x66, 0x66, 0x66, 0x66]
-            self.sendReadTagCommand(Data(readBlock4), to: mifareTag) { (responseBlock4: Data) in
-                print("response: \(responseBlock4)")
-                
-                
-//                self.testWriteInitData(to: tag)
-
-                // require Real Word
-                let magicSignature: [UInt8] = [0x30, 0xD0]
-                self.sendReadTagCommand(Data(magicSignature), to: mifareTag) { (realData: Data) in
-                    print("realData: \(realData)")
-
-                    // writer NDEF message
-                    self.write(to: mifareTag)
-                }
-            }
+//            let readBlock4: [UInt8] = [0x1B, 0x66, 0x66, 0x66, 0x66]
+//            self.sendReadTagCommand(Data(readBlock4), to: mifareTag) { (responseBlock4: Data) in
+//                print("response: \(responseBlock4)")
+//
+//
+////                self.testWriteInitData(to: tag)
+//
+//                // require Real Word
+//                let magicSignature: [UInt8] = [0x30, 0xD0]
+//                self.sendReadTagCommand(Data(magicSignature), to: mifareTag) { (realData: Data) in
+//                    print("realData: \(realData)")
+//
+//                    // writer NDEF message
+//                    self.write(to: mifareTag)
+//                }
+//            }
         }
     }
     
@@ -220,7 +225,8 @@ extension NFCTool {
     private func writeData(to tag: NFCMiFareTag, dps: String) {
         
         
-        let ios = NFCNDEFPayload.wellKnownTypeURIPayload(string: String("https://wut.im/"))
+        let ios = NFCNDEFPayload.wellKnownTypeURIPayload(string: String("https://tuyasmart.app.tuya.com/"))
+//        let ios = NFCNDEFPayload.wellKnownTypeURIPayload(string: String("https://smartlife.app.tuya.com/"))
         
         let android = NFCNDEFPayload(format: .nfcExternal,
                                      type: String("android.com:pkg").data(using: .utf8)!,

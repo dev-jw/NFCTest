@@ -1,0 +1,6 @@
+module Pods_TuyaSmartNFC {
+  umbrella header "Pods-TuyaSmartNFC-umbrella.h"
+
+  export *
+  module * { export * }
+}

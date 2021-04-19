@@ -1,0 +1,1 @@
+../../../../../../TuyaSmartSDK/TuyaSmartBLEMeshKit/TuyaSmartBLEMeshKit/TYBLEMeshKit/Classes/chanel/TuyaSmartBleMeshChannel.h

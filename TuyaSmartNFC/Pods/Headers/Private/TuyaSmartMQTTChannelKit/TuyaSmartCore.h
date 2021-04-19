@@ -1,0 +1,1 @@
+../../../../../../TuyaSmartSDK/TuyaSmartMQTTChannelKit/TuyaSmartMQTTChannelKit/Header/TuyaSmartCore.h

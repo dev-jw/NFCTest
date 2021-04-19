@@ -1,0 +1,31 @@
+{
+  "name": "TYNFCModule",
+  "version": "0.1.0",
+  "summary": "涂鸦 NFC 模块",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://registry.code.tuya-inc.top/tuyaIOS/tynfcmodule",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "HJW": "573986558@qq.com"
+  },
+  "source": {
+    "git": "https://registry.code.tuya-inc.top/tuyaIOS/tynfcmodule.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "13.0"
+  },
+  "source_files": "TYNFCModule/Classes/**/*",
+  "frameworks": "CoreNFC",
+  "dependencies": {
+    "TuyaSmartBaseKit": [
+
+    ]
+  },
+  "pod_target_xcconfig": {
+    "TUYA_PRIVACY_USAGE_DESCRIPTION": "NFCReaderUsageDescription"
+  }
+}

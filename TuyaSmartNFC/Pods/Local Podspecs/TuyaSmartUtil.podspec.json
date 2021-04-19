@@ -1,0 +1,53 @@
+{
+  "name": "TuyaSmartUtil",
+  "version": "3.26.5",
+  "summary": "A short description of TuyaSmartUtil.",
+  "homepage": "https://tuya.com",
+  "license": {
+    "type": "MIT"
+  },
+  "authors": {
+    "0x5e": "gaosen@tuya.com"
+  },
+  "source": {
+    "git": "file:///Users/zsy/Desktop/TuyaSmartSDK/TuyaSmartUtil"
+  },
+  "platforms": {
+    "ios": "9.0",
+    "watchos": "2.0"
+  },
+  "ios": {
+    "frameworks": [
+      "CoreTelephony",
+      "Foundation",
+      "SystemConfiguration",
+      "UIKit"
+    ],
+    "source_files": "OpenSSL-1.0.2.17/include-ios/**/*.h",
+    "vendored_libraries": "OpenSSL-1.0.2.17/lib-ios/**/*.a",
+    "pod_target_xcconfig": {
+      "HEADER_SEARCH_PATHS": "${PODS_ROOT}/OpenSSL-1.0.2.17/include-ios/ /Users/zsy/Desktop/TuyaSmartSDK/TuyaSmartUtil/OpenSSL-1.0.2.17/include-ios/ ${PODS_ROOT}/../../../OpenSSL-1.0.2.17/include-ios/"
+    }
+  },
+  "watchos": {
+    "frameworks": "WatchKit",
+    "pod_target_xcconfig": {
+      "ENABLE_BITCODE": "YES",
+      "OTHER_CFLAGS": "-fembed-bitcode -Qunused-arguments"
+    }
+  },
+  "source_files": "TuyaSmartUtil/**/*.{h,m,mm,c}",
+  "module_map": "TuyaSmartUtil/module.modulemap",
+  "public_header_files": "TuyaSmartUtil/Public/**/*.h",
+  "resource_bundles": {
+    "TuyaSmartUtil": "TuyaSmartUtil/Assets/*.{lproj,json}"
+  },
+  "user_target_xcconfig": {
+    "CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES": "YES"
+  },
+  "pod_target_xcconfig": {
+    "CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES": "YES",
+    "DEFINES_MODULE": "YES"
+  },
+  "prepare_command": "curl -fSL https://github.com/krzyzanowskim/OpenSSL/archive/1.0.2.17.tar.gz -o OpenSSL-1.0.2.17.tar.gz       && rm -rf OpenSSL-1.0.2.17       && tar -zxvf OpenSSL-1.0.2.17.tar.gz       && rm -rf OpenSSL-1.0.2.17.tar.gz"
+}

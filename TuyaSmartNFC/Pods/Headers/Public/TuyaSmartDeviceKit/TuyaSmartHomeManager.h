@@ -1,0 +1,1 @@
+../../../../../../TuyaSmartSDK/TuyaSmartDeviceKit/TuyaSmartDeviceKit/Public/Home/TuyaSmartHomeManager.h

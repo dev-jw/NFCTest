@@ -1,0 +1,1 @@
+../../../../../../TuyaSmartSDK/TuyaSmartDeviceCoreKit/TuyaSmartDeviceCoreKit/Service/Pipelines/TuyaSmartPipeline.h

@@ -1,0 +1,1 @@
+../../../../../../TuyaSmartSDK/TuyaSmartBLEKit/TuyaSmartBLEKit/Public/TuyaSmartBLEWifiActivator.h

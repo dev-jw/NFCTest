@@ -1,0 +1,6 @@
+module TuyaSmartBLEMeshKit {
+  umbrella header "TuyaSmartBLEMeshKit.h"
+
+  export *
+  module * { export * }
+}

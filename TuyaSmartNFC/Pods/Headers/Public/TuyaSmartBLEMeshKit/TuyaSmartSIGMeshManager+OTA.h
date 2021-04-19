@@ -1,0 +1,1 @@
+../../../../../../TuyaSmartSDK/TuyaSmartBLEMeshKit/TuyaSmartBLEMeshKit/Public/SIG/TuyaSmartSIGMeshManager+OTA.h

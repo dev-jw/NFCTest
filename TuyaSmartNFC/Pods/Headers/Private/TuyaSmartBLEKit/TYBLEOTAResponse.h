@@ -1,0 +1,1 @@
+../../../../../../TuyaSmartSDK/TuyaSmartBLEKit/TuyaSmartBLEKit/Service/TYBLEOTA/Model/TYBLEOTAResponse.h

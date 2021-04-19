@@ -1,0 +1,1 @@
+../../../../../../TuyaSmartSDK/TuyaSmartMQTTChannelKit/TuyaSmartMQTTChannelKit/Service/macros.h

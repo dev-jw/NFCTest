@@ -28,6 +28,9 @@
 		3B71EF2E25FB155400E37AE0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B71EF2D25FB155400E37AE0 /* Preview Assets.xcassets */; };
 		3B71EF3125FB155400E37AE0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B71EF2F25FB155400E37AE0 /* LaunchScreen.storyboard */; };
 		3B71EF8525FB17EB00E37AE0 /* t_s.bmp in Resources */ = {isa = PBXBuildFile; fileRef = 3B71EF8425FB17EB00E37AE0 /* t_s.bmp */; };
+		3B7800BB262D19AE00A06D0F /* CircleSystemButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7800BA262D19AD00A06D0F /* CircleSystemButton.swift */; };
+		3B7800BF262D19C100A06D0F /* NFCTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7800BE262D19C100A06D0F /* NFCTool.swift */; };
+		3B7800C3262D1A1200A06D0F /* PanelRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7800C2262D1A1200A06D0F /* PanelRow.swift */; };
 		3BF636B52601DE0C000314D3 /* SignView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF636B42601DE0C000314D3 /* SignView.swift */; };
 		3BF636BC2601DE35000314D3 /* TuyaSmartConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF636BB2601DE35000314D3 /* TuyaSmartConfig.swift */; };
 		3BF636C12601DE72000314D3 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF636C02601DE72000314D3 /* RootView.swift */; };
@@ -44,7 +47,6 @@
 		3BF636FC2601E1B8000314D3 /* AuthState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF636FB2601E1B8000314D3 /* AuthState.swift */; };
 		3BF637002601E1D5000314D3 /* AuthReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF636FF2601E1D5000314D3 /* AuthReducer.swift */; };
 		3BF637052601FBBA000314D3 /* PresentationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF637042601FBBA000314D3 /* PresentationView.swift */; };
-		3BF6370B260217AB000314D3 /* ActivitaorButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF6370A260217AB000314D3 /* ActivitaorButton.swift */; };
 		3BF6370F26021B0C000314D3 /* RootRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF6370E26021B0C000314D3 /* RootRow.swift */; };
 		3BF638772602F218000314D3 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF638762602F217000314D3 /* ProfileView.swift */; };
 		3BF6387B2602F231000314D3 /* PanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF6387A2602F231000314D3 /* PanelView.swift */; };
@@ -110,6 +112,9 @@
 		3B71EF3225FB155400E37AE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3B71EF7125FB168F00E37AE0 /* TuyaSmartNFC.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TuyaSmartNFC.entitlements; sourceTree = "<group>"; };
 		3B71EF8425FB17EB00E37AE0 /* t_s.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = t_s.bmp; sourceTree = "<group>"; };
+		3B7800BA262D19AD00A06D0F /* CircleSystemButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleSystemButton.swift; sourceTree = "<group>"; };
+		3B7800BE262D19C100A06D0F /* NFCTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NFCTool.swift; sourceTree = "<group>"; };
+		3B7800C2262D1A1200A06D0F /* PanelRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PanelRow.swift; sourceTree = "<group>"; };
 		3BF636B42601DE0C000314D3 /* SignView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignView.swift; sourceTree = "<group>"; };
 		3BF636BB2601DE35000314D3 /* TuyaSmartConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TuyaSmartConfig.swift; sourceTree = "<group>"; };
 		3BF636C02601DE72000314D3 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
@@ -126,7 +131,6 @@
 		3BF636FB2601E1B8000314D3 /* AuthState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthState.swift; sourceTree = "<group>"; };
 		3BF636FF2601E1D5000314D3 /* AuthReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthReducer.swift; sourceTree = "<group>"; };
 		3BF637042601FBBA000314D3 /* PresentationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationView.swift; sourceTree = "<group>"; };
-		3BF6370A260217AB000314D3 /* ActivitaorButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitaorButton.swift; sourceTree = "<group>"; };
 		3BF6370E26021B0C000314D3 /* RootRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootRow.swift; sourceTree = "<group>"; };
 		3BF638762602F217000314D3 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		3BF6387A2602F231000314D3 /* PanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanelView.swift; sourceTree = "<group>"; };
@@ -224,6 +228,7 @@
 			isa = PBXGroup;
 			children = (
 				3B6537DE2604ABB80098665F /* NFCView.swift */,
+				3B7800BE262D19C100A06D0F /* NFCTool.swift */,
 			);
 			path = NFC;
 			sourceTree = "<group>";
@@ -413,7 +418,7 @@
 		3BF637032601FBAF000314D3 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				3BF6370A260217AB000314D3 /* ActivitaorButton.swift */,
+				3B7800BA262D19AD00A06D0F /* CircleSystemButton.swift */,
 				3B6537D62604876D0098665F /* LoadingView.swift */,
 				3BF637042601FBBA000314D3 /* PresentationView.swift */,
 			);
@@ -431,6 +436,7 @@
 		3BF638722602EE45000314D3 /* Panel */ = {
 			isa = PBXGroup;
 			children = (
+				3B7800C2262D1A1200A06D0F /* PanelRow.swift */,
 				3BF6387A2602F231000314D3 /* PanelView.swift */,
 			);
 			path = Panel;
@@ -663,7 +669,7 @@
 				3B6537D326044EC50098665F /* ActivatorState.swift in Sources */,
 				3B6537DF2604ABB90098665F /* NFCView.swift in Sources */,
 				3BF636D52601DEE7000314D3 /* AppStore.swift in Sources */,
-				3BF6370B260217AB000314D3 /* ActivitaorButton.swift in Sources */,
+				3B7800BB262D19AE00A06D0F /* CircleSystemButton.swift in Sources */,
 				3BF636E12601DF8A000314D3 /* SignReducer.swift in Sources */,
 				3BF638A426034CFF000314D3 /* DeviceState.swift in Sources */,
 				3BF636B52601DE0C000314D3 /* SignView.swift in Sources */,
@@ -671,6 +677,8 @@
 				3BF636CD2601DED4000314D3 /* AppState.swift in Sources */,
 				3BF6387B2602F231000314D3 /* PanelView.swift in Sources */,
 				3BF636F12601DFE7000314D3 /* LoggingMiddleware.swift in Sources */,
+				3B7800C3262D1A1200A06D0F /* PanelRow.swift in Sources */,
+				3B7800BF262D19C100A06D0F /* NFCTool.swift in Sources */,
 				3BF636C12601DE72000314D3 /* RootView.swift in Sources */,
 				3BF63892260333B2000314D3 /* HomeReducer.swift in Sources */,
 				3BF6388A2603339B000314D3 /* HomeState.swift in Sources */,
