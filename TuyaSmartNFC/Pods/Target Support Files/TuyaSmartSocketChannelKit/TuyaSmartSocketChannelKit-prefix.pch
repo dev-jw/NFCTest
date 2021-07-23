@@ -11,7 +11,9 @@
 #endif
 
 #ifdef __OBJC__
-  #import <TuyaSmartBaseKit/TuyaSmartBaseKit.h>
+  // #import <TuyaSmartBaseKit/TuyaSmartBaseKit.h>
+  #import <TuyaSmartUtil/TuyaSmartUtil.h>
+
   #undef TYLog
   #undef TYSDKLogDebug
   #undef TYSDKLogInfo

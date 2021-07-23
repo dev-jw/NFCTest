@@ -13,12 +13,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
+        TuyaSmartSDK.sharedInstance().env = .prepare
+        
         TuyaSmartSDK.sharedInstance().start(withAppKey: app_config.appKey, secretKey: app_config.secretKey)
         
-        #if DEBUG
+#if DEBUG
         // 开启日志打印
         TuyaSmartSDK.sharedInstance().debugMode = true
-        #endif        
+#endif
+        
+//        let bytes = Array(repeating: 0, count: 16)
+//        let ivData = Data(bytes: bytes, count: bytes.count)
+        
         return true
     }
     
@@ -38,4 +44,3 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     
 }
-

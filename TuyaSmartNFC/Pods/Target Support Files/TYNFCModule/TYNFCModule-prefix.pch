@@ -10,3 +10,19 @@
 #endif
 #endif
 
+#ifdef __OBJC__
+  #import <TuyaSmartUtil/TuyaSmartUtil.h>
+  #import <TuyaSmartBaseKit/TuyaSmartBaseKit.h>
+  
+  #undef TYLog
+  #undef TYSDKLogDebug
+  #undef TYSDKLogInfo
+  #undef TYSDKLogWarn
+  #undef TYSDKLogError
+  #define TYSDKLogDebug(...)         TYSDKLog(0, @"TuyaSmartSocketChannelKit", __FILE__, __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)
+  #define TYSDKLogInfo(...)         TYSDKLog(1, @"TuyaSmartSocketChannelKit", __FILE__, __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)
+  #define TYSDKLogWarn(...)         TYSDKLog(2, @"TuyaSmartSocketChannelKit", __FILE__, __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)
+  #define TYSDKLogError(...)         TYSDKLog(3, @"TuyaSmartSocketChannelKit", __FILE__, __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)
+
+  #import "TYNFCModule.h"
+#endif

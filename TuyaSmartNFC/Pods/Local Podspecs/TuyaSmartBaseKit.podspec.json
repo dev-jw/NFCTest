@@ -1,6 +1,6 @@
 {
   "name": "TuyaSmartBaseKit",
-  "version": "3.26.5-rc.2",
+  "version": "3.29.0",
   "summary": "A short description of TuyaSmartBaseKit.",
   "homepage": "https://tuya.com",
   "license": {
@@ -32,14 +32,16 @@
     "TuyaSmartBaseKit/Assets/**/*"
   ],
   "public_header_files": "TuyaSmartBaseKit/Public/**/*.h",
-  "prefix_header_contents": "#ifdef __OBJC__\n  #import <TuyaSmartBaseKit/TuyaSmartBaseKit.h>\n  #undef TYLog\n  #undef TYSDKLogDebug\n  #undef TYSDKLogInfo\n  #undef TYSDKLogWarn\n  #undef TYSDKLogError\n  #define TYSDKLogDebug(...)         TYSDKLog(0, @\"TuyaSmartBaseKit\", __FILE__, __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)\n  #define TYSDKLogInfo(...)         TYSDKLog(1, @\"TuyaSmartBaseKit\", __FILE__, __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)\n  #define TYSDKLogWarn(...)         TYSDKLog(2, @\"TuyaSmartBaseKit\", __FILE__, __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)\n  #define TYSDKLogError(...)         TYSDKLog(3, @\"TuyaSmartBaseKit\", __FILE__, __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)\n\n  #import <YYModel/YYModel.h>\n  #import \"TYBaseNotificationUtils.h\"\n\n#endif",
-  "prepare_command": "/usr/bin/sed -i '' 's/#define TUYA_SDK_VERSION @\".*\"/#define TUYA_SDK_VERSION @\"3.26.5-rc.2\"/g' TuyaSmartBaseKit/Public/TuyaSmartBaseKit.h",
+  "prefix_header_contents": "#ifdef __OBJC__\n  #import <TuyaSmartBaseKit/TuyaSmartBaseKit.h>\n  #import <TuyaSmartNetworkKit/TuyaSmartNetworkKit.h>\n  #undef TYLog\n  #undef TYSDKLogDebug\n  #undef TYSDKLogInfo\n  #undef TYSDKLogWarn\n  #undef TYSDKLogError\n  #define TYSDKLogDebug(...)         TYSDKLog(0, @\"TuyaSmartBaseKit\", __FILE__, __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)\n  #define TYSDKLogInfo(...)         TYSDKLog(1, @\"TuyaSmartBaseKit\", __FILE__, __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)\n  #define TYSDKLogWarn(...)         TYSDKLog(2, @\"TuyaSmartBaseKit\", __FILE__, __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)\n  #define TYSDKLogError(...)         TYSDKLog(3, @\"TuyaSmartBaseKit\", __FILE__, __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)\n\n  #import <YYModel/YYModel.h>\n  #import \"TYBaseNotificationUtils.h\"\n\n#endif",
   "libraries": [
     "c++",
     "z"
   ],
   "dependencies": {
     "TuyaSmartUtil": [
+
+    ],
+    "TuyaSmartNetworkKit": [
 
     ],
     "YYModel": [

@@ -1,5 +1,5 @@
 PODS:
-  - AlertToast (1.2.3)
+  - AlertToast (1.2.9)
   - CocoaAsyncSocket (7.6.5)
   - ReSwift (5.0.0)
   - ReSwiftThunk (1.2.0):
@@ -7,55 +7,59 @@ PODS:
     - ReSwiftThunk/Core (= 1.2.0)
   - ReSwiftThunk/Core (1.2.0):
     - ReSwift (~> 5.0)
-  - TuyaSmartActivatorCoreKit (3.26.5-rc.2):
+  - TuyaSmartActivatorCoreKit (3.28.5-rc.8):
     - TuyaSmartDeviceCoreKit
-  - TuyaSmartActivatorKit (3.26.5-rc.1):
+  - TuyaSmartActivatorKit (3.28.5-rc.1):
     - TuyaSmartActivatorCoreKit
     - TuyaSmartDeviceKit
-  - TuyaSmartBaseKit (3.26.5-rc.2):
+  - TuyaSmartBaseKit (3.29.0):
+    - TuyaSmartNetworkKit
     - TuyaSmartUtil
     - YYModel
-  - TuyaSmartBLEKit (3.26.5-rc.3):
+  - TuyaSmartBLEKit (3.29.5-rc.3):
     - TuyaSmartBaseKit
     - TuyaSmartDeviceCoreKit
     - TYBluetooth (< 10.0)
-  - TuyaSmartBLEMeshKit (3.26.5-rc.8):
+  - TuyaSmartBLEMeshKit (3.28.5-rc.3):
     - TuyaSmartActivatorCoreKit
     - TuyaSmartBaseKit
     - TuyaSmartBLEKit
     - TuyaSmartDeviceCoreKit (>= 3.20.0)
     - TuyaSmartUtil
     - TYBluetooth (< 10.0)
-  - TuyaSmartDeviceCoreKit (3.26.5-rc.3):
+  - TuyaSmartDeviceCoreKit (3.29.5-rc.5):
     - TuyaSmartBaseKit
     - TuyaSmartMQTTChannelKit
     - TuyaSmartSocketChannelKit
     - TuyaSmartUtil
-  - TuyaSmartDeviceKit (3.26.5-rc.3):
+  - TuyaSmartDeviceKit (3.28.5):
     - TuyaSmartBaseKit
     - TuyaSmartDeviceCoreKit (>= 3.21.0)
   - TuyaSmartFeedbackKit (3.26.5-rc.1):
     - TuyaSmartBaseKit
   - TuyaSmartMessageKit (3.26.5-rc.2):
     - TuyaSmartBaseKit
-  - TuyaSmartMQTTChannelKit (3.26.0):
+  - TuyaSmartMQTTChannelKit (3.29.0-rc.1):
     - TuyaSmartBaseKit
     - TuyaSmartQUIC
+  - TuyaSmartNetworkKit (3.29.0):
+    - TuyaSmartUtil
+    - YYModel
   - TuyaSmartQUIC (1.1.1)
-  - TuyaSmartSceneKit (3.25.2-rc.3):
+  - TuyaSmartSceneKit (3.25.3-rc.1):
     - TuyaSmartBaseKit
     - TuyaSmartDeviceKit
-  - TuyaSmartSocketChannelKit (3.27.0-rc.1):
+  - TuyaSmartSocketChannelKit (3.30.0-rmdependency-rc.1):
     - CocoaAsyncSocket (>= 7.4.3)
-    - TuyaSmartBaseKit
     - TuyaSmartUtil
   - TuyaSmartTimerKit (3.26.5-rc.1):
     - TuyaSmartBaseKit
     - TuyaSmartDeviceKit
-  - TuyaSmartUtil (3.26.5)
-  - TYBluetooth (3.26.5-rc.3)
-  - TYNFCModule (0.1.0):
-    - TuyaSmartBaseKit
+  - TuyaSmartUtil (3.30.0-rc.1)
+  - TYBluetooth (3.29.5-rc.1)
+  - TYNFCModule (1.1.0-rc.11):
+    - TuyaSmartNetworkKit
+    - TuyaSmartUtil
   - YYModel (1.0.4)
 
 DEPENDENCIES:
@@ -77,9 +81,11 @@ DEPENDENCIES:
   - TuyaSmartTimerKit (from `../../TuyaSmartSDK/TuyaSmartTimerKit`)
   - TuyaSmartUtil (from `../../TuyaSmartSDK/TuyaSmartUtil`)
   - TYBluetooth (from `../../TuyaSmartSDK/TYBluetooth`)
-  - TYNFCModule (from `../../Module/TYNFCModule`)
+  - TYNFCModule (from `../../Tuya-Module/TYNFCModule`)
 
 SPEC REPOS:
+  https://registry.code.tuya-inc.top/tuyaIOS/TYSpecs.git:
+    - TuyaSmartNetworkKit
   trunk:
     - AlertToast
     - CocoaAsyncSocket
@@ -120,32 +126,33 @@ EXTERNAL SOURCES:
   TYBluetooth:
     :path: "../../TuyaSmartSDK/TYBluetooth"
   TYNFCModule:
-    :path: "../../Module/TYNFCModule"
+    :path: "../../Tuya-Module/TYNFCModule"
 
 SPEC CHECKSUMS:
-  AlertToast: ba89b195e8bc9084750979a9548b079458004bb3
+  AlertToast: cf98cad9bcd0ee5ff7b32b35ba1be3befd959a08
   CocoaAsyncSocket: 065fd1e645c7abab64f7a6a2007a48038fdc6a99
   ReSwift: 628f1a9b3ee52e3b3ca2a644435472fd77afafe1
   ReSwiftThunk: 23c8ea9092d9dc94b72005f19352dbd37fa42533
-  TuyaSmartActivatorCoreKit: 260948f4bd17f0e26486874dbd588c735f8171cd
-  TuyaSmartActivatorKit: f65dbdcd14bec7ecab2b9142cc661e53cced0e32
-  TuyaSmartBaseKit: de8dc984c182ef15aae064d8552d2d6746ccf633
-  TuyaSmartBLEKit: 01869708b26d256870bcd5dc26110ac3fdfe3a96
-  TuyaSmartBLEMeshKit: c1e73850f1de873047dc6958e9e31d04ab135452
-  TuyaSmartDeviceCoreKit: 7f3223799663a0f840eb39228cbf5098cebaae3b
-  TuyaSmartDeviceKit: 6095aa25c146efeb868eb7c713eed4c8570a279d
+  TuyaSmartActivatorCoreKit: ac078e29f469f2187a412af6c75d7659d94f18b7
+  TuyaSmartActivatorKit: 777287d8d0f691a2e6ce6e80fd346fb01450ea58
+  TuyaSmartBaseKit: 7397a0c400b36ae3fea5dadefd30e6795ba03c4b
+  TuyaSmartBLEKit: ac0ff11bc1d239a9dd694f34a3b180102a5c0106
+  TuyaSmartBLEMeshKit: 1b14d55003f3e4e2abfe1793ad70a2c88beb8581
+  TuyaSmartDeviceCoreKit: 6e7b5836a8979eab7a968dd6972b82e2bf514ec0
+  TuyaSmartDeviceKit: 730a5e7a6047691fbb8c7a1348276438b0ceeac7
   TuyaSmartFeedbackKit: b8013fdd50eb4457ecc7262b50c4391ed875d65d
   TuyaSmartMessageKit: a2e6602e879ca4e480bb40f1605c4be5a647c56c
-  TuyaSmartMQTTChannelKit: fdc7065cac5121d5cdf8ade1959ab1e5b195ce23
+  TuyaSmartMQTTChannelKit: 0c271058e3efff8592681872e031f927036fa6ae
+  TuyaSmartNetworkKit: 77319d804df4a3b4fe59f55b04f2df4d7543ea89
   TuyaSmartQUIC: 5bb81563fedf5b739ac50a5abbf42ec807cfb64b
-  TuyaSmartSceneKit: 5fc2fabb11413fe394742e5d688b1430bae2636e
-  TuyaSmartSocketChannelKit: da17ef8b3803642114150a956fa86a78e2cd175d
+  TuyaSmartSceneKit: 58691d646ff4d46e8453279e917c75a59a9ecc44
+  TuyaSmartSocketChannelKit: 0eb9879db84750cb200c40a2fe035322d694b113
   TuyaSmartTimerKit: 2270de574f16fcbd02bd517b392fb12064dd7334
-  TuyaSmartUtil: 4804c00dff5dbb48a6560a0b7d1eb8bb3f46cb5d
-  TYBluetooth: b1d66d9a0622ed864c88a1344bbb79179ddb6bf6
-  TYNFCModule: 3ca7f5b42181b15f7f0642a96f5b04b660a746da
+  TuyaSmartUtil: ae871db9d0ee3ea229f0159b92469cd8d169096f
+  TYBluetooth: 2d84f35573a9c006749e62e9baf207122a9d283d
+  TYNFCModule: 22a5de75ebfa2bc66377b2c2f057d1137c145f32
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: b59cfe62970664bf4ab18ca446524f7682b4bf52
+PODFILE CHECKSUM: 52ae4c582400b3d3ebb82e37f19a6009568cb54d
 
-COCOAPODS: 1.9.3
+COCOAPODS: 1.10.1

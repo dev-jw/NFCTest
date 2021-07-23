@@ -12,6 +12,7 @@
 
 #ifdef __OBJC__
   #import <TuyaSmartBaseKit/TuyaSmartBaseKit.h>
+  #import <TuyaSmartNetworkKit/TuyaSmartNetworkKit.h>
   #undef TYLog
   #undef TYSDKLogDebug
   #undef TYSDKLogInfo

@@ -13,6 +13,7 @@ enum ActivatorType {
     case AP
     case GateWay
     case ZigBeeSub
+    case NFC
     
     var titleMessage: String  {
         switch self {
@@ -24,6 +25,8 @@ enum ActivatorType {
             return "GateWay Acitvator"
         case .ZigBeeSub:
             return "ZigBeeSub Acitvator"
+        case .NFC:
+            return "NFC Acitvator"
         }
     }
     
@@ -58,7 +61,7 @@ struct ActivatorView: View, Identifiable {
                 VStack(alignment: .center) {
                     Form {
                         
-                        if type == .EZ || type == .AP {
+                        if type == .EZ || type == .AP || type == .NFC {
                             Section {
                                 TextField("Enter Wifi", text: $ssid).autocapitalization(.words)
                                 TextField("Enter Password", text: $password).autocapitalization(.words)
@@ -68,7 +71,27 @@ struct ActivatorView: View, Identifiable {
                                     if let window = UIApplication.shared.windows.first {
                                         window.endEditing(true)
                                     }
-                                    store.dispatch(ActivatorAction.startConfig(with: type.model, ssid: ssid, password: password))
+                                    
+                                    if type == .NFC {
+                                        // NFC 配网
+                                        //                                        let dict = [
+                                        //                                            "ssid": "sjdjzynmdnsayduy",
+                                        //                                            "password": "zsy13676789806",
+                                        //                                            "toekn": store.state.activatorState.token]
+                                        
+                                        guard let homeId = store.state.homeState.currentHome?.homeModel.homeId else {
+                                            return
+                                        }
+                                        
+                                        let tool = NFCTool()
+//                                        tool.startSession()
+                                        tool.configWifi(withHomeId: homeId, ssid: ssid, password: password, token: store.state.activatorState.token!)
+                                    
+                                        
+                                    }else {
+                                        
+                                        store.dispatch(ActivatorAction.startConfig(with: type.model, ssid: ssid, password: password))
+                                    }
                                 }
                                 .disabled(ssid.isEmpty || password.isEmpty || store.state.activatorState.requesting)
                             }
@@ -129,3 +152,5 @@ struct ActivatorView_Previews: PreviewProvider {
         ActivatorView(type: .EZ).environmentObject(AppMain().store)
     }
 }
+
+

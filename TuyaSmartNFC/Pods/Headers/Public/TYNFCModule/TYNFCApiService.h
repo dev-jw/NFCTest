@@ -1,1 +1,1 @@
-../../../../../../Module/TYNFCModule/TYNFCModule/Classes/TYNFCApiService.h
+../../../../../../Tuya-Module/TYNFCModule/TYNFCModule/Classes/TYNFCApiService.h

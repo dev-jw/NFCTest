@@ -31,7 +31,7 @@ struct NFCView: View {
                     ) {
                         
                         RootRow(content: Text("Scan Tag")) {
-                            NFCTool.performAction(.readTag)
+//                            NFCTool.performAction(.readTag)
                         }
                     }
                 }
@@ -58,15 +58,52 @@ struct NFCView: View {
                                 Text("on or off")
                             }
                             ) {
-                                                                
-                                let dict = ["dpId": "1", "devId": deviceModel.devId as Any] as [String : Any]
-                                let data = try? JSONSerialization.data(withJSONObject: dict, options: [])
-                                
-                                let str = String(data: data!, encoding: String.Encoding.utf8)
-                                
-                                NFCTool.performAction(.writeTag(dps: str ?? ""))
+                                                                                                
+                                let homeId = store.state.homeState.currentHome?.homeModel.homeId
+
+                                let tool = NFCTool()
+                                tool.startSession()
+                                tool.write(withHomeId: homeId!)
                                 
                             }.animation(.easeIn(duration: 0.3))
+                        }
+                    }
+                }
+                LazyVStack {
+                    Section(header: HStack {
+                        Text("Test Tag PWD")
+                            .font(.headline)
+                            .foregroundColor(Color.init("sectionTitleColor"))
+                            .padding()
+                        Spacer()
+                    }
+                    .background(Color.init("sectionColor"))
+                    .listRowInsets(
+                        EdgeInsets(
+                            top: 0,
+                            leading: 0,
+                            bottom: 0,
+                            trailing: 0))
+                    ) {
+                        
+                        RootRow(content: Text("Test Tag")) {
+                            
+                            let homeId = store.state.homeState.currentHome?.homeModel.homeId
+
+                            let tool = NFCTool()
+                            tool.startSession()
+                            tool.write(withHomeId: homeId!)
+
+//                            TYNFCTool.sharedInstance().recordModifier = TYNFCRecordModifier(block: { (strings) -> [String]? in
+//                                return [ANDROID_PACKAGE_PAYLOAD, APPLINKS]
+//                            })
+//
+//                            TYNFCTool.sharedInstance().wirteToTag(withHomeId: homeId!, data: ["":""]) { data in
+//                                print(data);
+//                            } failure: { error in
+//                                print(error?.localizedDescription ?? "")
+//                            }
+                            
                         }
                     }
                 }

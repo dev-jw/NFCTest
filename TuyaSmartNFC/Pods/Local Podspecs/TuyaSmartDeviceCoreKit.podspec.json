@@ -1,6 +1,6 @@
 {
   "name": "TuyaSmartDeviceCoreKit",
-  "version": "3.26.5-rc.3",
+  "version": "3.29.5-rc.5",
   "summary": "A short description of TuyaSmartDeviceCoreKit.",
   "homepage": "https://tuya.com",
   "license": {
@@ -20,6 +20,7 @@
   "module_map": "TuyaSmartDeviceCoreKit/module.modulemap",
   "public_header_files": "TuyaSmartDeviceCoreKit/Public/**/*.h",
   "prefix_header_contents": "#ifdef __OBJC__\n  #import <TuyaSmartBaseKit/TuyaSmartBaseKit.h>\n  #undef TYLog\n  #undef TYSDKLogDebug\n  #undef TYSDKLogInfo\n  #undef TYSDKLogWarn\n  #undef TYSDKLogError\n  #define TYSDKLogDebug(...)         TYSDKLog(0, @\"TuyaSmartDeviceCoreKit\", __FILE__, __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)\n  #define TYSDKLogInfo(...)         TYSDKLog(1, @\"TuyaSmartDeviceCoreKit\", __FILE__, __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)\n  #define TYSDKLogWarn(...)         TYSDKLog(2, @\"TuyaSmartDeviceCoreKit\", __FILE__, __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)\n  #define TYSDKLogError(...)         TYSDKLog(3, @\"TuyaSmartDeviceCoreKit\", __FILE__, __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)\n\n  #import <YYModel/YYModel.h>\n  #import \"TuyaSmartDeviceCoreKit.h\"\n  #import \"TYDeviceNotificationUtils.h\"\n  #import \"TYDeviceUtils.h\"\n#endif",
+  "prepare_command": "/usr/bin/sed -i '' 's/#define TUYA_DEVICECORE_VERSION @\".*\"/#define TUYA_DEVICECORE_VERSION @\"3.29.5-rc.5\"/g' TuyaSmartDeviceCoreKit/Public/TuyaSmartDeviceCoreKit.h",
   "dependencies": {
     "TuyaSmartBaseKit": [
 

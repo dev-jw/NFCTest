@@ -1,6 +1,6 @@
 {
   "name": "TuyaSmartMQTTChannelKit",
-  "version": "3.26.0",
+  "version": "3.29.0-rc.1",
   "summary": "A short description of TuyaSmartMQTTChannelKit.",
   "homepage": "https://tuya.com",
   "license": {
@@ -54,13 +54,7 @@
     ]
   },
   "pod_target_xcconfig": {
-    "DEFINES_MODULE": "YES",
-    "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64",
-    "EXCLUDED_ARCHS[sdk=watchsimulator*]": "x86_64 arm64"
+    "DEFINES_MODULE": "YES"
   },
-  "prepare_command": "curl -fSL https://github.com/novastone-media/MQTT-Client-Framework/archive/0.15.2.tar.gz -o MQTT-Client-Framework-0.15.2.tar.gz       && rm -rf MQTT-Client-Framework-0.15.2       && tar -zxvf MQTT-Client-Framework-0.15.2.tar.gz MQTT-Client-Framework-0.15.2/MQTTClient/MQTTClient/       && rm -rf MQTT-Client-Framework-0.15.2.tar.gz \n# pushd MQTT-Client-Framework-0.15.2/MQTTClient/MQTTClient/\n\n# # Class name\n# grep -Eh \"@implementation\\s+(\\w+)$\" *.{h,m}     #   | sed -E \"s/@implementation (.*)/#define \\1 TY\\1/g\"     #   > macros.h\n\n# # Struct name\n# grep -Eh \"typedef NS_ENUM\\(.*\\)\" *.{h,m}     #   | sed -E \"s/.?typedef NS_ENUM\\(.*, (.*)\\) ?\\{/#define \\1 TY\\1/g\"     #   > struct_names.txt\n# cat struct_names.txt >> macros.h\n# cat struct_names.txt     #   | xargs -I {} grep -Eh '{}[a-zA-Z]+( = .*)?,' *.{h,m}     #   | sed -E 's/^ *(.*),.*$/\\1/g'     #   >> macros.h\n\n# popd",
-  "user_target_xcconfig": {
-    "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64",
-    "EXCLUDED_ARCHS[sdk=watchsimulator*]": "x86_64 arm64"
-  }
+  "prepare_command": "curl -fSL https://github.com/novastone-media/MQTT-Client-Framework/archive/0.15.2.tar.gz -o MQTT-Client-Framework-0.15.2.tar.gz       && rm -rf MQTT-Client-Framework-0.15.2       && tar -zxvf MQTT-Client-Framework-0.15.2.tar.gz MQTT-Client-Framework-0.15.2/MQTTClient/MQTTClient/       && rm -rf MQTT-Client-Framework-0.15.2.tar.gz \n# pushd MQTT-Client-Framework-0.15.2/MQTTClient/MQTTClient/\n\n# # Class name\n# grep -Eh \"@implementation\\s+(\\w+)$\" *.{h,m}     #   | sed -E \"s/@implementation (.*)/#define \\1 TY\\1/g\"     #   > macros.h\n\n# # Struct name\n# grep -Eh \"typedef NS_ENUM\\(.*\\)\" *.{h,m}     #   | sed -E \"s/.?typedef NS_ENUM\\(.*, (.*)\\) ?\\{/#define \\1 TY\\1/g\"     #   > struct_names.txt\n# cat struct_names.txt >> macros.h\n# cat struct_names.txt     #   | xargs -I {} grep -Eh '{}[a-zA-Z]+( = .*)?,' *.{h,m}     #   | sed -E 's/^ *(.*),.*$/\\1/g'     #   >> macros.h\n\n# popd"
 }

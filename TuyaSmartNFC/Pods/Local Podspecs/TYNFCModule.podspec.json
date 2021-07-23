@@ -1,6 +1,6 @@
 {
   "name": "TYNFCModule",
-  "version": "0.1.0",
+  "version": "1.1.0-rc.11",
   "summary": "涂鸦 NFC 模块",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://registry.code.tuya-inc.top/tuyaIOS/tynfcmodule",
@@ -13,19 +13,31 @@
   },
   "source": {
     "git": "https://registry.code.tuya-inc.top/tuyaIOS/tynfcmodule.git",
-    "tag": "0.1.0"
+    "tag": "1.1.0-rc.11"
   },
   "platforms": {
-    "ios": "13.0"
+    "ios": "9.0"
   },
   "source_files": "TYNFCModule/Classes/**/*",
+  "public_header_files": "Pod/Classes/**/*.h",
+  "prefix_header_contents": "#ifdef __OBJC__\n  #import <TuyaSmartUtil/TuyaSmartUtil.h>\n  #import <TuyaSmartBaseKit/TuyaSmartBaseKit.h>\n  \n  #undef TYLog\n  #undef TYSDKLogDebug\n  #undef TYSDKLogInfo\n  #undef TYSDKLogWarn\n  #undef TYSDKLogError\n  #define TYSDKLogDebug(...)         TYSDKLog(0, @\"TuyaSmartSocketChannelKit\", __FILE__, __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)\n  #define TYSDKLogInfo(...)         TYSDKLog(1, @\"TuyaSmartSocketChannelKit\", __FILE__, __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)\n  #define TYSDKLogWarn(...)         TYSDKLog(2, @\"TuyaSmartSocketChannelKit\", __FILE__, __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)\n  #define TYSDKLogError(...)         TYSDKLog(3, @\"TuyaSmartSocketChannelKit\", __FILE__, __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)\n\n  #import \"TYNFCModule.h\"\n#endif",
   "frameworks": "CoreNFC",
   "dependencies": {
-    "TuyaSmartBaseKit": [
+    "TuyaSmartNetworkKit": [
+
+    ],
+    "TuyaSmartUtil": [
 
     ]
   },
   "pod_target_xcconfig": {
-    "TUYA_PRIVACY_USAGE_DESCRIPTION": "NFCReaderUsageDescription"
+    "TUYA_PRIVACY_USAGE_DESCRIPTION": "NFCReaderUsageDescription",
+    "TUYA_CODE_SIGN_ENTITLEMENTS": "com.apple.developer.nfc.readersession.formats",
+    "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64",
+    "EXCLUDED_ARCHS[sdk=watchsimulator*]": "x86_64 arm64"
+  },
+  "user_target_xcconfig": {
+    "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64",
+    "EXCLUDED_ARCHS[sdk=watchsimulator*]": "x86_64 arm64"
   }
 }

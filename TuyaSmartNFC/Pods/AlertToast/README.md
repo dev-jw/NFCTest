@@ -11,16 +11,20 @@
     <img src="https://github.com/elai950/AlertToast/blob/master/Assets/onboarding.png" style="display: block; margin: auto;"/>
 </p>
 
+<p align="center">
+    <img src="https://github.com/elai950/AlertToast/blob/master/Assets/ToastExample.gif" style="display: block; margin: auto;" width="180"/>
+</p>
+
 ## 🔭 Overview
 
-Currently, in Swift the only way to inform the user about a process is by using `Alert`. Sometimes, you just want to pop a message that tells the user that something completed, or his message was sent. Apple doesn't provide any other method rather than using `Alert` even though Apple using all kinds of different pop-ups. The results are poor UX where the user would need to tap "OK/Dismiss" for every little information that he should be notified about.
+Currently in SwiftUI, the only way to inform the user about some process that finished for example, is by using `Alert`. Sometimes, you just want to pop a message that tells the user that something completed, or his message was sent. Apple doesn't provide any other method rather than using `Alert` even though Apple using all kinds of different pop-ups. The results are poor UX where the user would need to tap "OK/Dismiss" for every little information that he should be notified about.
 
 Alert Toast is an open-source library in Github to use with SwiftUI. It allows you to present popups that don't need any user action to dismiss or to validate. Some great usage examples: `Message Sent`, `Poor Network Connection`, `Profile Updated`, `Logged In/Out`, `Favorited`, `Loading` and so on...
 
 <img src="https://img.shields.io/badge/BUILD-PASSING-green?style=for-the-badge" />&nbsp;&nbsp;&nbsp;<img src="https://img.shields.io/badge/PLATFORM-IOS%20|%20MACOS-lightgray?style=for-the-badge" />&nbsp;&nbsp;&nbsp;<img src="https://img.shields.io/badge/LICENSE-MIT-lightgray?style=for-the-badge" />&nbsp;&nbsp;&nbsp;<img src="https://img.shields.io/badge/MADE WITH-SWIFTUI-orange?style=for-the-badge" />
 
 * Built with pure SwiftUI.
-* 2 Display modes: `Alert` (pop at the center), `HUD` (drop from the top).
+* 3 Display modes: `Alert` (pop at the center), `HUD` (drop from the top) and `Banner` (pop/slide from the bottom).
 * `Complete`, `Error` `SystemImage`, `Image`, `Loading`, and `Regular` (Only Text).
 * Supports Light & Dark Mode.
 * Works with **any** kind of view builder.
@@ -118,6 +122,9 @@ struct ContentView: View{
             
             //Choose .hud to toast alert from the top of the screen
             //AlertToast(displayMode: .hud, type: .regular, title: "Message Sent!")
+            
+            //Choose .banner to slide/pop alert from the bottom of the screen
+            //AlertToast(displayMode: .banner(.slide), type: .regular, title: "Message Sent!")
         }
     }
 }

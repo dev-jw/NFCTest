@@ -1,1 +1,0 @@
-../../../../../../Module/TYNFCModule/TYNFCModule/Classes/TYNFCTool.h

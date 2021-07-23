@@ -1,1 +1,1 @@
-../../../../../../Module/TYNFCModule/TYNFCModule/Classes/TYNFCConstants.h
+../../../../../../Tuya-Module/TYNFCModule/TYNFCModule/Classes/TYNFCConstants.h

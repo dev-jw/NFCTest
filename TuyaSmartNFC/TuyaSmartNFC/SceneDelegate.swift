@@ -65,19 +65,30 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             fatalError("error")
         }
         
-        let data = ndefMessage.records[0].payload
-        
-        let alert = UIAlertController(title: "tips", message: String(data: data, encoding: .utf8), preferredStyle: .alert)
-        
-        alert.addAction(UIAlertAction(title: "Done", style: .default, handler: nil))
-        
-        guard let rootVc = window?.rootViewController else {
-            fatalError("error")
+        TYNFCModuleService.sharedInstance.readData(from: ndefMessage) { [self] res in
+                        
+            let alert = UIAlertController(title: "tips", message: res.description, preferredStyle: .alert)
+
+            alert.addAction(UIAlertAction(title: "Done", style: .default, handler: nil))
+
+            guard let rootVc = window?.rootViewController else {
+                fatalError("error")
+            }
+
+            rootVc.present(alert, animated: true, completion: nil)
+            
+        } failure: { [self] error in
+            
+            let alert = UIAlertController(title: "tips", message: error?.localizedDescription ?? "error", preferredStyle: .alert)
+
+            alert.addAction(UIAlertAction(title: "Done", style: .default, handler: nil))
+
+            guard let rootVc = window?.rootViewController else {
+                fatalError("error")
+            }
+
+            rootVc.present(alert, animated: true, completion: nil)
         }
-        
-        rootVc.present(alert, animated: true, completion: nil)
-        
-        print(ndefMessage)
     }
 }
 

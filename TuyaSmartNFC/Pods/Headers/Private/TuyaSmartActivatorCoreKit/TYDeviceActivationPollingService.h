@@ -1,0 +1,1 @@
+../../../../../../TuyaSmartSDK/TuyaSmartActivatorCoreKit/TuyaSmartActivatorCoreKit/Classes/Optimize/Helper/TYDeviceActivationPollingService.h

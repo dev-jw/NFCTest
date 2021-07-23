@@ -125,6 +125,10 @@ struct RootView: View {
                     title: Text(""),
                     message: Text("Please choose one of the following ways"),
                     buttons: [
+                        ActionSheet.Button.default(Text("NFC Activator")) {
+                            self.presentation = PresentationView(view: ActivatorView(type: .NFC))
+                        },
+                        
                         ActionSheet.Button.default(Text("EZ Activator")) {
                             self.presentation = PresentationView(view: ActivatorView(type: .EZ))
                         },
